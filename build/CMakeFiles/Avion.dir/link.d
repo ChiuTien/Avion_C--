@@ -7,8 +7,11 @@
   CMakeFiles/Avion.dir/src/main.cpp.o \
   CMakeFiles/Avion.dir/src/models/Avion.cpp.o \
   CMakeFiles/Avion.dir/src/models/Piste.cpp.o \
+  CMakeFiles/Avion.dir/src/repositories/AvionDAO.cpp.o \
+  CMakeFiles/Avion.dir/src/repositories/PisteDAO.cpp.o \
   CMakeFiles/Avion.dir/src/services/AvionService.cpp.o \
-  CMakeFiles/Avion.dir/src/views/MainWindow.cpp.o \
+  CMakeFiles/Avion.dir/src/views/ChronometreWidget.cpp.o \
+  CMakeFiles/Avion.dir/build/.qt/rcc/qrc_fichiers_qml.cpp.o \
   /usr/lib/libQt6Quick.so.6.11.1 \
   /usr/lib/libQt6Widgets.so.6.11.1 \
   /usr/lib/libQt6OpenGL.so.6.11.1 \
@@ -158,9 +161,15 @@ CMakeFiles/Avion.dir/src/models/Avion.cpp.o:
 
 CMakeFiles/Avion.dir/src/models/Piste.cpp.o:
 
+CMakeFiles/Avion.dir/src/repositories/AvionDAO.cpp.o:
+
+CMakeFiles/Avion.dir/src/repositories/PisteDAO.cpp.o:
+
 CMakeFiles/Avion.dir/src/services/AvionService.cpp.o:
 
-CMakeFiles/Avion.dir/src/views/MainWindow.cpp.o:
+CMakeFiles/Avion.dir/src/views/ChronometreWidget.cpp.o:
+
+CMakeFiles/Avion.dir/build/.qt/rcc/qrc_fichiers_qml.cpp.o:
 
 /usr/lib/libQt6Quick.so.6.11.1:
 

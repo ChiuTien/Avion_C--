@@ -2,7 +2,7 @@
 
 namespace Controllers {
     //Constructeur
-    AvionController::AvionController(Models::Avion& m_avion) : avion(m_avion) {}
+    AvionController::AvionController(Models::Avion& m_avion,QObject* parent) : avion(m_avion), QObject(parent) {}
 
     //Accelere en x
     void AvionController::accelererX() {
@@ -25,9 +25,5 @@ namespace Controllers {
         if(avion.getFreinageMY()<=nouvelleAcceleration) {
             avion.setAccelerationY(nouvelleAcceleration);
         }
-    }
-    //Mettre toute la simulation en pause
-    void AvionController::pause() {
-        vue->provoquerPause();
     }
 } 

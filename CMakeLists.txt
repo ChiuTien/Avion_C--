@@ -22,6 +22,7 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin)
 # 6. Collecte de tous les fichiers sources (.cpp)
 file(GLOB_RECURSE SOURCES "src/*.cpp")
 
+
 # 7. Création de l'exécutable final
 add_executable(${PROJECT_NAME} ${SOURCES}
     include/models/Piste.hpp
@@ -30,17 +31,19 @@ add_executable(${PROJECT_NAME} ${SOURCES}
     src/services/AvionService.cpp
     include/controllers/AvionController.hpp
     src/controllers/AvionControllers.cpp
-    include/views/InterfaceVueSimulation.hpp
-    include/views/MainWindow.hpp
-    src/views/MainWindow.cpp)
+    include/views/ChronometreWidget.hpp
+    src/views/ChronometreWidget.cpp
+    src/repositories/PisteDAO.cpp)
 
 # 8. Association du fichier QML à l'exécutable (Méthode Qt6 moderne)
-# qt_add_qml_module(${PROJECT_NAME}
-#     URI AppAvion
-#     VERSION 1.0
-#     QML_FILES
-#         src/ui/main.qml
-# )
+qt_add_resources(Avion "fichiers_qml"
+    PREFIX "/"
+    FILES
+        resources/main.qml
+        resources/ConfigurationView.qml  
+        resources/SimulationView.qml
+        resources/AccueilView.qml     
+)
 
 # 9. Liaison de ton projet avec les bibliothèques de Qt
 target_link_libraries(${PROJECT_NAME} PRIVATE 

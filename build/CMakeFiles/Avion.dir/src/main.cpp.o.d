@@ -1,8 +1,7 @@
 CMakeFiles/Avion.dir/src/main.cpp.o: \
  /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/src/main.cpp \
- /usr/include/stdc-predef.h /usr/include/qt6/QtWidgets/QApplication \
- /usr/include/qt6/QtWidgets/qapplication.h \
- /usr/include/qt6/QtWidgets/qtwidgetsglobal.h \
+ /usr/include/stdc-predef.h /usr/include/qt6/QtGui/QGuiApplication \
+ /usr/include/qt6/QtGui/qguiapplication.h \
  /usr/include/qt6/QtGui/qtguiglobal.h /usr/include/qt6/QtCore/qglobal.h \
  /usr/include/c++/16.1.1/type_traits \
  /usr/include/c++/16.1.1/x86_64-pc-linux-gnu/bits/c++config.h \
@@ -150,8 +149,6 @@ CMakeFiles/Avion.dir/src/main.cpp.o: \
  /usr/include/qt6/QtCore/qversiontagging.h \
  /usr/include/qt6/QtGui/qtgui-config.h \
  /usr/include/qt6/QtGui/qtguiexports.h \
- /usr/include/qt6/QtWidgets/qtwidgets-config.h \
- /usr/include/qt6/QtWidgets/qtwidgetsexports.h \
  /usr/include/qt6/QtCore/qcoreapplication.h \
  /usr/include/qt6/QtCore/qstring.h /usr/include/qt6/QtCore/qchar.h \
  /usr/include/qt6/QtCore/qcompare.h \
@@ -315,31 +312,19 @@ CMakeFiles/Avion.dir/src/main.cpp.o: \
  /usr/include/qt6/QtCore/qdeadlinetimer.h \
  /usr/include/qt6/QtCore/qnativeinterface.h \
  /usr/include/qt6/QtCore/qcoreapplication_platform.h \
- /usr/include/qt6/QtGui/qwindowdefs.h /usr/include/qt6/QtCore/qpoint.h \
- /usr/include/qt6/QtCore/qcheckedint_impl.h \
- /usr/include/qt6/QtCore/q23utility.h \
- /usr/include/qt6/QtCore/q20utility.h /usr/include/qt6/QtCore/qsize.h \
- /usr/include/qt6/QtCore/qmargins.h /usr/include/qt6/QtGui/qcursor.h \
- /usr/include/qt6/QtGui/qbitmap.h /usr/include/qt6/QtGui/qpixmap.h \
- /usr/include/qt6/QtGui/qpaintdevice.h /usr/include/qt6/QtCore/qrect.h \
- /usr/include/qt6/QtGui/qcolor.h /usr/include/qt6/QtGui/qrgb.h \
- /usr/include/qt6/QtGui/qrgba64.h \
+ /usr/include/qt6/QtGui/qwindowdefs.h \
+ /usr/include/qt6/QtGui/qinputmethod.h /usr/include/qt6/QtCore/qlocale.h \
+ /usr/include/qt6/QtCore/qvariant.h /usr/include/qt6/QtCore/qdebug.h \
+ /usr/include/qt6/QtCore/qtextstream.h \
+ /usr/include/qt6/QtCore/qcontiguouscache.h \
+ /usr/include/c++/16.1.1/climits \
  /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/limits.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/syslimits.h \
  /usr/include/limits.h /usr/include/bits/posix1_lim.h \
  /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
  /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
- /usr/include/bits/uio_lim.h /usr/include/qt6/QtCore/qshareddata.h \
- /usr/include/qt6/QtGui/qimage.h /usr/include/qt6/QtGui/qpixelformat.h \
- /usr/include/qt6/QtGui/qtransform.h /usr/include/qt6/QtGui/qpolygon.h \
- /usr/include/qt6/QtGui/qregion.h /usr/include/qt6/QtCore/qspan.h \
- /usr/include/c++/16.1.1/cassert /usr/include/qt6/QtCore/q20iterator.h \
- /usr/include/qt6/QtCore/qline.h /usr/include/qt6/QtGui/qguiapplication.h \
- /usr/include/qt6/QtGui/qinputmethod.h /usr/include/qt6/QtCore/qlocale.h \
- /usr/include/qt6/QtCore/qvariant.h /usr/include/qt6/QtCore/qdebug.h \
- /usr/include/qt6/QtCore/qtextstream.h \
- /usr/include/qt6/QtCore/qcontiguouscache.h \
- /usr/include/c++/16.1.1/climits /usr/include/qt6/QtCore/qsharedpointer.h \
+ /usr/include/bits/uio_lim.h /usr/include/qt6/QtCore/qsharedpointer.h \
+ /usr/include/qt6/QtCore/qshareddata.h \
  /usr/include/qt6/QtCore/qsharedpointer_impl.h \
  /usr/include/c++/16.1.1/set /usr/include/c++/16.1.1/bits/stl_set.h \
  /usr/include/c++/16.1.1/bits/stl_multiset.h \
@@ -349,16 +334,64 @@ CMakeFiles/Avion.dir/src/main.cpp.o: \
  /usr/include/qt6/QtCore/qshareddata_impl.h \
  /usr/include/qt6/QtCore/qset.h /usr/include/qt6/QtCore/qhash.h \
  /usr/include/qt6/QtCore/qvarlengtharray.h \
- /usr/include/qt6/QtCore/qalloc.h \
+ /usr/include/qt6/QtCore/qalloc.h /usr/include/qt6/QtCore/q23utility.h \
+ /usr/include/qt6/QtCore/q20utility.h /usr/include/qt6/QtCore/qpoint.h \
+ /usr/include/qt6/QtCore/qcheckedint_impl.h \
+ /usr/include/qt6/QtCore/qsize.h /usr/include/qt6/QtCore/qmargins.h \
  /usr/include/qt6/QtGui/qguiapplication_platform.h \
- /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/include/views/MainWindow.hpp \
- /usr/include/qt6/QtWidgets/QMainWindow \
- /usr/include/qt6/QtWidgets/qmainwindow.h \
- /usr/include/qt6/QtWidgets/qwidget.h /usr/include/qt6/QtGui/qaction.h \
- /usr/include/qt6/QtGui/qkeysequence.h /usr/include/qt6/QtGui/qicon.h \
+ /usr/include/qt6/QtQml/QQmlApplicationEngine \
+ /usr/include/qt6/QtQml/qqmlapplicationengine.h \
+ /usr/include/qt6/QtQml/qqmlengine.h /usr/include/qt6/QtCore/qurl.h \
+ /usr/include/qt6/QtQml/qjsengine.h /usr/include/qt6/QtCore/qtimezone.h \
+ /usr/include/qt6/QtCore/qdatetime.h /usr/include/qt6/QtCore/qcalendar.h \
+ /usr/include/qt6/QtQml/qjsvalue.h /usr/include/qt6/QtQml/qtqmlglobal.h \
+ /usr/include/qt6/QtQml/qtqml-config.h \
+ /usr/include/qt6/QtNetwork/qtnetworkglobal.h \
+ /usr/include/qt6/QtNetwork/qtnetwork-config.h \
+ /usr/include/qt6/QtNetwork/qtnetworkexports.h \
+ /usr/include/qt6/QtQml/qtqmlexports.h \
+ /usr/include/qt6/QtQml/qjsmanagedvalue.h \
+ /usr/include/qt6/QtQml/qjsprimitivevalue.h \
+ /usr/include/qt6/QtQml/qjsnumbercoercion.h \
+ /usr/include/qt6/QtQml/qqmldebug.h /usr/include/qt6/QtQml/qqml.h \
+ /usr/include/qt6/QtQml/qqmlprivate.h /usr/include/qt6/QtQml/qqmllist.h \
+ /usr/include/qt6/QtQml/qqmlparserstatus.h \
+ /usr/include/qt6/QtQml/qqmlpropertyvaluesource.h \
+ /usr/include/qt6/QtCore/qmetasequence.h \
+ /usr/include/qt6/QtCore/qiterable_impl.h \
+ /usr/include/qt6/QtCore/qmetaobject.h /usr/include/qt6/QtCore/qpointer.h \
+ /usr/include/qt6/QtCore/qtyperevision.h \
+ /usr/include/qt6/QtCore/qversionnumber.h /usr/include/qt6/QtCore/qspan.h \
+ /usr/include/c++/16.1.1/cassert /usr/include/qt6/QtCore/q20iterator.h \
+ /usr/include/qt6/QtQml/qqmlregistration.h \
+ /usr/include/qt6/QtQmlIntegration/qqmlintegration.h \
+ /usr/include/qt6/QtQml/qqmlerror.h \
+ /usr/include/qt6/QtQml/qqmlabstracturlinterceptor.h \
+ /usr/include/qt6/QtQml/QQmlContext /usr/include/qt6/QtQml/qqmlcontext.h \
+ /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/include/views/ChronometreWidget.hpp \
+ /usr/include/qt6/QtWidgets/QWidget /usr/include/qt6/QtWidgets/qwidget.h \
+ /usr/include/qt6/QtWidgets/qtwidgetsglobal.h \
+ /usr/include/qt6/QtWidgets/qtwidgets-config.h \
+ /usr/include/qt6/QtWidgets/qtwidgetsexports.h \
+ /usr/include/qt6/QtGui/qaction.h /usr/include/qt6/QtGui/qkeysequence.h \
+ /usr/include/qt6/QtGui/qicon.h /usr/include/qt6/QtGui/qpixmap.h \
+ /usr/include/qt6/QtGui/qpaintdevice.h /usr/include/qt6/QtCore/qrect.h \
+ /usr/include/qt6/QtGui/qcolor.h /usr/include/qt6/QtGui/qrgb.h \
+ /usr/include/qt6/QtGui/qrgba64.h /usr/include/qt6/QtGui/qimage.h \
+ /usr/include/qt6/QtGui/qpixelformat.h \
+ /usr/include/qt6/QtGui/qtransform.h /usr/include/qt6/QtGui/qpolygon.h \
+ /usr/include/qt6/QtGui/qregion.h /usr/include/qt6/QtCore/qline.h \
  /usr/include/qt6/QtGui/qpalette.h /usr/include/qt6/QtGui/qbrush.h \
  /usr/include/qt6/QtGui/qfont.h /usr/include/qt6/QtCore/qendian.h \
  /usr/include/qt6/QtGui/qfontmetrics.h /usr/include/qt6/QtGui/qfontinfo.h \
  /usr/include/qt6/QtGui/qfontvariableaxis.h \
  /usr/include/qt6/QtWidgets/qsizepolicy.h \
- /usr/include/qt6/QtWidgets/qtabwidget.h
+ /usr/include/qt6/QtGui/qcursor.h /usr/include/qt6/QtGui/qbitmap.h \
+ /usr/include/qt6/QtWidgets/QPushButton \
+ /usr/include/qt6/QtWidgets/qpushbutton.h \
+ /usr/include/qt6/QtWidgets/qabstractbutton.h \
+ /usr/include/qt6/QtWidgets/QLabel /usr/include/qt6/QtWidgets/qlabel.h \
+ /usr/include/qt6/QtWidgets/qframe.h /usr/include/qt6/QtGui/qpicture.h \
+ /usr/include/qt6/QtCore/qiodevice.h \
+ /usr/include/qt6/QtGui/qtextdocument.h /usr/include/qt6/QtCore/QTimer \
+ /usr/include/qt6/QtCore/qtimer.h

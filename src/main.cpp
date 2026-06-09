@@ -1,17 +1,25 @@
 // src/main.cpp
-#include <QApplication>
-#include "views/MainWindow.hpp"
+#include <QGuiApplication>
+#include <QQmlApplicationEngine>
+#include <QQmlContext>
+#include "views/ChronometreWidget.hpp"
 
 int main(int argc, char *argv[]) {
-    // 1. Initialise l'application Qt
-    QApplication app(argc, argv);
+    QGuiApplication app(argc, argv);
 
-    // 2. Crée l'instance de notre fenêtre
-    Views::MainWindow fenetre;
+    // 1. Créer le moteur QML
+    QQmlApplicationEngine engine;
 
-    // 3. Demande à la fenêtre de s'afficher
-    fenetre.show();
+    // 2. Créer notre composant de logique C++
+    Views::ChronometreWidget chrono;
 
-    // 4. Lance la boucle d'événements de Qt
+    // 3. 🔗 RENDRE LE C++ ACCESSIBLE AU QML
+    // On donne un nom ("monChronoCplusplus") que le QML utilisera pour appeler le C++
+    engine.rootContext()->setContextProperty("monChronoCplusplus", &chrono);
+
+    // 4. Charger le fichier visuel QML
+    const QUrl url(QStringLiteral("qrc:/resources/main.qml"));
+    engine.load(url);
+
     return app.exec();
 }

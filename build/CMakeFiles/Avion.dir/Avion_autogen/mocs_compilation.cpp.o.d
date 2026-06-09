@@ -1,10 +1,9 @@
 CMakeFiles/Avion.dir/Avion_autogen/mocs_compilation.cpp.o: \
  /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/build/Avion_autogen/mocs_compilation.cpp \
  /usr/include/stdc-predef.h \
- /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/build/Avion_autogen/CY5N3QYTG5/moc_MainWindow.cpp \
- /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/build/Avion_autogen/CY5N3QYTG5/../../../include/views/MainWindow.hpp \
- /usr/include/qt6/QtWidgets/QMainWindow \
- /usr/include/qt6/QtWidgets/qmainwindow.h \
+ /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/build/Avion_autogen/BAFWLH3SZT/moc_AvionController.cpp \
+ /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/build/Avion_autogen/BAFWLH3SZT/../../../include/controllers/AvionController.hpp \
+ /usr/include/qt6/QtWidgets/QWidget /usr/include/qt6/QtWidgets/qwidget.h \
  /usr/include/qt6/QtWidgets/qtwidgetsglobal.h \
  /usr/include/qt6/QtGui/qtguiglobal.h /usr/include/qt6/QtCore/qglobal.h \
  /usr/include/c++/16.1.1/type_traits \
@@ -155,7 +154,6 @@ CMakeFiles/Avion.dir/Avion_autogen/mocs_compilation.cpp.o: \
  /usr/include/qt6/QtGui/qtguiexports.h \
  /usr/include/qt6/QtWidgets/qtwidgets-config.h \
  /usr/include/qt6/QtWidgets/qtwidgetsexports.h \
- /usr/include/qt6/QtWidgets/qwidget.h \
  /usr/include/qt6/QtGui/qwindowdefs.h \
  /usr/include/qt6/QtCore/qobjectdefs.h \
  /usr/include/qt6/QtCore/qnamespace.h /usr/include/qt6/QtCore/qcompare.h \
@@ -350,7 +348,24 @@ CMakeFiles/Avion.dir/Avion_autogen/mocs_compilation.cpp.o: \
  /usr/include/qt6/QtGui/qfontvariableaxis.h \
  /usr/include/qt6/QtWidgets/qsizepolicy.h \
  /usr/include/qt6/QtGui/qcursor.h /usr/include/qt6/QtGui/qbitmap.h \
- /usr/include/qt6/QtWidgets/qtabwidget.h \
+ /usr/include/qt6/QtWidgets/QPushButton \
+ /usr/include/qt6/QtWidgets/qpushbutton.h \
+ /usr/include/qt6/QtWidgets/qabstractbutton.h \
+ /usr/include/qt6/QtWidgets/QLabel /usr/include/qt6/QtWidgets/qlabel.h \
+ /usr/include/qt6/QtWidgets/qframe.h /usr/include/qt6/QtGui/qpicture.h \
+ /usr/include/qt6/QtCore/qiodevice.h \
+ /usr/include/qt6/QtGui/qtextdocument.h /usr/include/qt6/QtCore/qurl.h \
+ /usr/include/qt6/QtCore/QTimer /usr/include/qt6/QtCore/qtimer.h \
+ /usr/include/qt6/QtCore/qbasictimer.h \
+ /usr/include/qt6/QtCore/qabstracteventdispatcher.h \
+ /usr/include/qt6/QtCore/qeventloop.h \
+ /usr/include/qt6/QtCore/qdeadlinetimer.h \
+ /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/include/models/Avion.hpp \
+ /usr/include/qt6/QtGui/qtextcursor.h \
+ /usr/include/qt6/QtGui/qtextformat.h /usr/include/qt6/QtGui/qpen.h \
+ /usr/include/qt6/QtGui/qtextoption.h \
  /usr/include/qt6/QtCore/qtmochelpers.h \
  /usr/include/qt6/QtCore/qtmocconstants.h \
- /usr/include/qt6/QtCore/q20algorithm.h
+ /usr/include/qt6/QtCore/q20algorithm.h \
+ /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/build/Avion_autogen/CY5N3QYTG5/moc_ChronometreWidget.cpp \
+ /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/build/Avion_autogen/CY5N3QYTG5/../../../include/views/ChronometreWidget.hpp

@@ -1638,7 +1638,8 @@
 		"/usr/lib/cmake/Qt6Widgets/Qt6WidgetsAdditionalTargetInfo.cmake",
 		"/usr/lib/cmake/Qt6Widgets/Qt6WidgetsMacros.cmake",
 		"/usr/lib/cmake/Qt6Widgets/Qt6WidgetsPlugins.cmake",
-		"/usr/lib/cmake/Qt6Widgets/Qt6WidgetsVersionlessAliasTargets.cmake"
+		"/usr/lib/cmake/Qt6Widgets/Qt6WidgetsVersionlessAliasTargets.cmake",
+		"/usr/lib/cmake/Qt6Core/Qt6CoreConfigureFileTemplate.in"
 	],
 	"CMAKE_SOURCE_DIR" : "/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion",
 	"CROSS_CONFIG" : false,
@@ -1665,15 +1666,9 @@
 			null
 		],
 		[
-			"/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/include/views/InterfaceVueSimulation.hpp",
+			"/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/include/views/ChronometreWidget.hpp",
 			"MU",
-			"CY5N3QYTG5/moc_InterfaceVueSimulation.cpp",
-			null
-		],
-		[
-			"/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/include/views/MainWindow.hpp",
-			"MU",
-			"CY5N3QYTG5/moc_MainWindow.cpp",
+			"CY5N3QYTG5/moc_ChronometreWidget.cpp",
 			null
 		]
 	],
@@ -1741,7 +1736,10 @@
 	],
 	"MOC_PREDEFS_FILE" : "/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/Avion_autogen/moc_predefs.h",
 	"MOC_RELAXED_MODE" : false,
-	"MOC_SKIP" : [],
+	"MOC_SKIP" : 
+	[
+		"/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/.qt/rcc/qrc_fichiers_qml.cpp"
+	],
 	"MULTI_CONFIG" : false,
 	"PARALLEL" : 4,
 	"PARSE_CACHE_FILE" : "/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/CMakeFiles/Avion_autogen.dir/ParseCache.txt",
@@ -1773,19 +1771,32 @@
 			null
 		],
 		[
+			"/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/src/repositories/AvionDAO.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/src/repositories/PisteDAO.cpp",
+			"MU",
+			null
+		],
+		[
 			"/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/src/services/AvionService.cpp",
 			"MU",
 			null
 		],
 		[
-			"/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/src/views/MainWindow.cpp",
+			"/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/src/views/ChronometreWidget.cpp",
 			"MU",
 			null
 		]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],
-	"UIC_SKIP" : [],
+	"UIC_SKIP" : 
+	[
+		"/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/.qt/rcc/qrc_fichiers_qml.cpp"
+	],
 	"UIC_UI_FILES" : [],
 	"USE_BETTER_GRAPH" : true,
 	"VERBOSITY" : 0

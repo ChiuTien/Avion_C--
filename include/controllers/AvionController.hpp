@@ -1,20 +1,26 @@
 #pragma once
 
+#include <QWidget>
+#include <QPushButton>
+#include <QLabel>
+#include <QTimer>
+
 #include "models/Avion.hpp"
-#include "views/InterfaceVueSimulation.hpp"
 
 namespace Controllers {
-    class AvionController {
+
+    class AvionController : public QObject {
+        Q_OBJECT
+
         private:
             Models::Avion& avion;
-            Views::InterfaceVueSimulation* vue;
         public:
-            AvionController(Models::Avion& avion);
+            explicit AvionController(Models::Avion& m_avion, QObject* parent = nullptr);
 
-            void accelererX();
-            void accelererY();
-            void freinerX();
-            void freinerY();
-            void pause();
+            Q_INVOKABLE void accelererX();
+            Q_INVOKABLE void accelererY();
+            Q_INVOKABLE void freinerX();
+            Q_INVOKABLE void freinerY();
     };
+
 }

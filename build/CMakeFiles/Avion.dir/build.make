@@ -69,10 +69,19 @@ include CMakeFiles/Avion.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Avion.dir/flags.make
 
+.qt/rcc/qrc_fichiers_qml.cpp: /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/resources/main.qml
+.qt/rcc/qrc_fichiers_qml.cpp: /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/resources/ConfigurationView.qml
+.qt/rcc/qrc_fichiers_qml.cpp: /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/resources/SimulationView.qml
+.qt/rcc/qrc_fichiers_qml.cpp: /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/resources/AccueilView.qml
+.qt/rcc/qrc_fichiers_qml.cpp: .qt/rcc/fichiers_qml.qrc
+.qt/rcc/qrc_fichiers_qml.cpp: /usr/lib/qt6/rcc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir="/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Running rcc for resource fichiers_qml"
+	/usr/lib/qt6/rcc --output "/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/.qt/rcc/qrc_fichiers_qml.cpp" --name fichiers_qml "/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/.qt/rcc/fichiers_qml.qrc"
+
 Avion_autogen/timestamp: /usr/lib/qt6/moc
 Avion_autogen/timestamp: /usr/lib/qt6/uic
 Avion_autogen/timestamp: CMakeFiles/Avion.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir="/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target Avion"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir="/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Automatic MOC and UIC for target Avion"
 	/usr/bin/cmake -E cmake_autogen "/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/CMakeFiles/Avion_autogen.dir/AutogenInfo.json" ""
 	/usr/bin/cmake -E touch "/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/Avion_autogen/timestamp"
 
@@ -82,7 +91,7 @@ CMakeFiles/Avion.dir/codegen:
 CMakeFiles/Avion.dir/Avion_autogen/mocs_compilation.cpp.o: CMakeFiles/Avion.dir/flags.make
 CMakeFiles/Avion.dir/Avion_autogen/mocs_compilation.cpp.o: Avion_autogen/mocs_compilation.cpp
 CMakeFiles/Avion.dir/Avion_autogen/mocs_compilation.cpp.o: CMakeFiles/Avion.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Avion.dir/Avion_autogen/mocs_compilation.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Avion.dir/Avion_autogen/mocs_compilation.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Avion.dir/Avion_autogen/mocs_compilation.cpp.o -MF CMakeFiles/Avion.dir/Avion_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/Avion.dir/Avion_autogen/mocs_compilation.cpp.o -c "/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/Avion_autogen/mocs_compilation.cpp"
 
 CMakeFiles/Avion.dir/Avion_autogen/mocs_compilation.cpp.i: cmake_force
@@ -96,7 +105,7 @@ CMakeFiles/Avion.dir/Avion_autogen/mocs_compilation.cpp.s: cmake_force
 CMakeFiles/Avion.dir/src/controllers/AvionControllers.cpp.o: CMakeFiles/Avion.dir/flags.make
 CMakeFiles/Avion.dir/src/controllers/AvionControllers.cpp.o: /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/src/controllers/AvionControllers.cpp
 CMakeFiles/Avion.dir/src/controllers/AvionControllers.cpp.o: CMakeFiles/Avion.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Avion.dir/src/controllers/AvionControllers.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Avion.dir/src/controllers/AvionControllers.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Avion.dir/src/controllers/AvionControllers.cpp.o -MF CMakeFiles/Avion.dir/src/controllers/AvionControllers.cpp.o.d -o CMakeFiles/Avion.dir/src/controllers/AvionControllers.cpp.o -c "/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/src/controllers/AvionControllers.cpp"
 
 CMakeFiles/Avion.dir/src/controllers/AvionControllers.cpp.i: cmake_force
@@ -110,7 +119,7 @@ CMakeFiles/Avion.dir/src/controllers/AvionControllers.cpp.s: cmake_force
 CMakeFiles/Avion.dir/src/main.cpp.o: CMakeFiles/Avion.dir/flags.make
 CMakeFiles/Avion.dir/src/main.cpp.o: /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/src/main.cpp
 CMakeFiles/Avion.dir/src/main.cpp.o: CMakeFiles/Avion.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Avion.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Avion.dir/src/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Avion.dir/src/main.cpp.o -MF CMakeFiles/Avion.dir/src/main.cpp.o.d -o CMakeFiles/Avion.dir/src/main.cpp.o -c "/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/src/main.cpp"
 
 CMakeFiles/Avion.dir/src/main.cpp.i: cmake_force
@@ -124,7 +133,7 @@ CMakeFiles/Avion.dir/src/main.cpp.s: cmake_force
 CMakeFiles/Avion.dir/src/models/Avion.cpp.o: CMakeFiles/Avion.dir/flags.make
 CMakeFiles/Avion.dir/src/models/Avion.cpp.o: /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/src/models/Avion.cpp
 CMakeFiles/Avion.dir/src/models/Avion.cpp.o: CMakeFiles/Avion.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Avion.dir/src/models/Avion.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Avion.dir/src/models/Avion.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Avion.dir/src/models/Avion.cpp.o -MF CMakeFiles/Avion.dir/src/models/Avion.cpp.o.d -o CMakeFiles/Avion.dir/src/models/Avion.cpp.o -c "/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/src/models/Avion.cpp"
 
 CMakeFiles/Avion.dir/src/models/Avion.cpp.i: cmake_force
@@ -138,7 +147,7 @@ CMakeFiles/Avion.dir/src/models/Avion.cpp.s: cmake_force
 CMakeFiles/Avion.dir/src/models/Piste.cpp.o: CMakeFiles/Avion.dir/flags.make
 CMakeFiles/Avion.dir/src/models/Piste.cpp.o: /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/src/models/Piste.cpp
 CMakeFiles/Avion.dir/src/models/Piste.cpp.o: CMakeFiles/Avion.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Avion.dir/src/models/Piste.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Avion.dir/src/models/Piste.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Avion.dir/src/models/Piste.cpp.o -MF CMakeFiles/Avion.dir/src/models/Piste.cpp.o.d -o CMakeFiles/Avion.dir/src/models/Piste.cpp.o -c "/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/src/models/Piste.cpp"
 
 CMakeFiles/Avion.dir/src/models/Piste.cpp.i: cmake_force
@@ -149,10 +158,38 @@ CMakeFiles/Avion.dir/src/models/Piste.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Avion.dir/src/models/Piste.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/src/models/Piste.cpp" -o CMakeFiles/Avion.dir/src/models/Piste.cpp.s
 
+CMakeFiles/Avion.dir/src/repositories/AvionDAO.cpp.o: CMakeFiles/Avion.dir/flags.make
+CMakeFiles/Avion.dir/src/repositories/AvionDAO.cpp.o: /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/src/repositories/AvionDAO.cpp
+CMakeFiles/Avion.dir/src/repositories/AvionDAO.cpp.o: CMakeFiles/Avion.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Avion.dir/src/repositories/AvionDAO.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Avion.dir/src/repositories/AvionDAO.cpp.o -MF CMakeFiles/Avion.dir/src/repositories/AvionDAO.cpp.o.d -o CMakeFiles/Avion.dir/src/repositories/AvionDAO.cpp.o -c "/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/src/repositories/AvionDAO.cpp"
+
+CMakeFiles/Avion.dir/src/repositories/AvionDAO.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Avion.dir/src/repositories/AvionDAO.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/src/repositories/AvionDAO.cpp" > CMakeFiles/Avion.dir/src/repositories/AvionDAO.cpp.i
+
+CMakeFiles/Avion.dir/src/repositories/AvionDAO.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Avion.dir/src/repositories/AvionDAO.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/src/repositories/AvionDAO.cpp" -o CMakeFiles/Avion.dir/src/repositories/AvionDAO.cpp.s
+
+CMakeFiles/Avion.dir/src/repositories/PisteDAO.cpp.o: CMakeFiles/Avion.dir/flags.make
+CMakeFiles/Avion.dir/src/repositories/PisteDAO.cpp.o: /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/src/repositories/PisteDAO.cpp
+CMakeFiles/Avion.dir/src/repositories/PisteDAO.cpp.o: CMakeFiles/Avion.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Avion.dir/src/repositories/PisteDAO.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Avion.dir/src/repositories/PisteDAO.cpp.o -MF CMakeFiles/Avion.dir/src/repositories/PisteDAO.cpp.o.d -o CMakeFiles/Avion.dir/src/repositories/PisteDAO.cpp.o -c "/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/src/repositories/PisteDAO.cpp"
+
+CMakeFiles/Avion.dir/src/repositories/PisteDAO.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Avion.dir/src/repositories/PisteDAO.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/src/repositories/PisteDAO.cpp" > CMakeFiles/Avion.dir/src/repositories/PisteDAO.cpp.i
+
+CMakeFiles/Avion.dir/src/repositories/PisteDAO.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Avion.dir/src/repositories/PisteDAO.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/src/repositories/PisteDAO.cpp" -o CMakeFiles/Avion.dir/src/repositories/PisteDAO.cpp.s
+
 CMakeFiles/Avion.dir/src/services/AvionService.cpp.o: CMakeFiles/Avion.dir/flags.make
 CMakeFiles/Avion.dir/src/services/AvionService.cpp.o: /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/src/services/AvionService.cpp
 CMakeFiles/Avion.dir/src/services/AvionService.cpp.o: CMakeFiles/Avion.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Avion.dir/src/services/AvionService.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Avion.dir/src/services/AvionService.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Avion.dir/src/services/AvionService.cpp.o -MF CMakeFiles/Avion.dir/src/services/AvionService.cpp.o.d -o CMakeFiles/Avion.dir/src/services/AvionService.cpp.o -c "/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/src/services/AvionService.cpp"
 
 CMakeFiles/Avion.dir/src/services/AvionService.cpp.i: cmake_force
@@ -163,19 +200,33 @@ CMakeFiles/Avion.dir/src/services/AvionService.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Avion.dir/src/services/AvionService.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/src/services/AvionService.cpp" -o CMakeFiles/Avion.dir/src/services/AvionService.cpp.s
 
-CMakeFiles/Avion.dir/src/views/MainWindow.cpp.o: CMakeFiles/Avion.dir/flags.make
-CMakeFiles/Avion.dir/src/views/MainWindow.cpp.o: /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/src/views/MainWindow.cpp
-CMakeFiles/Avion.dir/src/views/MainWindow.cpp.o: CMakeFiles/Avion.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Avion.dir/src/views/MainWindow.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Avion.dir/src/views/MainWindow.cpp.o -MF CMakeFiles/Avion.dir/src/views/MainWindow.cpp.o.d -o CMakeFiles/Avion.dir/src/views/MainWindow.cpp.o -c "/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/src/views/MainWindow.cpp"
+CMakeFiles/Avion.dir/src/views/ChronometreWidget.cpp.o: CMakeFiles/Avion.dir/flags.make
+CMakeFiles/Avion.dir/src/views/ChronometreWidget.cpp.o: /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/src/views/ChronometreWidget.cpp
+CMakeFiles/Avion.dir/src/views/ChronometreWidget.cpp.o: CMakeFiles/Avion.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Avion.dir/src/views/ChronometreWidget.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Avion.dir/src/views/ChronometreWidget.cpp.o -MF CMakeFiles/Avion.dir/src/views/ChronometreWidget.cpp.o.d -o CMakeFiles/Avion.dir/src/views/ChronometreWidget.cpp.o -c "/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/src/views/ChronometreWidget.cpp"
 
-CMakeFiles/Avion.dir/src/views/MainWindow.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Avion.dir/src/views/MainWindow.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/src/views/MainWindow.cpp" > CMakeFiles/Avion.dir/src/views/MainWindow.cpp.i
+CMakeFiles/Avion.dir/src/views/ChronometreWidget.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Avion.dir/src/views/ChronometreWidget.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/src/views/ChronometreWidget.cpp" > CMakeFiles/Avion.dir/src/views/ChronometreWidget.cpp.i
 
-CMakeFiles/Avion.dir/src/views/MainWindow.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Avion.dir/src/views/MainWindow.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/src/views/MainWindow.cpp" -o CMakeFiles/Avion.dir/src/views/MainWindow.cpp.s
+CMakeFiles/Avion.dir/src/views/ChronometreWidget.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Avion.dir/src/views/ChronometreWidget.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/src/views/ChronometreWidget.cpp" -o CMakeFiles/Avion.dir/src/views/ChronometreWidget.cpp.s
+
+CMakeFiles/Avion.dir/build/.qt/rcc/qrc_fichiers_qml.cpp.o: CMakeFiles/Avion.dir/flags.make
+CMakeFiles/Avion.dir/build/.qt/rcc/qrc_fichiers_qml.cpp.o: .qt/rcc/qrc_fichiers_qml.cpp
+CMakeFiles/Avion.dir/build/.qt/rcc/qrc_fichiers_qml.cpp.o: CMakeFiles/Avion.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Avion.dir/build/.qt/rcc/qrc_fichiers_qml.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Avion.dir/build/.qt/rcc/qrc_fichiers_qml.cpp.o -MF CMakeFiles/Avion.dir/build/.qt/rcc/qrc_fichiers_qml.cpp.o.d -o CMakeFiles/Avion.dir/build/.qt/rcc/qrc_fichiers_qml.cpp.o -c "/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/.qt/rcc/qrc_fichiers_qml.cpp"
+
+CMakeFiles/Avion.dir/build/.qt/rcc/qrc_fichiers_qml.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Avion.dir/build/.qt/rcc/qrc_fichiers_qml.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/.qt/rcc/qrc_fichiers_qml.cpp" > CMakeFiles/Avion.dir/build/.qt/rcc/qrc_fichiers_qml.cpp.i
+
+CMakeFiles/Avion.dir/build/.qt/rcc/qrc_fichiers_qml.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Avion.dir/build/.qt/rcc/qrc_fichiers_qml.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/.qt/rcc/qrc_fichiers_qml.cpp" -o CMakeFiles/Avion.dir/build/.qt/rcc/qrc_fichiers_qml.cpp.s
 
 # Object files for target Avion
 Avion_OBJECTS = \
@@ -184,8 +235,11 @@ Avion_OBJECTS = \
 "CMakeFiles/Avion.dir/src/main.cpp.o" \
 "CMakeFiles/Avion.dir/src/models/Avion.cpp.o" \
 "CMakeFiles/Avion.dir/src/models/Piste.cpp.o" \
+"CMakeFiles/Avion.dir/src/repositories/AvionDAO.cpp.o" \
+"CMakeFiles/Avion.dir/src/repositories/PisteDAO.cpp.o" \
 "CMakeFiles/Avion.dir/src/services/AvionService.cpp.o" \
-"CMakeFiles/Avion.dir/src/views/MainWindow.cpp.o"
+"CMakeFiles/Avion.dir/src/views/ChronometreWidget.cpp.o" \
+"CMakeFiles/Avion.dir/build/.qt/rcc/qrc_fichiers_qml.cpp.o"
 
 # External object files for target Avion
 Avion_EXTERNAL_OBJECTS =
@@ -195,8 +249,11 @@ Avion_EXTERNAL_OBJECTS =
 /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/bin/Avion: CMakeFiles/Avion.dir/src/main.cpp.o
 /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/bin/Avion: CMakeFiles/Avion.dir/src/models/Avion.cpp.o
 /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/bin/Avion: CMakeFiles/Avion.dir/src/models/Piste.cpp.o
+/home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/bin/Avion: CMakeFiles/Avion.dir/src/repositories/AvionDAO.cpp.o
+/home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/bin/Avion: CMakeFiles/Avion.dir/src/repositories/PisteDAO.cpp.o
 /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/bin/Avion: CMakeFiles/Avion.dir/src/services/AvionService.cpp.o
-/home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/bin/Avion: CMakeFiles/Avion.dir/src/views/MainWindow.cpp.o
+/home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/bin/Avion: CMakeFiles/Avion.dir/src/views/ChronometreWidget.cpp.o
+/home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/bin/Avion: CMakeFiles/Avion.dir/build/.qt/rcc/qrc_fichiers_qml.cpp.o
 /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/bin/Avion: CMakeFiles/Avion.dir/build.make
 /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/bin/Avion: CMakeFiles/Avion.dir/compiler_depend.ts
 /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/bin/Avion: /usr/lib/libQt6Quick.so.6.11.1
@@ -209,7 +266,7 @@ Avion_EXTERNAL_OBJECTS =
 /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/bin/Avion: /usr/lib/libOpenGL.so
 /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/bin/Avion: /usr/lib/libQt6Core.so.6.11.1
 /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/bin/Avion: CMakeFiles/Avion.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable \"/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/bin/Avion\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable \"/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/bin/Avion\""
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Avion.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -220,6 +277,7 @@ CMakeFiles/Avion.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles/Avion.dir/cmake_clean.cmake
 .PHONY : CMakeFiles/Avion.dir/clean
 
+CMakeFiles/Avion.dir/depend: .qt/rcc/qrc_fichiers_qml.cpp
 CMakeFiles/Avion.dir/depend: Avion_autogen/timestamp
 	cd "/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion" "/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion" "/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build" "/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build" "/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/CMakeFiles/Avion.dir/DependInfo.cmake" "--color=$(COLOR)" Avion
 .PHONY : CMakeFiles/Avion.dir/depend

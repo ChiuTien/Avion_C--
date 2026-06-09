@@ -130,6 +130,19 @@ Avion/fast:
 .PHONY : Avion/fast
 
 #=============================================================================
+# Target rules for targets named Avion_other_files
+
+# Build rule for target.
+Avion_other_files: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Avion_other_files
+.PHONY : Avion_other_files
+
+# fast build rule for target.
+Avion_other_files/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Avion_other_files.dir/build.make CMakeFiles/Avion_other_files.dir/build
+.PHONY : Avion_other_files/fast
+
+#=============================================================================
 # Target rules for targets named Avion_autogen_timestamp_deps
 
 # Build rule for target.
@@ -178,6 +191,30 @@ Avion_autogen/mocs_compilation.s: Avion_autogen/mocs_compilation.cpp.s
 Avion_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Avion.dir/build.make CMakeFiles/Avion.dir/Avion_autogen/mocs_compilation.cpp.s
 .PHONY : Avion_autogen/mocs_compilation.cpp.s
+
+build/.qt/rcc/qrc_fichiers_qml.o: build/.qt/rcc/qrc_fichiers_qml.cpp.o
+.PHONY : build/.qt/rcc/qrc_fichiers_qml.o
+
+# target to build an object file
+build/.qt/rcc/qrc_fichiers_qml.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Avion.dir/build.make CMakeFiles/Avion.dir/build/.qt/rcc/qrc_fichiers_qml.cpp.o
+.PHONY : build/.qt/rcc/qrc_fichiers_qml.cpp.o
+
+build/.qt/rcc/qrc_fichiers_qml.i: build/.qt/rcc/qrc_fichiers_qml.cpp.i
+.PHONY : build/.qt/rcc/qrc_fichiers_qml.i
+
+# target to preprocess a source file
+build/.qt/rcc/qrc_fichiers_qml.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Avion.dir/build.make CMakeFiles/Avion.dir/build/.qt/rcc/qrc_fichiers_qml.cpp.i
+.PHONY : build/.qt/rcc/qrc_fichiers_qml.cpp.i
+
+build/.qt/rcc/qrc_fichiers_qml.s: build/.qt/rcc/qrc_fichiers_qml.cpp.s
+.PHONY : build/.qt/rcc/qrc_fichiers_qml.s
+
+# target to generate assembly for a file
+build/.qt/rcc/qrc_fichiers_qml.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Avion.dir/build.make CMakeFiles/Avion.dir/build/.qt/rcc/qrc_fichiers_qml.cpp.s
+.PHONY : build/.qt/rcc/qrc_fichiers_qml.cpp.s
 
 src/controllers/AvionControllers.o: src/controllers/AvionControllers.cpp.o
 .PHONY : src/controllers/AvionControllers.o
@@ -275,6 +312,54 @@ src/models/Piste.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Avion.dir/build.make CMakeFiles/Avion.dir/src/models/Piste.cpp.s
 .PHONY : src/models/Piste.cpp.s
 
+src/repositories/AvionDAO.o: src/repositories/AvionDAO.cpp.o
+.PHONY : src/repositories/AvionDAO.o
+
+# target to build an object file
+src/repositories/AvionDAO.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Avion.dir/build.make CMakeFiles/Avion.dir/src/repositories/AvionDAO.cpp.o
+.PHONY : src/repositories/AvionDAO.cpp.o
+
+src/repositories/AvionDAO.i: src/repositories/AvionDAO.cpp.i
+.PHONY : src/repositories/AvionDAO.i
+
+# target to preprocess a source file
+src/repositories/AvionDAO.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Avion.dir/build.make CMakeFiles/Avion.dir/src/repositories/AvionDAO.cpp.i
+.PHONY : src/repositories/AvionDAO.cpp.i
+
+src/repositories/AvionDAO.s: src/repositories/AvionDAO.cpp.s
+.PHONY : src/repositories/AvionDAO.s
+
+# target to generate assembly for a file
+src/repositories/AvionDAO.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Avion.dir/build.make CMakeFiles/Avion.dir/src/repositories/AvionDAO.cpp.s
+.PHONY : src/repositories/AvionDAO.cpp.s
+
+src/repositories/PisteDAO.o: src/repositories/PisteDAO.cpp.o
+.PHONY : src/repositories/PisteDAO.o
+
+# target to build an object file
+src/repositories/PisteDAO.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Avion.dir/build.make CMakeFiles/Avion.dir/src/repositories/PisteDAO.cpp.o
+.PHONY : src/repositories/PisteDAO.cpp.o
+
+src/repositories/PisteDAO.i: src/repositories/PisteDAO.cpp.i
+.PHONY : src/repositories/PisteDAO.i
+
+# target to preprocess a source file
+src/repositories/PisteDAO.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Avion.dir/build.make CMakeFiles/Avion.dir/src/repositories/PisteDAO.cpp.i
+.PHONY : src/repositories/PisteDAO.cpp.i
+
+src/repositories/PisteDAO.s: src/repositories/PisteDAO.cpp.s
+.PHONY : src/repositories/PisteDAO.s
+
+# target to generate assembly for a file
+src/repositories/PisteDAO.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Avion.dir/build.make CMakeFiles/Avion.dir/src/repositories/PisteDAO.cpp.s
+.PHONY : src/repositories/PisteDAO.cpp.s
+
 src/services/AvionService.o: src/services/AvionService.cpp.o
 .PHONY : src/services/AvionService.o
 
@@ -299,29 +384,29 @@ src/services/AvionService.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Avion.dir/build.make CMakeFiles/Avion.dir/src/services/AvionService.cpp.s
 .PHONY : src/services/AvionService.cpp.s
 
-src/views/MainWindow.o: src/views/MainWindow.cpp.o
-.PHONY : src/views/MainWindow.o
+src/views/ChronometreWidget.o: src/views/ChronometreWidget.cpp.o
+.PHONY : src/views/ChronometreWidget.o
 
 # target to build an object file
-src/views/MainWindow.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Avion.dir/build.make CMakeFiles/Avion.dir/src/views/MainWindow.cpp.o
-.PHONY : src/views/MainWindow.cpp.o
+src/views/ChronometreWidget.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Avion.dir/build.make CMakeFiles/Avion.dir/src/views/ChronometreWidget.cpp.o
+.PHONY : src/views/ChronometreWidget.cpp.o
 
-src/views/MainWindow.i: src/views/MainWindow.cpp.i
-.PHONY : src/views/MainWindow.i
+src/views/ChronometreWidget.i: src/views/ChronometreWidget.cpp.i
+.PHONY : src/views/ChronometreWidget.i
 
 # target to preprocess a source file
-src/views/MainWindow.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Avion.dir/build.make CMakeFiles/Avion.dir/src/views/MainWindow.cpp.i
-.PHONY : src/views/MainWindow.cpp.i
+src/views/ChronometreWidget.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Avion.dir/build.make CMakeFiles/Avion.dir/src/views/ChronometreWidget.cpp.i
+.PHONY : src/views/ChronometreWidget.cpp.i
 
-src/views/MainWindow.s: src/views/MainWindow.cpp.s
-.PHONY : src/views/MainWindow.s
+src/views/ChronometreWidget.s: src/views/ChronometreWidget.cpp.s
+.PHONY : src/views/ChronometreWidget.s
 
 # target to generate assembly for a file
-src/views/MainWindow.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Avion.dir/build.make CMakeFiles/Avion.dir/src/views/MainWindow.cpp.s
-.PHONY : src/views/MainWindow.cpp.s
+src/views/ChronometreWidget.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Avion.dir/build.make CMakeFiles/Avion.dir/src/views/ChronometreWidget.cpp.s
+.PHONY : src/views/ChronometreWidget.cpp.s
 
 # Help Target
 help:
@@ -333,10 +418,14 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Avion_autogen"
 	@echo "... Avion_autogen_timestamp_deps"
+	@echo "... Avion_other_files"
 	@echo "... Avion"
 	@echo "... Avion_autogen/mocs_compilation.o"
 	@echo "... Avion_autogen/mocs_compilation.i"
 	@echo "... Avion_autogen/mocs_compilation.s"
+	@echo "... build/.qt/rcc/qrc_fichiers_qml.o"
+	@echo "... build/.qt/rcc/qrc_fichiers_qml.i"
+	@echo "... build/.qt/rcc/qrc_fichiers_qml.s"
 	@echo "... src/controllers/AvionControllers.o"
 	@echo "... src/controllers/AvionControllers.i"
 	@echo "... src/controllers/AvionControllers.s"
@@ -349,12 +438,18 @@ help:
 	@echo "... src/models/Piste.o"
 	@echo "... src/models/Piste.i"
 	@echo "... src/models/Piste.s"
+	@echo "... src/repositories/AvionDAO.o"
+	@echo "... src/repositories/AvionDAO.i"
+	@echo "... src/repositories/AvionDAO.s"
+	@echo "... src/repositories/PisteDAO.o"
+	@echo "... src/repositories/PisteDAO.i"
+	@echo "... src/repositories/PisteDAO.s"
 	@echo "... src/services/AvionService.o"
 	@echo "... src/services/AvionService.i"
 	@echo "... src/services/AvionService.s"
-	@echo "... src/views/MainWindow.o"
-	@echo "... src/views/MainWindow.i"
-	@echo "... src/views/MainWindow.s"
+	@echo "... src/views/ChronometreWidget.o"
+	@echo "... src/views/ChronometreWidget.i"
+	@echo "... src/views/ChronometreWidget.s"
 .PHONY : help
 
 
