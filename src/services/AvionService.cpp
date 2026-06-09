@@ -26,9 +26,8 @@ namespace Services {
     }
 
     //Calcule distance par rapport a la piste
-    double AvionService::distancePiste(Avion& avion, Piste& piste) {
-        double distance = piste.getDebutX() - avion.getX();
-        return distance;
+    void AvionService::distancePiste(Avion& avion, Piste& piste) {
+        avion.setDistancePiste(piste.getDebutX() - avion.getX());
     }
 
     //Amelioration globale

@@ -11,6 +11,6 @@ namespace Services {
             void nouvelleVitesse(Avion& avion, double dt);
             void nouvellePosition(Avion& avion, double dt);
             void evolutionDansTemps(Avion& avion, double dt);
-            double AvionService::distancePiste(Avion& avion, Piste& piste)
+            void distancePiste(Avion& avion, Piste& piste)
     };
 }
