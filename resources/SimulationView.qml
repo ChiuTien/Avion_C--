@@ -2,7 +2,7 @@ import QtQuick
 import QtQuick.Controls
 
 Item {
-    anchors.fill: parent
+    //anchors.fill: parent
 
     // 🌤️ 1. ZONE SUPÉRIEURE : Vue extérieure / Ciel
     Rectangle {

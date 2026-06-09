@@ -4,11 +4,13 @@ Avion_autogen/timestamp: \
 	/home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/build/CMakeFiles/4.3.3/CMakeCXXCompiler.cmake \
 	/home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/build/CMakeFiles/4.3.3/CMakeSystem.cmake \
 	/home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/include/controllers/AvionController.hpp \
+	/home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/include/controllers/CrudController.hpp \
 	/home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/include/models/Avion.hpp \
 	/home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/include/models/Piste.hpp \
 	/home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/include/services/AvionService.hpp \
 	/home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/include/views/ChronometreWidget.hpp \
 	/home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/src/controllers/AvionControllers.cpp \
+	/home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/src/controllers/CrudController.cpp \
 	/home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/src/main.cpp \
 	/home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/src/models/Avion.cpp \
 	/home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/src/models/Piste.cpp \
@@ -286,7 +288,12 @@ Avion_autogen/timestamp: \
 	/usr/include/linux/types.h \
 	/usr/include/locale.h \
 	/usr/include/pthread.h \
+	/usr/include/qt6/QtCore/QList \
+	/usr/include/qt6/QtCore/QObject \
+	/usr/include/qt6/QtCore/QStringList \
 	/usr/include/qt6/QtCore/QTimer \
+	/usr/include/qt6/QtCore/QVariant \
+	/usr/include/qt6/QtCore/QVariantList \
 	/usr/include/qt6/QtCore/q17memory.h \
 	/usr/include/qt6/QtCore/q20bit.h \
 	/usr/include/qt6/QtCore/q20functional.h \
@@ -418,6 +425,7 @@ Avion_autogen/timestamp: \
 	/usr/include/qt6/QtCore/qurl.h \
 	/usr/include/qt6/QtCore/qutf8stringview.h \
 	/usr/include/qt6/QtCore/qvariant.h \
+	/usr/include/qt6/QtCore/qvariantlist.h \
 	/usr/include/qt6/QtCore/qvarlengtharray.h \
 	/usr/include/qt6/QtCore/qversiontagging.h \
 	/usr/include/qt6/QtCore/qxptype_traits.h \

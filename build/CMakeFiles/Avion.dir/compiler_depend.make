@@ -6,11 +6,13 @@ Avion_autogen/timestamp: /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion
   CMakeFiles/4.3.3/CMakeCXXCompiler.cmake \
   CMakeFiles/4.3.3/CMakeSystem.cmake \
   /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/include/controllers/AvionController.hpp \
+  /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/include/controllers/CrudController.hpp \
   /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/include/models/Avion.hpp \
   /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/include/models/Piste.hpp \
   /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/include/services/AvionService.hpp \
   /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/include/views/ChronometreWidget.hpp \
   /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/src/controllers/AvionControllers.cpp \
+  /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/src/controllers/CrudController.cpp \
   /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/src/main.cpp \
   /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/src/models/Avion.cpp \
   /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/src/models/Piste.cpp \
@@ -289,7 +291,12 @@ Avion_autogen/timestamp: /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion
   /usr/include/linux/types.h \
   /usr/include/locale.h \
   /usr/include/pthread.h \
+  /usr/include/qt6/QtCore/QList \
+  /usr/include/qt6/QtCore/QObject \
+  /usr/include/qt6/QtCore/QStringList \
   /usr/include/qt6/QtCore/QTimer \
+  /usr/include/qt6/QtCore/QVariant \
+  /usr/include/qt6/QtCore/QVariantList \
   /usr/include/qt6/QtCore/q17memory.h \
   /usr/include/qt6/QtCore/q20bit.h \
   /usr/include/qt6/QtCore/q20functional.h \
@@ -421,6 +428,7 @@ Avion_autogen/timestamp: /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion
   /usr/include/qt6/QtCore/qurl.h \
   /usr/include/qt6/QtCore/qutf8stringview.h \
   /usr/include/qt6/QtCore/qvariant.h \
+  /usr/include/qt6/QtCore/qvariantlist.h \
   /usr/include/qt6/QtCore/qvarlengtharray.h \
   /usr/include/qt6/QtCore/qversiontagging.h \
   /usr/include/qt6/QtCore/qxptype_traits.h \
@@ -2175,23 +2183,17 @@ Avion_autogen/timestamp: /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion
 
 /usr/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquickcontrols2fusionstylepluginAdditionalTargetInfo.cmake:
 
-/usr/lib/cmake/Qt6Qml/Qt6QQmlDebugServerFactoryPluginTargets-relwithdebinfo.cmake:
+/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stdarg.h:
 
-/usr/lib/cmake/Qt6Qml/QmlPlugins/Qt6VirtualKeyboardpluginAdditionalTargetInfo.cmake:
+/usr/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquickcontrols2fusionstyleimplpluginTargets-relwithdebinfo.cmake:
 
-/usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp:
+/usr/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquickcontrols2fluentwinui3stylepluginTargetsPrecheck.cmake:
 
-/usr/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtvkbpluginspluginTargets.cmake:
-
-/usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:
-
-/usr/lib/cmake/Qt6Qml/QmlPlugins/Qt6qmlfolderlistmodelpluginTargets-relwithdebinfo.cmake:
+/usr/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquickcontrols2fluentwinui3stylepluginTargets.cmake:
 
 /usr/lib/cmake/Qt6Core/Qt6CoreConfigureFileTemplate.in:
 
 /usr/lib/cmake/Qt6Core/Qt6CoreConfigVersion.cmake:
-
-/usr/include/c++/16.1.1/debug/debug.h:
 
 /usr/lib/cmake/Qt6Core/Qt6CoreAdditionalTargetInfo.cmake:
 
@@ -2365,6 +2367,10 @@ Avion_autogen/timestamp: /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion
 
 /usr/include/qt6/QtCore/qvarlengtharray.h:
 
+/usr/include/c++/16.1.1/debug/debug.h:
+
+/usr/include/qt6/QtCore/qvariantlist.h:
+
 /usr/lib/cmake/Qt6Network/Qt6QTlsBackendCertOnlyPluginTargetsPrecheck.cmake:
 
 /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/include/views/ChronometreWidget.hpp:
@@ -2394,12 +2400,6 @@ Avion_autogen/timestamp: /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion
 /usr/include/qt6/QtCore/qtmetamacros.h:
 
 /usr/include/qt6/QtCore/qtformat_impl.h:
-
-/usr/lib/cmake/Qt6CoreTools/Qt6CoreToolsAdditionalTargetInfo.cmake:
-
-/usr/include/qt6/QtCore/qtdeprecationmarkers.h:
-
-/usr/include/locale.h:
 
 /usr/include/qt6/QtCore/qtcoreglobal.h:
 
@@ -2473,14 +2473,6 @@ Avion_autogen/timestamp: /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion
 
 /usr/include/qt6/QtCore/qobject.h:
 
-/usr/share/cmake/Modules/Compiler/PathScale-DetermineCompiler.cmake:
-
-/usr/include/qt6/QtCore/qnumeric.h:
-
-/usr/lib/cmake/Qt6Gui/Qt6QGifPluginTargets-relwithdebinfo.cmake:
-
-/usr/lib/cmake/Qt6Gui/Qt6QIbusPlatformInputContextPluginTargets.cmake:
-
 /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/src/main.cpp:
 
 /usr/include/qt6/QtCore/qmetatype.h:
@@ -2490,10 +2482,6 @@ Avion_autogen/timestamp: /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion
 /usr/include/qt6/QtCore/qmargins.h:
 
 /usr/include/qt6/QtGui/qrgba64.h:
-
-/usr/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtqmlcorepluginTargets.cmake:
-
-/usr/include/qt6/QtCore/qmalloc.h:
 
 /usr/include/bits/stdint-uintn.h:
 
@@ -2534,8 +2522,6 @@ Avion_autogen/timestamp: /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion
 /usr/lib/cmake/Qt6Gui/Qt6GuiConfigVersionImpl.cmake:
 
 /usr/include/qt6/QtCore/qglobal.h:
-
-/usr/include/c++/16.1.1/numeric:
 
 /usr/include/qt6/QtCore/qforeach.h:
 
@@ -2645,6 +2631,8 @@ Avion_autogen/timestamp: /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion
 
 /usr/include/qt6/QtCore/q20utility.h:
 
+/usr/include/qt6/QtCore/QVariantList:
+
 /usr/include/qt6/QtGui/qimage.h:
 
 /usr/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquick3dhelpersimplpluginTargetsPrecheck.cmake:
@@ -2661,7 +2649,17 @@ Avion_autogen/timestamp: /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion
 
 /usr/lib/cmake/Qt6Gui/Qt6QEvdevKeyboardPluginConfig.cmake:
 
+/usr/include/qt6/QtCore/QVariant:
+
 /usr/include/qt6/QtCore/QTimer:
+
+/usr/include/c++/16.1.1/numeric:
+
+/usr/include/qt6/QtCore/QStringList:
+
+/usr/include/qt6/QtCore/QList:
+
+/usr/lib/cmake/Qt6Gui/Qt6QVirtualKeyboardPluginTargets-relwithdebinfo.cmake:
 
 /usr/include/pthread.h:
 
@@ -2711,19 +2709,15 @@ Avion_autogen/timestamp: /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion
 
 /usr/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquick3dparticles3dpluginTargets-relwithdebinfo.cmake:
 
-/usr/lib/cmake/Qt6Qml/QmlPlugins/Qt6quickmultimediaAdditionalTargetInfo.cmake:
-
-/usr/lib/cmake/Qt6Core/Qt6CoreTargets.cmake:
-
-/usr/share/cmake/Modules/Platform/Linux-Initialize.cmake:
-
-/usr/include/bits/stdlib-float.h:
-
 /usr/include/c++/16.1.1/x86_64-pc-linux-gnu/bits/error_constants.h:
 
 /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake:
 
 /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/src/views/ChronometreWidget.cpp:
+
+/usr/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquickcontrols2fusionstyleimplpluginTargets.cmake:
+
+/usr/include/qt6/QtCore/qtextstream.h:
 
 /usr/share/cmake/Modules/CMakeParseLibraryArchitecture.cmake:
 
@@ -2757,7 +2751,15 @@ Avion_autogen/timestamp: /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion
 
 /usr/lib/cmake/Qt6Gui/Qt6QLinuxFbIntegrationPluginTargets.cmake:
 
+/usr/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquickcontrols2fusionstyleimplpluginConfig.cmake:
+
+/usr/include/c++/16.1.1/x86_64-pc-linux-gnu/bits/atomic_word.h:
+
 /usr/include/c++/16.1.1/vector:
+
+/usr/include/locale.h:
+
+/usr/include/qt6/QtCore/qtdeprecationmarkers.h:
 
 /usr/include/c++/16.1.1/utility:
 
@@ -2869,10 +2871,6 @@ Avion_autogen/timestamp: /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion
 
 /usr/include/bits/types/timer_t.h:
 
-/usr/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfig.cmake:
-
-/usr/include/qt6/QtCore/qrefcount.h:
-
 /usr/include/qt6/QtCore/qiterable.h:
 
 /usr/include/c++/16.1.1/bits/stl_set.h:
@@ -2937,9 +2935,9 @@ Avion_autogen/timestamp: /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion
 
 /usr/include/c++/16.1.1/bits/hash_bytes.h:
 
-/usr/lib/cmake/Qt6Core/Qt6CoreTargetsPrecheck.cmake:
-
 /usr/lib/cmake/Qt6Gui/Qt6QEglFSX11IntegrationPluginTargets.cmake:
+
+/usr/lib/cmake/Qt6Qml/QmlPlugins/Qt6LabsStyleKitpluginAdditionalTargetInfo.cmake:
 
 /usr/include/linux/posix_types.h:
 
@@ -2991,6 +2989,34 @@ Avion_autogen/timestamp: /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion
 
 /usr/lib/cmake/Qt6Gui/Qt6QWaylandIntegrationPluginConfig.cmake:
 
+/usr/share/cmake/Modules/Platform/Linux-Initialize.cmake:
+
+/usr/include/bits/stdlib-float.h:
+
+/usr/lib/cmake/Qt6Qml/QmlPlugins/Qt6quickmultimediaAdditionalTargetInfo.cmake:
+
+/usr/lib/cmake/Qt6Core/Qt6CoreTargets.cmake:
+
+/usr/lib/cmake/Qt6Qml/QmlPlugins/Qt6labsmodelspluginTargets-relwithdebinfo.cmake:
+
+/usr/include/bits/thread-shared-types.h:
+
+/usr/share/cmake/Modules/Compiler/SCO-DetermineCompiler.cmake:
+
+/usr/include/c++/16.1.1/bits/char_traits.h:
+
+/usr/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginTargets-relwithdebinfo.cmake:
+
+/usr/lib/cmake/Qt6Qml/QmlPlugins/Qt6qquickvectorimagepluginTargetsPrecheck.cmake:
+
+/home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/src/services/AvionService.cpp:
+
+/usr/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquick3dassetutilspluginTargets.cmake:
+
+/usr/include/c++/16.1.1/bits/std_abs.h:
+
+/usr/include/bits/types/time_t.h:
+
 /usr/include/asm-generic/errno.h:
 
 /usr/include/c++/16.1.1/bits/list.tcc:
@@ -3000,8 +3026,6 @@ Avion_autogen/timestamp: /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion
 /usr/lib/cmake/Qt6Qml/Qt6QmlTargets.cmake:
 
 /usr/include/asm-generic/types.h:
-
-/usr/lib/cmake/Qt6Core/Qt6CoreVersionlessAliasTargets.cmake:
 
 /usr/share/cmake/Modules/CMakeDetermineCompilerSupport.cmake:
 
@@ -3026,6 +3050,20 @@ Avion_autogen/timestamp: /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion
 /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/src/controllers/AvionControllers.cpp:
 
 /usr/include/c++/16.1.1/cwchar:
+
+/usr/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquickcontrols2fusionstylepluginTargetsPrecheck.cmake:
+
+/usr/lib/cmake/Qt6/QtPublicSbomLicenseHelpers.cmake:
+
+/usr/include/qt6/QtCore/qxptype_traits.h:
+
+/usr/include/c++/16.1.1/type_traits:
+
+/usr/include/bits/stdio_lim.h:
+
+/usr/share/cmake/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake:
+
+/usr/include/c++/16.1.1/exception:
 
 /usr/lib/cmake/Qt6/QtPublicExternalProjectHelpers.cmake:
 
@@ -3055,49 +3093,13 @@ Avion_autogen/timestamp: /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion
 
 /usr/lib/cmake/Qt6Gui/Qt6QMinimalEglIntegrationPluginConfig.cmake:
 
+/home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/include/controllers/CrudController.hpp:
+
 /usr/include/qt6/QtCore/q23utility.h:
 
 /usr/include/bits/struct_mutex.h:
 
 /usr/lib/cmake/Qt6Gui/Qt6DmaBufServerBufferPluginTargetsPrecheck.cmake:
-
-/usr/include/c++/16.1.1/bits/ios_base.h:
-
-/usr/include/c++/16.1.1/algorithm:
-
-/usr/include/qt6/QtCore/qxptype_traits.h:
-
-/usr/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquickcontrols2fusionstylepluginTargetsPrecheck.cmake:
-
-/usr/lib/cmake/Qt6/QtPublicSbomLicenseHelpers.cmake:
-
-/usr/include/asm-generic/int-ll64.h:
-
-/usr/share/cmake/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake:
-
-/usr/include/c++/16.1.1/exception:
-
-/usr/include/bits/stdio_lim.h:
-
-/usr/include/c++/16.1.1/type_traits:
-
-/usr/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquickshapesdesignhelperspluginTargetsPrecheck.cmake:
-
-/usr/lib/cmake/Qt6/QtPublicFinalizerHelpers.cmake:
-
-/usr/share/cmake/Modules/GNUInstallDirs.cmake:
-
-/usr/include/asm/posix_types_64.h:
-
-/usr/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquick3dhelperspluginTargets-relwithdebinfo.cmake:
-
-/usr/include/c++/16.1.1/version:
-
-/usr/include/qt6/QtGui/qkeysequence.h:
-
-/usr/lib/cmake/Qt6Gui/Qt6QGtk3ThemePluginTargets-relwithdebinfo.cmake:
-
-/usr/include/c++/16.1.1/ctime:
 
 /usr/lib/cmake/Qt6/QtPublicCMakeVersionHelpers.cmake:
 
@@ -3113,11 +3115,23 @@ Avion_autogen/timestamp: /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion
 
 /usr/lib/cmake/Qt6Gui/Qt6ShmServerBufferPluginConfig.cmake:
 
-/home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/src/models/Piste.cpp:
+/usr/include/c++/16.1.1/ctime:
 
 /usr/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake:
 
 /usr/include/bits/uio_lim.h:
+
+/usr/include/asm/bitsperlong.h:
+
+/usr/include/c++/16.1.1/bits/ios_base.h:
+
+/usr/include/c++/16.1.1/algorithm:
+
+/usr/include/asm-generic/int-ll64.h:
+
+/usr/lib/cmake/Qt6Gui/Qt6QICOPluginConfig.cmake:
+
+/home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/CMakeLists.txt:
 
 /usr/include/c++/16.1.1/tuple:
 
@@ -3142,28 +3156,6 @@ Avion_autogen/timestamp: /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion
 /usr/include/c++/16.1.1/clocale:
 
 /usr/include/c++/16.1.1/bits/stl_multimap.h:
-
-/usr/include/asm/bitsperlong.h:
-
-/usr/lib/cmake/Qt6Gui/Qt6QICOPluginConfig.cmake:
-
-/home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/CMakeLists.txt:
-
-/usr/lib/cmake/Qt6Qml/QmlPlugins/Qt6labsmodelspluginTargets-relwithdebinfo.cmake:
-
-/usr/include/bits/thread-shared-types.h:
-
-/home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/src/services/AvionService.cpp:
-
-/usr/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquick3dassetutilspluginTargets.cmake:
-
-/usr/share/cmake/Modules/Compiler/SCO-DetermineCompiler.cmake:
-
-/usr/include/c++/16.1.1/bits/char_traits.h:
-
-/usr/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginTargets-relwithdebinfo.cmake:
-
-/usr/lib/cmake/Qt6Qml/QmlPlugins/Qt6qquickvectorimagepluginTargetsPrecheck.cmake:
 
 /usr/lib/cmake/Qt6Network/Qt6QGlibNetworkInformationPluginAdditionalTargetInfo.cmake:
 
@@ -3197,8 +3189,6 @@ Avion_autogen/timestamp: /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion
 
 /usr/include/qt6/QtWidgets/qsizepolicy.h:
 
-/usr/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquickcontrols2fluentwinui3stylepluginTargetsPrecheck.cmake:
-
 /usr/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquickdialogspluginTargets-relwithdebinfo.cmake:
 
 /usr/include/qt6/QtCore/qmath.h:
@@ -3206,6 +3196,22 @@ Avion_autogen/timestamp: /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion
 /usr/include/c++/16.1.1/bits/basic_string.tcc:
 
 /usr/include/c++/16.1.1/bits/stl_iterator_base_funcs.h:
+
+/usr/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquickshapesdesignhelperspluginTargetsPrecheck.cmake:
+
+/usr/lib/cmake/Qt6/QtPublicFinalizerHelpers.cmake:
+
+/usr/share/cmake/Modules/GNUInstallDirs.cmake:
+
+/usr/include/asm/posix_types_64.h:
+
+/usr/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquick3dhelperspluginTargets-relwithdebinfo.cmake:
+
+/usr/include/c++/16.1.1/version:
+
+/usr/include/qt6/QtGui/qkeysequence.h:
+
+/usr/lib/cmake/Qt6Gui/Qt6QGtk3ThemePluginTargets-relwithdebinfo.cmake:
 
 /usr/include/c++/16.1.1/bits/cpp_type_traits.h:
 
@@ -3289,6 +3295,8 @@ Avion_autogen/timestamp: /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion
 
 /usr/include/bits/endian.h:
 
+/usr/include/qt6/QtCore/QObject:
+
 /usr/lib/cmake/Qt6Qml/QmlPlugins/Qt6LabsStyleKitImplpluginTargets.cmake:
 
 /usr/lib/cmake/Qt6Qml/Qt6QQmlNativeDebugServiceFactoryPluginTargets-relwithdebinfo.cmake:
@@ -3361,6 +3369,20 @@ CMakeFiles/4.3.3/CMakeSystem.cmake:
 
 /usr/lib/cmake/Qt6Qml/QmlPlugins/Qt6QmlNetworkpluginTargets-relwithdebinfo.cmake:
 
+/usr/share/cmake/Modules/Compiler/PathScale-DetermineCompiler.cmake:
+
+/usr/include/qt6/QtCore/qnumeric.h:
+
+/usr/lib/cmake/Qt6Gui/Qt6QGifPluginTargets-relwithdebinfo.cmake:
+
+/usr/lib/cmake/Qt6Gui/Qt6QIbusPlatformInputContextPluginTargets.cmake:
+
+/home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/src/controllers/CrudController.cpp:
+
+/usr/lib/cmake/Qt6Qml/QmlPlugins/Qt6qmlwavefrontmeshpluginTargets.cmake:
+
+/usr/lib/cmake/Qt6Gui/Qt6QVncIntegrationPluginConfig.cmake:
+
 /usr/include/bits/select.h:
 
 /usr/include/c++/16.1.1/bits/cxxabi_init_exception.h:
@@ -3397,9 +3419,7 @@ CMakeFiles/4.3.3/CMakeSystem.cmake:
 
 /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/include/controllers/AvionController.hpp:
 
-/usr/include/c++/16.1.1/bits/std_abs.h:
-
-/usr/include/bits/types/time_t.h:
+/home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/src/models/Piste.cpp:
 
 /usr/include/c++/16.1.1/bits/hashtable_policy.h:
 
@@ -3525,8 +3545,6 @@ CMakeFiles/4.3.3/CMakeSystem.cmake:
 
 /usr/include/c++/16.1.1/bits/stl_list.h:
 
-/usr/lib/cmake/Qt6Gui/Qt6QEglFSKmsGbmIntegrationPluginTargetsPrecheck.cmake:
-
 /usr/lib/cmake/Qt6Qml/QmlPlugins/Qt6sharedimagepluginTargets-relwithdebinfo.cmake:
 
 /usr/include/qt6/QtCore/qcompare.h:
@@ -3536,10 +3554,6 @@ CMakeFiles/4.3.3/CMakeSystem.cmake:
 /usr/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:
 
 /usr/include/c++/16.1.1/streambuf:
-
-/usr/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersion.cmake:
-
-/usr/lib/cmake/Qt6Qml/QmlPlugins/Qt6qmlfolderlistmodelpluginTargets.cmake:
 
 /usr/include/c++/16.1.1/bits/stl_algo.h:
 
@@ -3574,6 +3588,10 @@ CMakeFiles/4.3.3/CMakeSystem.cmake:
 /usr/include/c++/16.1.1/bits/streambuf.tcc:
 
 /usr/lib/cmake/Qt6Network/Qt6QGlibNetworkInformationPluginTargets-relwithdebinfo.cmake:
+
+/usr/include/qt6/QtCore/qrefcount.h:
+
+/usr/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfig.cmake:
 
 /usr/lib/cmake/Qt6Qml/QmlPlugins/Qt6VirtualKeyboardpluginTargets.cmake:
 
@@ -3673,6 +3691,12 @@ CMakeFiles/4.3.3/CMakeSystem.cmake:
 
 /usr/lib/cmake/Qt6DBusTools/Qt6DBusToolsConfigVersionImpl.cmake:
 
+/usr/lib/cmake/Qt6CoreTools/Qt6CoreToolsDependencies.cmake:
+
+/usr/include/c++/16.1.1/bits/stdexcept_throw.h:
+
+/usr/lib/cmake/Qt6Gui/Qt6QSvgPluginTargetsPrecheck.cmake:
+
 /usr/include/c++/16.1.1/ext/alloc_traits.h:
 
 /usr/lib/cmake/Qt6Gui/Qt6QSvgIconPluginAdditionalTargetInfo.cmake:
@@ -3682,6 +3706,10 @@ CMakeFiles/4.3.3/CMakeSystem.cmake:
 /usr/include/bits/types/struct_FILE.h:
 
 Avion_autogen/moc_predefs.h:
+
+/usr/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquickcontrols2fusionstyleimplpluginAdditionalTargetInfo.cmake:
+
+/usr/include/qt6/QtCore/qtenvironmentvariables.h:
 
 /usr/lib/cmake/Qt6Widgets/Qt6WidgetsTargets.cmake:
 
@@ -3727,15 +3755,35 @@ Avion_autogen/moc_predefs.h:
 
 /usr/lib/cmake/Qt6Qml/QmlPlugins/Qt6modelspluginTargets.cmake:
 
+/usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp:
+
+/usr/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtvkbpluginspluginTargets.cmake:
+
+/usr/lib/cmake/Qt6Core/Qt6CoreMacros.cmake:
+
+/usr/lib/cmake/Qt6Qml/QmlPlugins/Qt6qmlfolderlistmodelpluginTargets-relwithdebinfo.cmake:
+
+/usr/lib/cmake/Qt6Gui/Qt6QEglFSKmsGbmIntegrationPluginTargetsPrecheck.cmake:
+
+/usr/lib/cmake/Qt6Core/Qt6CoreTargetsPrecheck.cmake:
+
+/usr/lib/cmake/Qt6Core/Qt6CoreVersionlessAliasTargets.cmake:
+
+/usr/lib/cmake/Qt6CoreTools/Qt6CoreToolsAdditionalTargetInfo.cmake:
+
+/usr/lib/cmake/Qt6Qml/QmlPlugins/Qt6qmlfolderlistmodelpluginTargets.cmake:
+
+/usr/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersion.cmake:
+
+/usr/lib/cmake/Qt6Qml/Qt6QQmlDebugServerFactoryPluginTargets-relwithdebinfo.cmake:
+
+/usr/lib/cmake/Qt6Qml/QmlPlugins/Qt6VirtualKeyboardpluginAdditionalTargetInfo.cmake:
+
+/usr/include/qt6/QtCore/qmalloc.h:
+
+/usr/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtqmlcorepluginTargets.cmake:
+
 /usr/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersionImpl.cmake:
-
-/usr/include/c++/16.1.1/bits/stdexcept_throw.h:
-
-/usr/lib/cmake/Qt6Gui/Qt6QSvgPluginTargetsPrecheck.cmake:
-
-/usr/lib/cmake/Qt6CoreTools/Qt6CoreToolsDependencies.cmake:
-
-/usr/lib/cmake/Qt6Qml/QmlPlugins/Qt6LabsStyleKitpluginAdditionalTargetInfo.cmake:
 
 /usr/include/qt6/QtWidgets/qwidget.h:
 
@@ -4061,6 +4109,12 @@ Avion_autogen/moc_predefs.h:
 
 /usr/lib/cmake/Qt6Gui/Qt6QVirtualKeyboardPluginTargetsPrecheck.cmake:
 
+/usr/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquickcontrols2fluentwinui3stylepluginTargets-relwithdebinfo.cmake:
+
+/usr/lib/cmake/Qt6Gui/Qt6QLibInputPluginConfig.cmake:
+
+/usr/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginTargets.cmake:
+
 /usr/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargetsPrecheck.cmake:
 
 /usr/include/c++/16.1.1/cstddef:
@@ -4159,8 +4213,6 @@ Avion_autogen/moc_predefs.h:
 
 /usr/lib/cmake/Qt6Gui/Qt6QVirtualKeyboardPluginConfig.cmake:
 
-/usr/lib/cmake/Qt6Gui/Qt6QVirtualKeyboardPluginTargets-relwithdebinfo.cmake:
-
 /usr/lib/cmake/Qt6Gui/Qt6QVkKhrDisplayIntegrationPluginConfig.cmake:
 
 /usr/lib/cmake/Qt6Gui/Qt6QWaylandFullScreenShellV1IntegrationPluginConfig.cmake:
@@ -4178,10 +4230,6 @@ Avion_autogen/moc_predefs.h:
 /usr/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquickcontrols2basicstyleimplpluginTargets.cmake:
 
 /usr/lib/cmake/Qt6Gui/Qt6QVncIntegrationPluginAdditionalTargetInfo.cmake:
-
-/usr/lib/cmake/Qt6Qml/QmlPlugins/Qt6qmlwavefrontmeshpluginTargets.cmake:
-
-/usr/lib/cmake/Qt6Gui/Qt6QVncIntegrationPluginConfig.cmake:
 
 /usr/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtvkbstylespluginTargets-relwithdebinfo.cmake:
 
@@ -4603,10 +4651,6 @@ CMakeFiles/4.3.3/CMakeCXXCompiler.cmake:
 
 /usr/lib/cmake/Qt6Qml/QmlPlugins/Qt6qmlsettingspluginTargetsPrecheck.cmake:
 
-/usr/include/qt6/QtCore/qtenvironmentvariables.h:
-
-/usr/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquickcontrols2fusionstyleimplpluginAdditionalTargetInfo.cmake:
-
 /usr/lib/cmake/Qt6Qml/QmlPlugins/Qt6qmlshapespluginConfig.cmake:
 
 /usr/lib/cmake/Qt6Qml/QmlPlugins/Qt6qmlshapespluginTargets.cmake:
@@ -4705,10 +4749,6 @@ CMakeFiles/4.3.3/CMakeCXXCompiler.cmake:
 
 /usr/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquick2pluginTargets.cmake:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stdarg.h:
-
-/usr/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquickcontrols2fusionstyleimplpluginTargets-relwithdebinfo.cmake:
-
 /usr/include/c++/16.1.1/unordered_map:
 
 /usr/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquick2pluginTargetsPrecheck.cmake:
@@ -4774,19 +4814,3 @@ CMakeFiles/4.3.3/CMakeCXXCompiler.cmake:
 /usr/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquickcontrols2basicstylepluginTargetsPrecheck.cmake:
 
 /usr/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquickcontrols2fluentwinui3styleimplpluginConfig.cmake:
-
-/usr/lib/cmake/Qt6Gui/Qt6QLibInputPluginConfig.cmake:
-
-/usr/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginTargets.cmake:
-
-/usr/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquickcontrols2fluentwinui3stylepluginTargets-relwithdebinfo.cmake:
-
-/usr/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquickcontrols2fluentwinui3stylepluginTargets.cmake:
-
-/usr/include/c++/16.1.1/x86_64-pc-linux-gnu/bits/atomic_word.h:
-
-/usr/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquickcontrols2fusionstyleimplpluginConfig.cmake:
-
-/usr/include/qt6/QtCore/qtextstream.h:
-
-/usr/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquickcontrols2fusionstyleimplpluginTargets.cmake:

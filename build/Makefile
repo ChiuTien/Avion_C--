@@ -240,6 +240,30 @@ src/controllers/AvionControllers.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Avion.dir/build.make CMakeFiles/Avion.dir/src/controllers/AvionControllers.cpp.s
 .PHONY : src/controllers/AvionControllers.cpp.s
 
+src/controllers/CrudController.o: src/controllers/CrudController.cpp.o
+.PHONY : src/controllers/CrudController.o
+
+# target to build an object file
+src/controllers/CrudController.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Avion.dir/build.make CMakeFiles/Avion.dir/src/controllers/CrudController.cpp.o
+.PHONY : src/controllers/CrudController.cpp.o
+
+src/controllers/CrudController.i: src/controllers/CrudController.cpp.i
+.PHONY : src/controllers/CrudController.i
+
+# target to preprocess a source file
+src/controllers/CrudController.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Avion.dir/build.make CMakeFiles/Avion.dir/src/controllers/CrudController.cpp.i
+.PHONY : src/controllers/CrudController.cpp.i
+
+src/controllers/CrudController.s: src/controllers/CrudController.cpp.s
+.PHONY : src/controllers/CrudController.s
+
+# target to generate assembly for a file
+src/controllers/CrudController.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Avion.dir/build.make CMakeFiles/Avion.dir/src/controllers/CrudController.cpp.s
+.PHONY : src/controllers/CrudController.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -429,6 +453,9 @@ help:
 	@echo "... src/controllers/AvionControllers.o"
 	@echo "... src/controllers/AvionControllers.i"
 	@echo "... src/controllers/AvionControllers.s"
+	@echo "... src/controllers/CrudController.o"
+	@echo "... src/controllers/CrudController.i"
+	@echo "... src/controllers/CrudController.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

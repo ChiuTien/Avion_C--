@@ -33,7 +33,9 @@ add_executable(${PROJECT_NAME} ${SOURCES}
     src/controllers/AvionControllers.cpp
     include/views/ChronometreWidget.hpp
     src/views/ChronometreWidget.cpp
-    src/repositories/PisteDAO.cpp)
+    src/repositories/PisteDAO.cpp
+    include/controllers/CrudController.hpp
+    src/controllers/CrudController.cpp)
 
 # 8. Association du fichier QML à l'exécutable (Méthode Qt6 moderne)
 qt_add_resources(Avion "fichiers_qml"
@@ -42,7 +44,8 @@ qt_add_resources(Avion "fichiers_qml"
         resources/main.qml
         resources/ConfigurationView.qml  
         resources/SimulationView.qml
-        resources/AccueilView.qml     
+        resources/AccueilView.qml    
+        resources/CrudView.qml 
 )
 
 # 9. Liaison de ton projet avec les bibliothèques de Qt

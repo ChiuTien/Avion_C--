@@ -3,7 +3,7 @@ import QtQuick.Controls
 
 Item {
     id: configurationView
-    anchors.fill: parent
+    //anchors.fill: parent
 
     // Signal pour avertir le main.qml qu'on veut lancer la simulation
     signal simulationLancee()

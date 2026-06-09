@@ -3,7 +3,7 @@ import QtQuick.Controls
 
 Item {
     id: accueilView
-    anchors.fill: parent
+    //anchors.fill: parent
 
     // 📣 Signaux pour avertir le main.qml du choix de l'utilisateur
     signal allerAuxDonnees()

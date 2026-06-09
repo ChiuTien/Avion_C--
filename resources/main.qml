@@ -22,8 +22,7 @@ ApplicationWindow {
 
         // 1. Si l'utilisateur clique sur "Données"
         function onAllerAuxDonnees() {
-            // TODO: On poussera la page CRUD ici (ex: "qrc:/resources/CrudView.qml")
-            console.log("Navigation vers la gestion des données (CRUD)")
+            stackNavigation.push("CrudView.qml")
         }
 
         // 2. Si l'utilisateur clique sur "Simulation"
