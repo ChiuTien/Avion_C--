@@ -5,9 +5,9 @@
 namespace Controllers {
     class AvionController {
         private:
-            Models::Avion& m_avion;
+            Models::Avion& avion;
         public:
-            AvionController(Models::Avion& avion) : m_avion(avion) {}
+            AvionController(Models::Avion& avion);
 
             void accelererX();
             void accelererY();

@@ -9,6 +9,8 @@ file(REMOVE_RECURSE
   "Avion_autogen/timestamp"
   "CMakeFiles/Avion.dir/Avion_autogen/mocs_compilation.cpp.o"
   "CMakeFiles/Avion.dir/Avion_autogen/mocs_compilation.cpp.o.d"
+  "CMakeFiles/Avion.dir/src/controllers/AvionControllers.cpp.o"
+  "CMakeFiles/Avion.dir/src/controllers/AvionControllers.cpp.o.d"
   "CMakeFiles/Avion.dir/src/main.cpp.o"
   "CMakeFiles/Avion.dir/src/main.cpp.o.d"
   "CMakeFiles/Avion.dir/src/models/Avion.cpp.o"

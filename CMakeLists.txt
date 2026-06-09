@@ -28,7 +28,8 @@ add_executable(${PROJECT_NAME} ${SOURCES}
     src/models/Piste.cpp
     include/services/AvionService.hpp
     src/services/AvionService.cpp
-    include/controllers/AvionController.hpp)
+    include/controllers/AvionController.hpp
+    src/controllers/AvionControllers.cpp)
 
 # 8. Association du fichier QML à l'exécutable (Méthode Qt6 moderne)
 # qt_add_qml_module(${PROJECT_NAME}

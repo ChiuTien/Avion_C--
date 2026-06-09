@@ -179,6 +179,30 @@ Avion_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Avion.dir/build.make CMakeFiles/Avion.dir/Avion_autogen/mocs_compilation.cpp.s
 .PHONY : Avion_autogen/mocs_compilation.cpp.s
 
+src/controllers/AvionControllers.o: src/controllers/AvionControllers.cpp.o
+.PHONY : src/controllers/AvionControllers.o
+
+# target to build an object file
+src/controllers/AvionControllers.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Avion.dir/build.make CMakeFiles/Avion.dir/src/controllers/AvionControllers.cpp.o
+.PHONY : src/controllers/AvionControllers.cpp.o
+
+src/controllers/AvionControllers.i: src/controllers/AvionControllers.cpp.i
+.PHONY : src/controllers/AvionControllers.i
+
+# target to preprocess a source file
+src/controllers/AvionControllers.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Avion.dir/build.make CMakeFiles/Avion.dir/src/controllers/AvionControllers.cpp.i
+.PHONY : src/controllers/AvionControllers.cpp.i
+
+src/controllers/AvionControllers.s: src/controllers/AvionControllers.cpp.s
+.PHONY : src/controllers/AvionControllers.s
+
+# target to generate assembly for a file
+src/controllers/AvionControllers.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Avion.dir/build.make CMakeFiles/Avion.dir/src/controllers/AvionControllers.cpp.s
+.PHONY : src/controllers/AvionControllers.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -289,6 +313,9 @@ help:
 	@echo "... Avion_autogen/mocs_compilation.o"
 	@echo "... Avion_autogen/mocs_compilation.i"
 	@echo "... Avion_autogen/mocs_compilation.s"
+	@echo "... src/controllers/AvionControllers.o"
+	@echo "... src/controllers/AvionControllers.i"
+	@echo "... src/controllers/AvionControllers.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

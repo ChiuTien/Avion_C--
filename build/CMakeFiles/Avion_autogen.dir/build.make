@@ -71,7 +71,7 @@ CMakeFiles/Avion_autogen: Avion_autogen/timestamp
 Avion_autogen/timestamp: /usr/lib/qt6/moc
 Avion_autogen/timestamp: CMakeFiles/Avion_autogen.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir="/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target Avion"
-	/usr/bin/cmake -E cmake_autogen "/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/CMakeFiles/Avion_autogen.dir/AutogenInfo.json" ""
+	/usr/bin/cmake -E cmake_autogen "/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/CMakeFiles/Avion_autogen.dir/AutogenInfo.json" Debug
 	/usr/bin/cmake -E touch "/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/Avion_autogen/timestamp"
 
 CMakeFiles/Avion_autogen.dir/codegen:
