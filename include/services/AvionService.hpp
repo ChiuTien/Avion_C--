@@ -10,7 +10,7 @@ namespace Services {
 
             void nouvelleVitesse(Avion& avion, double dt);
             void nouvellePosition(Avion& avion, double dt);
-            void evolutionDansTemps(Avion& avion, double dt);
+            void evolutionDansTemps(Avion& avion, Piste& piste, double dt);
             void distancePiste(Avion& avion, Piste& piste)
     };
 }

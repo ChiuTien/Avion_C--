@@ -27,12 +27,15 @@ namespace Services {
 
     //Calcule distance par rapport a la piste
     void AvionService::distancePiste(Avion& avion, Piste& piste) {
-        avion.setDistancePiste(piste.getDebutX() - avion.getX());
+        avion.setDistancePiste(avion.getX()-piste.getDebutX());
     }
 
     //Amelioration globale
-    void AvionService::evolutionDansTemps(Avion& avion, double dt) {
+    void AvionService::evolutionDansTemps(Avion& avion, Piste& piste, double dt) {
         nouvellePosition(avion,dt);
+        
+        distancePiste(avion,piste);
+
         nouvelleVitesse(avion,dt);
     }
 }
