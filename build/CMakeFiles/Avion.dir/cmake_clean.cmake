@@ -19,6 +19,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Avion.dir/src/models/Piste.cpp.o.d"
   "CMakeFiles/Avion.dir/src/services/AvionService.cpp.o"
   "CMakeFiles/Avion.dir/src/services/AvionService.cpp.o.d"
+  "CMakeFiles/Avion.dir/src/views/MainWindow.cpp.o"
+  "CMakeFiles/Avion.dir/src/views/MainWindow.cpp.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

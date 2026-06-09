@@ -2,7 +2,7 @@
 
 namespace Controllers {
     //Constructeur
-    AvionController::AvionController(Models::Avion& m_avion) : avion(M_avion) {}
+    AvionController::AvionController(Models::Avion& m_avion) : avion(m_avion) {}
 
     //Accelere en x
     void AvionController::accelererX() {
@@ -28,6 +28,6 @@ namespace Controllers {
     }
     //Mettre toute la simulation en pause
     void AvionController::pause() {
-        //je ne sais pas encore
+        vue->provoquerPause();
     }
 } 

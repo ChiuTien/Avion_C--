@@ -37,6 +37,7 @@ events:
       ENV{PATH}:
         - "/home/chiu/.npm-global/bin"
         - "/home/chiu/.npm-global/bin"
+        - "/home/chiu/.npm-global/bin"
         - "/usr/local/bin"
         - "/usr/bin"
         - "/bin"
@@ -99,6 +100,62 @@ events:
       ENV{PATH}:
         - "/home/chiu/.npm-global/bin"
         - "/home/chiu/.npm-global/bin"
+        - "/home/chiu/.npm-global/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/sbin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompiler.cmake:73 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:69 (_cmake_find_compiler)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER"
+    description: "CXX compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "c++"
+      - "CC"
+      - "g++"
+      - "aCC"
+      - "cl"
+      - "bcc"
+      - "xlC"
+      - "icpx"
+      - "icx"
+      - "clang++"
+    candidate_directories:
+      - "/home/chiu/.npm-global/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+    searched_directories:
+      - "/home/chiu/.npm-global/bin/c++"
+      - "/usr/local/bin/c++"
+    found: "/usr/bin/c++"
+    search_context:
+      ENV{PATH}:
+        - "/home/chiu/.npm-global/bin"
+        - "/home/chiu/.npm-global/bin"
+        - "/home/chiu/.npm-global/bin"
         - "/usr/local/bin"
         - "/usr/bin"
         - "/bin"
@@ -136,6 +193,7 @@ events:
       ENV{PATH}:
         - "/home/chiu/.npm-global/bin"
         - "/home/chiu/.npm-global/bin"
+        - "/home/chiu/.npm-global/bin"
         - "/usr/local/bin"
         - "/usr/bin"
         - "/bin"
@@ -153,7 +211,7 @@ events:
       - "CMakeLists.txt:2 (project)"
     message: |
       Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-      Compiler: /usr/bin/g++ 
+      Compiler: /usr/bin/c++ 
       Build flags: 
       Id flags:  
       
@@ -200,6 +258,7 @@ events:
       ENV{PATH}:
         - "/home/chiu/.npm-global/bin"
         - "/home/chiu/.npm-global/bin"
+        - "/home/chiu/.npm-global/bin"
         - "/usr/local/bin"
         - "/usr/bin"
         - "/bin"
@@ -240,6 +299,7 @@ events:
     found: "/usr/bin/ranlib"
     search_context:
       ENV{PATH}:
+        - "/home/chiu/.npm-global/bin"
         - "/home/chiu/.npm-global/bin"
         - "/home/chiu/.npm-global/bin"
         - "/usr/local/bin"
@@ -284,6 +344,7 @@ events:
       ENV{PATH}:
         - "/home/chiu/.npm-global/bin"
         - "/home/chiu/.npm-global/bin"
+        - "/home/chiu/.npm-global/bin"
         - "/usr/local/bin"
         - "/usr/bin"
         - "/bin"
@@ -324,6 +385,7 @@ events:
     found: "/usr/bin/ld"
     search_context:
       ENV{PATH}:
+        - "/home/chiu/.npm-global/bin"
         - "/home/chiu/.npm-global/bin"
         - "/home/chiu/.npm-global/bin"
         - "/usr/local/bin"
@@ -368,6 +430,7 @@ events:
       ENV{PATH}:
         - "/home/chiu/.npm-global/bin"
         - "/home/chiu/.npm-global/bin"
+        - "/home/chiu/.npm-global/bin"
         - "/usr/local/bin"
         - "/usr/bin"
         - "/bin"
@@ -408,6 +471,7 @@ events:
     found: "/usr/bin/objdump"
     search_context:
       ENV{PATH}:
+        - "/home/chiu/.npm-global/bin"
         - "/home/chiu/.npm-global/bin"
         - "/home/chiu/.npm-global/bin"
         - "/usr/local/bin"
@@ -452,6 +516,7 @@ events:
       ENV{PATH}:
         - "/home/chiu/.npm-global/bin"
         - "/home/chiu/.npm-global/bin"
+        - "/home/chiu/.npm-global/bin"
         - "/usr/local/bin"
         - "/usr/bin"
         - "/bin"
@@ -492,6 +557,7 @@ events:
     found: "/usr/bin/readelf"
     search_context:
       ENV{PATH}:
+        - "/home/chiu/.npm-global/bin"
         - "/home/chiu/.npm-global/bin"
         - "/home/chiu/.npm-global/bin"
         - "/usr/local/bin"
@@ -546,6 +612,7 @@ events:
       ENV{PATH}:
         - "/home/chiu/.npm-global/bin"
         - "/home/chiu/.npm-global/bin"
+        - "/home/chiu/.npm-global/bin"
         - "/usr/local/bin"
         - "/usr/bin"
         - "/bin"
@@ -586,6 +653,7 @@ events:
     found: "/usr/bin/addr2line"
     search_context:
       ENV{PATH}:
+        - "/home/chiu/.npm-global/bin"
         - "/home/chiu/.npm-global/bin"
         - "/home/chiu/.npm-global/bin"
         - "/usr/local/bin"
@@ -638,6 +706,7 @@ events:
     found: false
     search_context:
       ENV{PATH}:
+        - "/home/chiu/.npm-global/bin"
         - "/home/chiu/.npm-global/bin"
         - "/home/chiu/.npm-global/bin"
         - "/usr/local/bin"
@@ -713,6 +782,7 @@ events:
       ENV{PATH}:
         - "/home/chiu/.npm-global/bin"
         - "/home/chiu/.npm-global/bin"
+        - "/home/chiu/.npm-global/bin"
         - "/usr/local/bin"
         - "/usr/bin"
         - "/bin"
@@ -786,6 +856,7 @@ events:
       ENV{PATH}:
         - "/home/chiu/.npm-global/bin"
         - "/home/chiu/.npm-global/bin"
+        - "/home/chiu/.npm-global/bin"
         - "/usr/local/bin"
         - "/usr/bin"
         - "/bin"
@@ -803,8 +874,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/CMakeFiles/CMakeScratch/TryCompile-TuvXEh"
-      binary: "/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/CMakeFiles/CMakeScratch/TryCompile-TuvXEh"
+      source: "/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/CMakeFiles/CMakeScratch/TryCompile-wHFCKY"
+      binary: "/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/CMakeFiles/CMakeScratch/TryCompile-wHFCKY"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -815,22 +886,22 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/CMakeFiles/CMakeScratch/TryCompile-TuvXEh'
+        Change Dir: '/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/CMakeFiles/CMakeScratch/TryCompile-wHFCKY'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_5cedf/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_5cedf.dir/build.make CMakeFiles/cmTC_5cedf.dir/build
-        make[1]: Entering directory '/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/CMakeFiles/CMakeScratch/TryCompile-TuvXEh'
-        Building CXX object CMakeFiles/cmTC_5cedf.dir/CMakeCXXCompilerABI.cpp.o
-        /usr/bin/g++   -v -o CMakeFiles/cmTC_5cedf.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_d2722/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_d2722.dir/build.make CMakeFiles/cmTC_d2722.dir/build
+        make[1]: Entering directory '/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/CMakeFiles/CMakeScratch/TryCompile-wHFCKY'
+        Building CXX object CMakeFiles/cmTC_d2722.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -v -o CMakeFiles/cmTC_d2722.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
         Using built-in specs.
-        COLLECT_GCC=/usr/bin/g++
+        COLLECT_GCC=/usr/bin/c++
         Target: x86_64-pc-linux-gnu
         Configured with: /tmp/pkg/src/gcc/configure --enable-languages=ada,c,c++,d,fortran,go,lto,m2,objc,obj-c++,rust,cobol --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://github.com/CachyOS/CachyOS-PKGBUILDS/issues --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror --disable-fixincludes
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 16.1.1 20260430 (GCC) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_5cedf.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_5cedf.dir/'
-         /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_5cedf.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/cc09TV3s.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_d2722.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_d2722.dir/'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_d2722.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccrQYoFK.s
         GNU C++20 (GCC) version 16.1.1 20260430 (x86_64-pc-linux-gnu)
         	compiled by GNU C version 16.1.1 20260430, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.4.1, isl version isl-0.27-GMP
         
@@ -847,16 +918,16 @@ events:
          /usr/include
         End of search list.
         Compiler executable checksum: 01fb603e66dcb466f7fe3398b5ee0e67
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_5cedf.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_5cedf.dir/'
-         as -v --64 -o CMakeFiles/cmTC_5cedf.dir/CMakeCXXCompilerABI.cpp.o /tmp/cc09TV3s.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_d2722.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_d2722.dir/'
+         as -v --64 -o CMakeFiles/cmTC_d2722.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccrQYoFK.s
         GNU assembler version 2.46.0 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.46.0
         COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_5cedf.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_5cedf.dir/CMakeCXXCompilerABI.cpp.'
-        Linking CXX executable cmTC_5cedf
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5cedf.dir/link.txt --verbose=1
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_d2722.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_d2722.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_d2722
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d2722.dir/link.txt --verbose=1
         Using built-in specs.
-        COLLECT_GCC=/usr/bin/g++
+        COLLECT_GCC=/usr/bin/c++
         COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/lto-wrapper
         Target: x86_64-pc-linux-gnu
         Configured with: /tmp/pkg/src/gcc/configure --enable-languages=ada,c,c++,d,fortran,go,lto,m2,objc,obj-c++,rust,cobol --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://github.com/CachyOS/CachyOS-PKGBUILDS/issues --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror --disable-fixincludes
@@ -865,14 +936,14 @@ events:
         gcc version 16.1.1 20260430 (GCC) 
         COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_5cedf' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_5cedf.'
-         /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccnpial0.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_5cedf /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_5cedf.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d2722' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_d2722.'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cc6wfe7u.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_d2722 /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_d2722.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/crtn.o
         collect2 version 16.1.1 20260430
-        /usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccnpial0.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_5cedf /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_5cedf.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/crtn.o
+        /usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cc6wfe7u.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_d2722 /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_d2722.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/crtn.o
         GNU ld (GNU Binutils) 2.46.0
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_5cedf' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_5cedf.'
-        /usr/bin/g++  -v -Wl,-v CMakeFiles/cmTC_5cedf.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_5cedf
-        make[1]: Leaving directory '/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/CMakeFiles/CMakeScratch/TryCompile-TuvXEh'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d2722' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_d2722.'
+        /usr/bin/c++  -v -Wl,-v CMakeFiles/cmTC_d2722.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_d2722
+        make[1]: Leaving directory '/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/CMakeFiles/CMakeScratch/TryCompile-wHFCKY'
         
       exitCode: 0
   -
@@ -911,22 +982,22 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: '/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/CMakeFiles/CMakeScratch/TryCompile-TuvXEh']
+        ignore line: [Change Dir: '/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/CMakeFiles/CMakeScratch/TryCompile-wHFCKY']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_5cedf/fast]
-        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_5cedf.dir/build.make CMakeFiles/cmTC_5cedf.dir/build]
-        ignore line: [make[1]: Entering directory '/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/CMakeFiles/CMakeScratch/TryCompile-TuvXEh']
-        ignore line: [Building CXX object CMakeFiles/cmTC_5cedf.dir/CMakeCXXCompilerABI.cpp.o]
-        ignore line: [/usr/bin/g++   -v -o CMakeFiles/cmTC_5cedf.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_d2722/fast]
+        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_d2722.dir/build.make CMakeFiles/cmTC_d2722.dir/build]
+        ignore line: [make[1]: Entering directory '/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/CMakeFiles/CMakeScratch/TryCompile-wHFCKY']
+        ignore line: [Building CXX object CMakeFiles/cmTC_d2722.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_d2722.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Using built-in specs.]
-        ignore line: [COLLECT_GCC=/usr/bin/g++]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [Target: x86_64-pc-linux-gnu]
         ignore line: [Configured with: /tmp/pkg/src/gcc/configure --enable-languages=ada c c++ d fortran go lto m2 objc obj-c++ rust cobol --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://github.com/CachyOS/CachyOS-PKGBUILDS/issues --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror --disable-fixincludes]
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 16.1.1 20260430 (GCC) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_5cedf.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_5cedf.dir/']
-        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_5cedf.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/cc09TV3s.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_d2722.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_d2722.dir/']
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_d2722.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccrQYoFK.s]
         ignore line: [GNU C++20 (GCC) version 16.1.1 20260430 (x86_64-pc-linux-gnu)]
         ignore line: [	compiled by GNU C version 16.1.1 20260430  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.4.1  isl version isl-0.27-GMP]
         ignore line: []
@@ -943,16 +1014,16 @@ events:
         ignore line: [ /usr/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: 01fb603e66dcb466f7fe3398b5ee0e67]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_5cedf.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_5cedf.dir/']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_5cedf.dir/CMakeCXXCompilerABI.cpp.o /tmp/cc09TV3s.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_d2722.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_d2722.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_d2722.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccrQYoFK.s]
         ignore line: [GNU assembler version 2.46.0 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.46.0]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_5cedf.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_5cedf.dir/CMakeCXXCompilerABI.cpp.']
-        ignore line: [Linking CXX executable cmTC_5cedf]
-        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5cedf.dir/link.txt --verbose=1]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_d2722.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_d2722.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_d2722]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d2722.dir/link.txt --verbose=1]
         ignore line: [Using built-in specs.]
-        ignore line: [COLLECT_GCC=/usr/bin/g++]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/lto-wrapper]
         ignore line: [Target: x86_64-pc-linux-gnu]
         ignore line: [Configured with: /tmp/pkg/src/gcc/configure --enable-languages=ada c c++ d fortran go lto m2 objc obj-c++ rust cobol --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://github.com/CachyOS/CachyOS-PKGBUILDS/issues --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror --disable-fixincludes]
@@ -961,13 +1032,13 @@ events:
         ignore line: [gcc version 16.1.1 20260430 (GCC) ]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_5cedf' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_5cedf.']
-        link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccnpial0.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_5cedf /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_5cedf.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d2722' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_d2722.']
+        link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cc6wfe7u.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_d2722 /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_d2722.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/crtn.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccnpial0.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cc6wfe7u.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-latomic_asneeded] ==> ignore
@@ -983,7 +1054,7 @@ events:
           arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
           arg [-pie] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_5cedf] ==> ignore
+          arg [cmTC_d2722] ==> ignore
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/Scrt1.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/crti.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/crti.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/crtbeginS.o]
@@ -995,7 +1066,7 @@ events:
           arg [-L/lib] ==> dir [/lib]
           arg [-L/usr/lib] ==> dir [/usr/lib]
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_5cedf.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_d2722.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [-lstdc++] ==> lib [stdc++]
           arg [-lm] ==> lib [m]
           arg [-lgcc_s] ==> lib [gcc_s]
@@ -1007,7 +1078,7 @@ events:
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/crtendS.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/crtn.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/crtn.o]
         ignore line: [collect2 version 16.1.1 20260430]
-        ignore line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccnpial0.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_5cedf /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_5cedf.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/crtn.o]
+        ignore line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cc6wfe7u.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_d2722 /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_d2722.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/crtn.o]
         linker tool for 'CXX': /usr/bin/ld
         collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/Scrt1.o] ==> [/usr/lib/Scrt1.o]
         collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/crti.o] ==> [/usr/lib/crti.o]
@@ -1051,8 +1122,8 @@ events:
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/CMakeFiles/CMakeScratch/TryCompile-hh31Wd"
-      binary: "/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/CMakeFiles/CMakeScratch/TryCompile-hh31Wd"
+      source: "/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/CMakeFiles/CMakeScratch/TryCompile-qB7tI9"
+      binary: "/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/CMakeFiles/CMakeScratch/TryCompile-qB7tI9"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -1063,17 +1134,17 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: '/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/CMakeFiles/CMakeScratch/TryCompile-hh31Wd'
+        Change Dir: '/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/CMakeFiles/CMakeScratch/TryCompile-qB7tI9'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_5675b/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_5675b.dir/build.make CMakeFiles/cmTC_5675b.dir/build
-        make[1] : on entre dans le répertoire « /home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/CMakeFiles/CMakeScratch/TryCompile-hh31Wd »
-        Building CXX object CMakeFiles/cmTC_5675b.dir/src.cxx.o
-        /usr/bin/g++ -DCMAKE_HAVE_LIBC_PTHREAD  -std=gnu++17 -o CMakeFiles/cmTC_5675b.dir/src.cxx.o -c "/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/CMakeFiles/CMakeScratch/TryCompile-hh31Wd/src.cxx"
-        Linking CXX executable cmTC_5675b
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5675b.dir/link.txt --verbose=1
-        /usr/bin/g++ CMakeFiles/cmTC_5675b.dir/src.cxx.o -o cmTC_5675b
-        make[1] : on quitte le répertoire « /home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/CMakeFiles/CMakeScratch/TryCompile-hh31Wd »
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_aeff8/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_aeff8.dir/build.make CMakeFiles/cmTC_aeff8.dir/build
+        make[1] : on entre dans le répertoire « /home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/CMakeFiles/CMakeScratch/TryCompile-qB7tI9 »
+        Building CXX object CMakeFiles/cmTC_aeff8.dir/src.cxx.o
+        /usr/bin/c++ -DCMAKE_HAVE_LIBC_PTHREAD  -std=gnu++17 -o CMakeFiles/cmTC_aeff8.dir/src.cxx.o -c "/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/CMakeFiles/CMakeScratch/TryCompile-qB7tI9/src.cxx"
+        Linking CXX executable cmTC_aeff8
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_aeff8.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_aeff8.dir/src.cxx.o -o cmTC_aeff8
+        make[1] : on quitte le répertoire « /home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/CMakeFiles/CMakeScratch/TryCompile-qB7tI9 »
         
       exitCode: 0
   -
@@ -1092,8 +1163,8 @@ events:
     checks:
       - "Performing Test HAVE_STDATOMIC"
     directories:
-      source: "/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/CMakeFiles/CMakeScratch/TryCompile-r0XkEE"
-      binary: "/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/CMakeFiles/CMakeScratch/TryCompile-r0XkEE"
+      source: "/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/CMakeFiles/CMakeScratch/TryCompile-SNZR3J"
+      binary: "/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/CMakeFiles/CMakeScratch/TryCompile-SNZR3J"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -1104,17 +1175,17 @@ events:
       variable: "HAVE_STDATOMIC"
       cached: true
       stdout: |
-        Change Dir: '/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/CMakeFiles/CMakeScratch/TryCompile-r0XkEE'
+        Change Dir: '/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/CMakeFiles/CMakeScratch/TryCompile-SNZR3J'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_500f0/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_500f0.dir/build.make CMakeFiles/cmTC_500f0.dir/build
-        make[1] : on entre dans le répertoire « /home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/CMakeFiles/CMakeScratch/TryCompile-r0XkEE »
-        Building CXX object CMakeFiles/cmTC_500f0.dir/src.cxx.o
-        /usr/bin/g++ -DHAVE_STDATOMIC  -std=gnu++17 -o CMakeFiles/cmTC_500f0.dir/src.cxx.o -c "/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/CMakeFiles/CMakeScratch/TryCompile-r0XkEE/src.cxx"
-        Linking CXX executable cmTC_500f0
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_500f0.dir/link.txt --verbose=1
-        /usr/bin/g++ CMakeFiles/cmTC_500f0.dir/src.cxx.o -o cmTC_500f0
-        make[1] : on quitte le répertoire « /home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/CMakeFiles/CMakeScratch/TryCompile-r0XkEE »
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_47a64/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_47a64.dir/build.make CMakeFiles/cmTC_47a64.dir/build
+        make[1] : on entre dans le répertoire « /home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/CMakeFiles/CMakeScratch/TryCompile-SNZR3J »
+        Building CXX object CMakeFiles/cmTC_47a64.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_STDATOMIC  -std=gnu++17 -o CMakeFiles/cmTC_47a64.dir/src.cxx.o -c "/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/CMakeFiles/CMakeScratch/TryCompile-SNZR3J/src.cxx"
+        Linking CXX executable cmTC_47a64
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_47a64.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_47a64.dir/src.cxx.o -o cmTC_47a64
+        make[1] : on quitte le répertoire « /home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/CMakeFiles/CMakeScratch/TryCompile-SNZR3J »
         
       exitCode: 0
   -
@@ -1271,6 +1342,7 @@ events:
       ENV{PATH}:
         - "/home/chiu/.npm-global/bin"
         - "/home/chiu/.npm-global/bin"
+        - "/home/chiu/.npm-global/bin"
         - "/usr/local/bin"
         - "/usr/bin"
         - "/bin"
@@ -1405,6 +1477,7 @@ events:
       ENV{PATH}:
         - "/home/chiu/.npm-global/bin"
         - "/home/chiu/.npm-global/bin"
+        - "/home/chiu/.npm-global/bin"
         - "/usr/local/bin"
         - "/usr/bin"
         - "/bin"
@@ -1488,6 +1561,7 @@ events:
     found: "/usr/include/"
     search_context:
       ENV{PATH}:
+        - "/home/chiu/.npm-global/bin"
         - "/home/chiu/.npm-global/bin"
         - "/home/chiu/.npm-global/bin"
         - "/usr/local/bin"
@@ -1574,6 +1648,7 @@ events:
       ENV{PATH}:
         - "/home/chiu/.npm-global/bin"
         - "/home/chiu/.npm-global/bin"
+        - "/home/chiu/.npm-global/bin"
         - "/usr/local/bin"
         - "/usr/bin"
         - "/bin"
@@ -1656,6 +1731,7 @@ events:
     found: "/usr/include/"
     search_context:
       ENV{PATH}:
+        - "/home/chiu/.npm-global/bin"
         - "/home/chiu/.npm-global/bin"
         - "/home/chiu/.npm-global/bin"
         - "/usr/local/bin"
@@ -1742,6 +1818,7 @@ events:
       ENV{PATH}:
         - "/home/chiu/.npm-global/bin"
         - "/home/chiu/.npm-global/bin"
+        - "/home/chiu/.npm-global/bin"
         - "/usr/local/bin"
         - "/usr/bin"
         - "/bin"
@@ -1824,6 +1901,7 @@ events:
     found: "/usr/include/"
     search_context:
       ENV{PATH}:
+        - "/home/chiu/.npm-global/bin"
         - "/home/chiu/.npm-global/bin"
         - "/home/chiu/.npm-global/bin"
         - "/usr/local/bin"
@@ -1926,6 +2004,7 @@ events:
       ENV{PATH}:
         - "/home/chiu/.npm-global/bin"
         - "/home/chiu/.npm-global/bin"
+        - "/home/chiu/.npm-global/bin"
         - "/usr/local/bin"
         - "/usr/bin"
         - "/bin"
@@ -2010,6 +2089,7 @@ events:
       ENV{PATH}:
         - "/home/chiu/.npm-global/bin"
         - "/home/chiu/.npm-global/bin"
+        - "/home/chiu/.npm-global/bin"
         - "/usr/local/bin"
         - "/usr/bin"
         - "/bin"
@@ -2092,6 +2172,7 @@ events:
     found: "/usr/lib/libOpenGL.so"
     search_context:
       ENV{PATH}:
+        - "/home/chiu/.npm-global/bin"
         - "/home/chiu/.npm-global/bin"
         - "/home/chiu/.npm-global/bin"
         - "/usr/local/bin"
@@ -2211,6 +2292,7 @@ events:
       ENV{PATH}:
         - "/home/chiu/.npm-global/bin"
         - "/home/chiu/.npm-global/bin"
+        - "/home/chiu/.npm-global/bin"
         - "/usr/local/bin"
         - "/usr/bin"
         - "/bin"
@@ -2328,6 +2410,7 @@ events:
       ENV{PATH}:
         - "/home/chiu/.npm-global/bin"
         - "/home/chiu/.npm-global/bin"
+        - "/home/chiu/.npm-global/bin"
         - "/usr/local/bin"
         - "/usr/bin"
         - "/bin"
@@ -2410,6 +2493,7 @@ events:
     found: "/usr/lib/libGLESv2.so"
     search_context:
       ENV{PATH}:
+        - "/home/chiu/.npm-global/bin"
         - "/home/chiu/.npm-global/bin"
         - "/home/chiu/.npm-global/bin"
         - "/usr/local/bin"
@@ -2518,6 +2602,7 @@ events:
       ENV{PATH}:
         - "/home/chiu/.npm-global/bin"
         - "/home/chiu/.npm-global/bin"
+        - "/home/chiu/.npm-global/bin"
         - "/usr/local/bin"
         - "/usr/bin"
         - "/bin"
@@ -2604,6 +2689,7 @@ events:
     found: "/usr/lib/libGLU.so"
     search_context:
       ENV{PATH}:
+        - "/home/chiu/.npm-global/bin"
         - "/home/chiu/.npm-global/bin"
         - "/home/chiu/.npm-global/bin"
         - "/usr/local/bin"
@@ -2698,6 +2784,7 @@ events:
       ENV{PATH}:
         - "/home/chiu/.npm-global/bin"
         - "/home/chiu/.npm-global/bin"
+        - "/home/chiu/.npm-global/bin"
         - "/usr/local/bin"
         - "/usr/bin"
         - "/bin"
@@ -2780,6 +2867,7 @@ events:
       ENV{PATH}:
         - "/home/chiu/.npm-global/bin"
         - "/home/chiu/.npm-global/bin"
+        - "/home/chiu/.npm-global/bin"
         - "/usr/local/bin"
         - "/usr/bin"
         - "/bin"
@@ -2858,6 +2946,7 @@ events:
       ENV{PATH}:
         - "/home/chiu/.npm-global/bin"
         - "/home/chiu/.npm-global/bin"
+        - "/home/chiu/.npm-global/bin"
         - "/usr/local/bin"
         - "/usr/bin"
         - "/bin"
@@ -2932,6 +3021,7 @@ events:
     found: "/usr/bin/glslangValidator"
     search_context:
       ENV{PATH}:
+        - "/home/chiu/.npm-global/bin"
         - "/home/chiu/.npm-global/bin"
         - "/home/chiu/.npm-global/bin"
         - "/usr/local/bin"
@@ -3104,6 +3194,7 @@ events:
       version: "6.11.1"
     search_context:
       ENV{PATH}:
+        - "/home/chiu/.npm-global/bin"
         - "/home/chiu/.npm-global/bin"
         - "/home/chiu/.npm-global/bin"
         - "/usr/local/bin"
@@ -3283,6 +3374,7 @@ events:
       ENV{PATH}:
         - "/home/chiu/.npm-global/bin"
         - "/home/chiu/.npm-global/bin"
+        - "/home/chiu/.npm-global/bin"
         - "/usr/local/bin"
         - "/usr/bin"
         - "/bin"
@@ -3409,6 +3501,7 @@ events:
       ENV{PATH}:
         - "/home/chiu/.npm-global/bin"
         - "/home/chiu/.npm-global/bin"
+        - "/home/chiu/.npm-global/bin"
         - "/usr/local/bin"
         - "/usr/bin"
         - "/bin"
@@ -3525,6 +3618,7 @@ events:
       version: "6.11.1"
     search_context:
       ENV{PATH}:
+        - "/home/chiu/.npm-global/bin"
         - "/home/chiu/.npm-global/bin"
         - "/home/chiu/.npm-global/bin"
         - "/usr/local/bin"
@@ -3699,6 +3793,7 @@ events:
       ENV{PATH}:
         - "/home/chiu/.npm-global/bin"
         - "/home/chiu/.npm-global/bin"
+        - "/home/chiu/.npm-global/bin"
         - "/usr/local/bin"
         - "/usr/bin"
         - "/bin"
@@ -3807,6 +3902,7 @@ events:
       version: "6.11.1"
     search_context:
       ENV{PATH}:
+        - "/home/chiu/.npm-global/bin"
         - "/home/chiu/.npm-global/bin"
         - "/home/chiu/.npm-global/bin"
         - "/usr/local/bin"
@@ -3941,6 +4037,7 @@ events:
       version: "6.11.1"
     search_context:
       ENV{PATH}:
+        - "/home/chiu/.npm-global/bin"
         - "/home/chiu/.npm-global/bin"
         - "/home/chiu/.npm-global/bin"
         - "/usr/local/bin"
@@ -4250,6 +4347,7 @@ events:
     found: null
     search_context:
       ENV{PATH}:
+        - "/home/chiu/.npm-global/bin"
         - "/home/chiu/.npm-global/bin"
         - "/home/chiu/.npm-global/bin"
         - "/usr/local/bin"
@@ -4562,6 +4660,7 @@ events:
       ENV{PATH}:
         - "/home/chiu/.npm-global/bin"
         - "/home/chiu/.npm-global/bin"
+        - "/home/chiu/.npm-global/bin"
         - "/usr/local/bin"
         - "/usr/bin"
         - "/bin"
@@ -4734,6 +4833,7 @@ events:
       ENV{PATH}:
         - "/home/chiu/.npm-global/bin"
         - "/home/chiu/.npm-global/bin"
+        - "/home/chiu/.npm-global/bin"
         - "/usr/local/bin"
         - "/usr/bin"
         - "/bin"
@@ -4850,6 +4950,7 @@ events:
       version: "6.11.1"
     search_context:
       ENV{PATH}:
+        - "/home/chiu/.npm-global/bin"
         - "/home/chiu/.npm-global/bin"
         - "/home/chiu/.npm-global/bin"
         - "/usr/local/bin"
@@ -4975,6 +5076,7 @@ events:
       ENV{PATH}:
         - "/home/chiu/.npm-global/bin"
         - "/home/chiu/.npm-global/bin"
+        - "/home/chiu/.npm-global/bin"
         - "/usr/local/bin"
         - "/usr/bin"
         - "/bin"
@@ -5091,6 +5193,7 @@ events:
       version: "6.11.1"
     search_context:
       ENV{PATH}:
+        - "/home/chiu/.npm-global/bin"
         - "/home/chiu/.npm-global/bin"
         - "/home/chiu/.npm-global/bin"
         - "/usr/local/bin"
@@ -5217,6 +5320,7 @@ events:
       version: "6.11.1"
     search_context:
       ENV{PATH}:
+        - "/home/chiu/.npm-global/bin"
         - "/home/chiu/.npm-global/bin"
         - "/home/chiu/.npm-global/bin"
         - "/usr/local/bin"
@@ -5985,6 +6089,299 @@ events:
       ENV{PATH}:
         - "/home/chiu/.npm-global/bin"
         - "/home/chiu/.npm-global/bin"
+        - "/home/chiu/.npm-global/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/sbin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "/usr/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:100 (find_package)"
+      - "/usr/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake:42 (_qt_internal_find_tool_dependencies)"
+      - "/usr/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake:50 (include)"
+      - "/usr/lib/cmake/Qt6/Qt6Config.cmake:263 (find_package)"
+      - "CMakeLists.txt:14 (find_package)"
+    name: "Qt6WidgetsTools"
+    configs:
+      -
+        filename: "Qt6WidgetsTools.cps"
+        kind: "cps"
+      -
+        filename: "qt6widgetstools.cps"
+        kind: "cps"
+      -
+        filename: "Qt6WidgetsToolsConfig.cmake"
+        kind: "cmake"
+      -
+        filename: "qt6widgetstools-config.cmake"
+        kind: "cmake"
+    version_request:
+      version: "6.11.1"
+      version_complete: "6.11.1"
+      exact: false
+    settings:
+      required: "optional"
+      quiet: false
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      names:
+        - "Qt6WidgetsTools"
+      search_paths:
+        - "/usr/lib/cmake/Qt6Widgets/.."
+        - "/usr/lib/cmake"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/CMakeFiles/pkgRedirects/Qt6WidgetsToolsConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/CMakeFiles/pkgRedirects/qt6widgetstools-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/CMakeFiles/pkgRedirects/lib/cps/Qt6WidgetsTools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/CMakeFiles/pkgRedirects/lib/cps/qt6widgetstools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/CMakeFiles/pkgRedirects/share/cps/Qt6WidgetsTools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/CMakeFiles/pkgRedirects/share/cps/qt6widgetstools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/chiu/.npm-global/Qt6WidgetsToolsConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/chiu/.npm-global/qt6widgetstools-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/chiu/.npm-global/lib/cps/Qt6WidgetsTools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/chiu/.npm-global/lib/cps/qt6widgetstools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/chiu/.npm-global/share/cps/Qt6WidgetsTools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/chiu/.npm-global/share/cps/qt6widgetstools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/local/Qt6WidgetsToolsConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/local/qt6widgetstools-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/local/lib/cps/Qt6WidgetsTools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/local/lib/cps/qt6widgetstools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/local/share/cps/Qt6WidgetsTools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/local/share/cps/qt6widgetstools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/Qt6WidgetsToolsConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/qt6widgetstools-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cps/Qt6WidgetsTools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cps/qt6widgetstools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/share/cps/Qt6WidgetsTools.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/share/cps/qt6widgetstools.cps"
+        mode: "cps"
+        reason: "no_exist"
+    found:
+      path: "/usr/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfig.cmake"
+      mode: "config"
+      version: "6.11.1"
+    search_context:
+      ENV{PATH}:
+        - "/home/chiu/.npm-global/bin"
+        - "/home/chiu/.npm-global/bin"
+        - "/home/chiu/.npm-global/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/local/sbin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "/usr/lib/cmake/Qt6/Qt6Config.cmake:263 (find_package)"
+      - "CMakeLists.txt:14 (find_package)"
+    name: "Qt6Widgets"
+    configs:
+      -
+        filename: "Qt6Widgets.cps"
+        kind: "cps"
+      -
+        filename: "qt6widgets.cps"
+        kind: "cps"
+      -
+        filename: "Qt6WidgetsConfig.cmake"
+        kind: "cmake"
+      -
+        filename: "qt6widgets-config.cmake"
+        kind: "cmake"
+    version_request:
+      exact: false
+    settings:
+      required: "optional"
+      quiet: false
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      names:
+        - "Qt6Widgets"
+      search_paths:
+        - "/usr/lib/cmake"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: false
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/CMakeFiles/pkgRedirects/Qt6WidgetsConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/CMakeFiles/pkgRedirects/qt6widgets-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/CMakeFiles/pkgRedirects/lib/cps/Qt6Widgets.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/CMakeFiles/pkgRedirects/lib/cps/qt6widgets.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/CMakeFiles/pkgRedirects/share/cps/Qt6Widgets.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/CMakeFiles/pkgRedirects/share/cps/qt6widgets.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6WidgetsConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/qt6widgets-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6WidgetsTools/Qt6WidgetsConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6WidgetsTools/qt6widgets-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6WidgetsPrivate/Qt6WidgetsConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib/cmake/Qt6WidgetsPrivate/qt6widgets-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+    found:
+      path: "/usr/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake"
+      mode: "config"
+      version: "6.11.1"
+    search_context:
+      ENV{PATH}:
+        - "/home/chiu/.npm-global/bin"
+        - "/home/chiu/.npm-global/bin"
+        - "/home/chiu/.npm-global/bin"
         - "/usr/local/bin"
         - "/usr/bin"
         - "/bin"
@@ -6023,6 +6420,10 @@ events:
         found: false
       -
         name: "Quick"
+        required: true
+        found: false
+      -
+        name: "Widgets"
         required: true
         found: false
     configs:
@@ -8451,6 +8852,7 @@ events:
       version: "6.11.1"
     search_context:
       ENV{PATH}:
+        - "/home/chiu/.npm-global/bin"
         - "/home/chiu/.npm-global/bin"
         - "/home/chiu/.npm-global/bin"
         - "/usr/local/bin"

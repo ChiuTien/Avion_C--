@@ -299,6 +299,30 @@ src/services/AvionService.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Avion.dir/build.make CMakeFiles/Avion.dir/src/services/AvionService.cpp.s
 .PHONY : src/services/AvionService.cpp.s
 
+src/views/MainWindow.o: src/views/MainWindow.cpp.o
+.PHONY : src/views/MainWindow.o
+
+# target to build an object file
+src/views/MainWindow.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Avion.dir/build.make CMakeFiles/Avion.dir/src/views/MainWindow.cpp.o
+.PHONY : src/views/MainWindow.cpp.o
+
+src/views/MainWindow.i: src/views/MainWindow.cpp.i
+.PHONY : src/views/MainWindow.i
+
+# target to preprocess a source file
+src/views/MainWindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Avion.dir/build.make CMakeFiles/Avion.dir/src/views/MainWindow.cpp.i
+.PHONY : src/views/MainWindow.cpp.i
+
+src/views/MainWindow.s: src/views/MainWindow.cpp.s
+.PHONY : src/views/MainWindow.s
+
+# target to generate assembly for a file
+src/views/MainWindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Avion.dir/build.make CMakeFiles/Avion.dir/src/views/MainWindow.cpp.s
+.PHONY : src/views/MainWindow.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -328,6 +352,9 @@ help:
 	@echo "... src/services/AvionService.o"
 	@echo "... src/services/AvionService.i"
 	@echo "... src/services/AvionService.s"
+	@echo "... src/views/MainWindow.o"
+	@echo "... src/views/MainWindow.i"
+	@echo "... src/views/MainWindow.s"
 .PHONY : help
 
 

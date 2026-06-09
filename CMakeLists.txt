@@ -11,7 +11,7 @@ set(CMAKE_AUTOUIC ON) # Gère les fichiers d'interface .ui
 set(CMAKE_AUTORCC ON) # Gère les fichiers de ressources
 
 # 3. Recherche des modules de Qt6
-find_package(Qt6 REQUIRED COMPONENTS Core Gui Qml Quick)
+find_package(Qt6 REQUIRED COMPONENTS Core Gui Qml Quick Widgets)
 
 # 4. Inclusion du dossier 'include'
 include_directories(include)
@@ -29,7 +29,10 @@ add_executable(${PROJECT_NAME} ${SOURCES}
     include/services/AvionService.hpp
     src/services/AvionService.cpp
     include/controllers/AvionController.hpp
-    src/controllers/AvionControllers.cpp)
+    src/controllers/AvionControllers.cpp
+    include/views/InterfaceVueSimulation.hpp
+    include/views/MainWindow.hpp
+    src/views/MainWindow.cpp)
 
 # 8. Association du fichier QML à l'exécutable (Méthode Qt6 moderne)
 # qt_add_qml_module(${PROJECT_NAME}
@@ -45,4 +48,5 @@ target_link_libraries(${PROJECT_NAME} PRIVATE
     Qt6::Gui 
     Qt6::Qml 
     Qt6::Quick
+    Qt6::Widgets
 )
