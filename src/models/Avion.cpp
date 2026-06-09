@@ -3,19 +3,20 @@
 namespace Models {
     Avion::Avion(int id,double dP,double v_x,double v_y,double a,
     double v_d,double fmax_x,double fmax_y,double pasf_x,double pasf_y
-    double a_x, double a_y): 
+    double a_x, double a_y, double d_p): 
     avion_id(id),
-    dPiste(dP),
+    x(dP),
     vx(v_x),
     vy(v_y),
-    altitude(a),
+    y(a),
     vd(v_d),
     fmax_x(fmax_x),
     fmax_y(fmax_y),
     pasfx(pasf_x),
     pasfy(pasf_y),
     ax(a_x),
-    ay(a_y) {}
+    ay(a_y),
+    dPiste(d_p) {}
 
     Avion::Avion() {
         avion_id = 0;
@@ -33,8 +34,8 @@ namespace Models {
     void Avion::setAvionId(int id) {
         avion_id = id;
     }
-    void Avion::setDistancePiste(double distance) {
-        dPiste = distance;
+    void Avion::setX(double distance) {
+        x = distance;
     }
     void Avion::setAccelerationX(double a) {
         ax = a;
@@ -48,8 +49,8 @@ namespace Models {
     void Avion::setVitesseY(double vitesse) {
         vy = vitesse;
     }
-    void Avion::setAltitude(double a) {
-        altitude = a;
+    void Avion::setY(double a) {
+        y = a;
     }
     void Avion::setVitesseD(double vitesse) {
         vd = vitesse;
@@ -66,13 +67,16 @@ namespace Models {
     void Avion::setPasFreinageY(double pas) {
         pasfy = pas;
     }
+    void Avion::setDistancePiste(double dp) {
+        dPiste = dp;
+    }
 
     // Getters
     int Avion::getAvionId() const {
         return avion_id;
     }
-    double Avion::getDistancePiste() const {
-        return dPiste;
+    double Avion::getX() const {
+        return x;
     }
     double Avion::getAccelerationX() const {
         return ax;
@@ -86,8 +90,8 @@ namespace Models {
     double Avion::getVitesseY() const {
         return vy;
     }
-    double Avion::getAltitude() const {
-        return altitude;
+    double Avion::getY() const {
+        return y;
     }
     double Avion::getVitesseD() const {
         return vd;
@@ -103,5 +107,8 @@ namespace Models {
     }
     double Avion::getPasFreinageY() const {
         return pasfy;
+    }
+    double Avion::getDistancePiste() const {
+        return dPiste;
     }
 }
