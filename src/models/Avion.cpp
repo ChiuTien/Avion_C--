@@ -2,7 +2,8 @@
 
 namespace Models {
     Avion::Avion(int id,double dP,double v_x,double v_y,double a,
-    double v_d,double fmax_x,double fmax_y,double pasf_x,double pasf_y): 
+    double v_d,double fmax_x,double fmax_y,double pasf_x,double pasf_y
+    double a_x, double a_y): 
     avion_id(id),
     dPiste(dP),
     vx(v_x),
@@ -12,7 +13,9 @@ namespace Models {
     fmax_x(fmax_x),
     fmax_y(fmax_y),
     pasfx(pasf_x),
-    pasfy(pasf_y){}
+    pasfy(pasf_y),
+    ax(a_x),
+    ay(a_y) {}
 
     Avion::Avion() {
         avion_id = 0;
@@ -32,6 +35,12 @@ namespace Models {
     }
     void Avion::setDistancePiste(double distance) {
         dPiste = distance;
+    }
+    void Avion::setAccelerationX(double a) {
+        ax = a;
+    }
+    void Avion::setAccelerationY(double a) {
+        ay = a;
     }
     void Avion::setVitesseX(double vitesse) {
         vx = vitesse;
@@ -64,6 +73,12 @@ namespace Models {
     }
     double Avion::getDistancePiste() const {
         return dPiste;
+    }
+    double Avion::getAccelerationX() const {
+        return ax;
+    }
+    double Avion::getAccelerationY() const {
+        return ay;
     }
     double Avion::getVitesseX() const {
         return vx;
