@@ -1,0 +1,6 @@
+{
+    "cmake.configureArgs": [
+        "-DCMAKE_PREFIX_PATH=/usr/lib64/cmake/"
+    ],
+    "C_Cpp.errorSquiggles": "disabled"
+}
