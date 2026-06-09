@@ -5,7 +5,7 @@ namespace Services {
     AvionService::AvionService() {}
 
     //Calcule nouvelle vitesse
-    void AvionService::nouvelleVitesse(Avion& avion, double dt) {
+    void AvionService::nouvelleVitesse(Models::Avion& avion, double dt) {
         double vitesseActuelleX = avion.getVitesseX();
         avion.setVitesseX(avion.getAccelerationX()*dt + vitesseActuelleX);
 
@@ -14,7 +14,7 @@ namespace Services {
     }
 
     //Calcule nouvelle position
-    void AvionService::nouvellePosition(Avion& avion, double dt) {
+    void AvionService::nouvellePosition(Models::Avion& avion, double dt) {
         double positionActuelleX = avion.getX();
         double nouvellePositionX =  0.5*avion.getAccelerationX()*(dt*dt) + avion.getVitesseX()*dt + positionActuelleX;
 
@@ -26,16 +26,51 @@ namespace Services {
     }
 
     //Calcule distance par rapport a la piste
-    void AvionService::distancePiste(Avion& avion, Piste& piste) {
+    void AvionService::distancePiste(Models::Avion& avion, Models::Piste& piste) {
         avion.setDistancePiste(avion.getX()-piste.getDebutX());
     }
 
-    //Amelioration globale
-    void AvionService::evolutionDansTemps(Avion& avion, Piste& piste, double dt) {
-        nouvellePosition(avion,dt);
-        
-        distancePiste(avion,piste);
+    //Atterrissage avion
+    void AvionService::atterrissage(Models::Avion& avion) {
+        avion.setAccelerationY(0);
+        avion.setVitesseY(0);
+        avion.setY(0);
+    }
 
-        nouvelleVitesse(avion,dt);
+    //Amelioration globale
+    void AvionService::evolutionDansTemps(Models::Avion& avion, Models::Piste& piste, double dt) {
+
+        if(avion.getY() > 0) {
+
+            if(avion.getVitesseX() <= avion.getVitesseD()) {
+                //crash
+                return;
+            } 
+
+            nouvellePosition(avion,dt);
+            distancePiste(avion,piste);
+            nouvelleVitesse(avion,dt);
+
+        } else if(avion.getY() <= 0) {
+
+            atterrissage(avion);
+            nouvellePosition(avion,dt);
+            nouvelleVitesse(avion,dt);
+
+            if(avion.getX() < piste.getDebutX()) {
+                //crash
+                return;
+            }
+
+            if(avion.getX() > piste.getFinX()) {
+                //crash
+                return;
+            }
+
+            if(avion.getVitesseX() <= 0) {
+                //atterrissage reussi
+                return;
+            }
+        }
     }
 }

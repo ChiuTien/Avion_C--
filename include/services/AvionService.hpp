@@ -8,9 +8,10 @@ namespace Services {
         public:
             AvionService();
 
-            void nouvelleVitesse(Avion& avion, double dt);
-            void nouvellePosition(Avion& avion, double dt);
-            void evolutionDansTemps(Avion& avion, Piste& piste, double dt);
-            void distancePiste(Avion& avion, Piste& piste)
+            void nouvelleVitesse(Models::Avion& avion, double dt);
+            void nouvellePosition(Models::Avion& avion, double dt);
+            void evolutionDansTemps(Models::Avion& avion, Models::Piste& piste, double dt);
+            void distancePiste(Models::Avion& avion, Models::Piste& piste);
+            void atterrissage(Models::Avion& avion);
     };
 }

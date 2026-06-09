@@ -3,9 +3,11 @@ Avion_autogen/timestamp: \
 	/home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/build/CMakeFiles/4.3.3/CMakeCXXCompiler.cmake \
 	/home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/build/CMakeFiles/4.3.3/CMakeSystem.cmake \
 	/home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/include/models/Piste.hpp \
+	/home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/include/services/AvionService.hpp \
 	/home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/src/main.cpp \
 	/home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/src/models/Avion.cpp \
 	/home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/src/models/Piste.cpp \
+	/home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/src/services/AvionService.cpp \
 	/usr/lib/cmake/Qt6/FindWrapAtomic.cmake \
 	/usr/lib/cmake/Qt6/FindWrapOpenGL.cmake \
 	/usr/lib/cmake/Qt6/FindWrapVulkanHeaders.cmake \

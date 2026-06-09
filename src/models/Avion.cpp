@@ -2,7 +2,7 @@
 
 namespace Models {
     Avion::Avion(int id,double dP,double v_x,double v_y,double a,
-    double v_d,double fmax_x,double fmax_y,double pasf_x,double pasf_y
+    double v_d,double fmax_x,double fmax_y,double pasf_x,double pasf_y,
     double a_x, double a_y, double d_p): 
     avion_id(id),
     x(dP),
