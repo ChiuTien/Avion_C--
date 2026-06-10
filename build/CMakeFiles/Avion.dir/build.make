@@ -74,6 +74,8 @@ include CMakeFiles/Avion.dir/flags.make
 .qt/rcc/qrc_fichiers_qml.cpp: /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/resources/SimulationView.qml
 .qt/rcc/qrc_fichiers_qml.cpp: /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/resources/AccueilView.qml
 .qt/rcc/qrc_fichiers_qml.cpp: /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/resources/CrudView.qml
+.qt/rcc/qrc_fichiers_qml.cpp: /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/resources/ProfilGaucheView.qml
+.qt/rcc/qrc_fichiers_qml.cpp: /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/resources/VueArriereView.qml
 .qt/rcc/qrc_fichiers_qml.cpp: .qt/rcc/fichiers_qml.qrc
 .qt/rcc/qrc_fichiers_qml.cpp: /usr/lib/qt6/rcc
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir="/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Running rcc for resource fichiers_qml"

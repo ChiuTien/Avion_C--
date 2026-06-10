@@ -27,6 +27,71 @@ Item {
         color: "lightblue"
         clip: true
         
+        // ========== SOLEIL ==========
+        Rectangle {
+            id: soleil
+            width: 80
+            height: 80
+            radius: 40
+            color: "yellow"
+            anchors.top: parent.top
+            anchors.right: parent.right
+            anchors.margins: 20
+            opacity: 0.9
+            
+            // Rayons du soleil
+            Rectangle {
+                width: 120
+                height: 120
+                radius: 60
+                color: "transparent"
+                border.color: "yellow"
+                border.width: 3
+                anchors.centerIn: parent
+                opacity: 0.4
+            }
+            
+            Rectangle {
+                width: 160
+                height: 160
+                radius: 80
+                color: "transparent"
+                border.color: "yellow"
+                border.width: 2
+                anchors.centerIn: parent
+                opacity: 0.2
+            }
+        }
+        
+        // Nuages avec effet de lumière solaire
+        Rectangle {
+            x: 150
+            y: 80
+            width: 80
+            height: 40
+            radius: 20
+            color: "white"
+            opacity: 0.7
+        }
+        Rectangle {
+            x: 500
+            y: 120
+            width: 100
+            height: 45
+            radius: 22
+            color: "white"
+            opacity: 0.6
+        }
+        Rectangle {
+            x: 750
+            y: 200
+            width: 70
+            height: 35
+            radius: 17
+            color: "white"
+            opacity: 0.5
+        }
+        
         Rectangle {
             id: sol
             width: parent.width
@@ -42,7 +107,7 @@ Item {
             }
         }
         
-        // Piste (vue de profil gauche - vue miroir)
+        // Piste (vue profil gauche - apparaît depuis la droite vers l'avion)
         Rectangle {
             id: pisteGraphique
             width: 200
@@ -52,7 +117,7 @@ Item {
             border.color: "darkgray"
             border.width: 1
             radius: 2
-            
+                    
             opacity: {
                 if (monSimulationController && monSimulationController.distancePiste !== undefined) {
                     if (monSimulationController.distancePiste <= distanceApparitionPiste) {
@@ -66,9 +131,10 @@ Item {
                 if (monSimulationController && monSimulationController.distancePiste !== undefined) {
                     if (monSimulationController.distancePiste <= distanceApparitionPiste) {
                         let progression = 1 - (monSimulationController.distancePiste / distanceApparitionPiste)
-                        let xMin = avionGraphique.x - width / 2
-                        let xMax = avionGraphique.x + 50
-                        return xMin + (progression * (xMax - xMin))
+                        // Départ à droite de l'écran, arrive sous l'avion
+                        let xDepart = parent.width
+                        let xArrivee = avionGraphique.x - width / 2
+                        return xDepart + (progression * (xArrivee - xDepart))
                     }
                 }
                 return parent.width
@@ -90,7 +156,7 @@ Item {
             height: 25
             color: "red"
             radius: 5
-            x: 80
+            x: parent.width - 130  // Départ à droite de l'écran
             
             y: {
                 if (!monSimulationController || monSimulationController.avionY === undefined) {
@@ -113,7 +179,7 @@ Item {
             
             // Avion orienté à gauche
             Text {
-                text: "🠜✈️"
+                text: "←✈️"
                 anchors.centerIn: parent
                 font.pixelSize: 20
             }
@@ -141,26 +207,16 @@ Item {
             }
         }
         
+        // Traînée (effet de mouvement) - maintenant à gauche de l'avion
         Rectangle {
             width: 30
             height: 3
             color: "black"
             opacity: 0.2
-            anchors.right: avionGraphique.left
-            anchors.rightMargin: 5
+            anchors.left: avionGraphique.right
+            anchors.leftMargin: 5
             anchors.verticalCenter: avionGraphique.verticalCenter
             visible: monSimulationController && monSimulationController.vitesseX > 50
-        }
-        
-        // Nuages
-        Rectangle {
-            x: 200; y: 100; width: 80; height: 40; radius: 20; color: "white"; opacity: 0.6
-        }
-        Rectangle {
-            x: 600; y: 150; width: 100; height: 45; radius: 22; color: "white"; opacity: 0.5
-        }
-        Rectangle {
-            x: 400; y: 300; width: 70; height: 35; radius: 17; color: "white"; opacity: 0.4
         }
     }
     
@@ -288,9 +344,7 @@ Item {
             }
             onClicked: {
                 if(stackNavigation) {
-                    var profilDroit = stackNavigation.push("ProfilDroitView.qml")
-                    profilDroit.monSimulationController = monSimulationController
-                    profilDroit.monChrono = monChrono
+                    stackNavigation.push("SimulationView.qml")
                 }
             }
         }
@@ -303,7 +357,7 @@ Item {
                 border.color: "gray"
                 radius: 4
             }
-            enabled: false  // Vue actuelle
+            enabled: false
         }
         
         Button {
@@ -316,9 +370,7 @@ Item {
             }
             onClicked: {
                 if(stackNavigation) {
-                    var vueArriere = stackNavigation.push("VueArriereView.qml")
-                    vueArriere.monSimulationController = monSimulationController
-                    vueArriere.monChrono = monChrono
+                    stackNavigation.push("VueArriereView.qml")
                 }
             }
         }

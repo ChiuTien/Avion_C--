@@ -5,6 +5,8 @@
     <file alias="resources/SimulationView.qml">/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/resources/SimulationView.qml</file>
     <file alias="resources/AccueilView.qml">/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/resources/AccueilView.qml</file>
     <file alias="resources/CrudView.qml">/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/resources/CrudView.qml</file>
+    <file alias="resources/ProfilGaucheView.qml">/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/resources/ProfilGaucheView.qml</file>
+    <file alias="resources/VueArriereView.qml">/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/resources/VueArriereView.qml</file>
   </qresource>
 </RCC>
 

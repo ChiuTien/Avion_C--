@@ -46,6 +46,8 @@ qt_add_resources(Avion "fichiers_qml"
         resources/SimulationView.qml
         resources/AccueilView.qml    
         resources/CrudView.qml 
+        resources/ProfilGaucheView.qml
+        resources/VueArriereView.qml
 )
 
 # 9. Liaison de ton projet avec les bibliothèques de Qt
