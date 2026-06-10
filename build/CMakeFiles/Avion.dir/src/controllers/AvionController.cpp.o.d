@@ -1,7 +1,9 @@
-CMakeFiles/Avion.dir/src/main.cpp.o: \
- /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/src/main.cpp \
- /usr/include/stdc-predef.h /usr/include/qt6/QtGui/QGuiApplication \
- /usr/include/qt6/QtGui/qguiapplication.h \
+CMakeFiles/Avion.dir/src/controllers/AvionController.cpp.o: \
+ /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/src/controllers/AvionController.cpp \
+ /usr/include/stdc-predef.h \
+ /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/include/controllers/AvionController.hpp \
+ /usr/include/qt6/QtWidgets/QWidget /usr/include/qt6/QtWidgets/qwidget.h \
+ /usr/include/qt6/QtWidgets/qtwidgetsglobal.h \
  /usr/include/qt6/QtGui/qtguiglobal.h /usr/include/qt6/QtCore/qglobal.h \
  /usr/include/c++/16.1.1/type_traits \
  /usr/include/c++/16.1.1/x86_64-pc-linux-gnu/bits/c++config.h \
@@ -149,9 +151,11 @@ CMakeFiles/Avion.dir/src/main.cpp.o: \
  /usr/include/qt6/QtCore/qversiontagging.h \
  /usr/include/qt6/QtGui/qtgui-config.h \
  /usr/include/qt6/QtGui/qtguiexports.h \
- /usr/include/qt6/QtCore/qcoreapplication.h \
- /usr/include/qt6/QtCore/qstring.h /usr/include/qt6/QtCore/qchar.h \
- /usr/include/qt6/QtCore/qcompare.h \
+ /usr/include/qt6/QtWidgets/qtwidgets-config.h \
+ /usr/include/qt6/QtWidgets/qtwidgetsexports.h \
+ /usr/include/qt6/QtGui/qwindowdefs.h \
+ /usr/include/qt6/QtCore/qobjectdefs.h \
+ /usr/include/qt6/QtCore/qnamespace.h /usr/include/qt6/QtCore/qcompare.h \
  /usr/include/qt6/QtCore/qstdlibdetection.h \
  /usr/include/qt6/QtCore/qcomparehelpers.h \
  /usr/include/c++/16.1.1/functional \
@@ -179,33 +183,23 @@ CMakeFiles/Avion.dir/src/main.cpp.o: \
  /usr/include/c++/16.1.1/bits/stl_vector.h \
  /usr/include/c++/16.1.1/bits/stl_bvector.h \
  /usr/include/c++/16.1.1/bits/vector.tcc /usr/include/c++/16.1.1/array \
- /usr/include/c++/16.1.1/compare /usr/include/qt6/QtCore/qstringview.h \
- /usr/include/qt6/QtCore/qbytearray.h /usr/include/qt6/QtCore/qrefcount.h \
- /usr/include/qt6/QtCore/qnamespace.h \
- /usr/include/qt6/QtCore/qtmetamacros.h \
- /usr/include/qt6/QtCore/qarraydata.h /usr/include/qt6/QtCore/qpair.h \
- /usr/include/string.h /usr/include/strings.h \
- /usr/include/qt6/QtCore/qarraydatapointer.h \
- /usr/include/qt6/QtCore/qarraydataops.h \
- /usr/include/qt6/QtCore/qcontainertools_impl.h \
- /usr/include/qt6/QtCore/qxptype_traits.h \
- /usr/include/qt6/QtCore/q23type_traits.h /usr/include/c++/16.1.1/cstring \
- /usr/include/c++/16.1.1/iterator \
- /usr/include/c++/16.1.1/bits/stream_iterator.h \
- /usr/include/c++/16.1.1/iosfwd /usr/include/c++/16.1.1/bits/stringfwd.h \
+ /usr/include/c++/16.1.1/compare /usr/include/qt6/QtCore/qtmetamacros.h \
+ /usr/include/qt6/QtCore/qobjectdefs_impl.h \
+ /usr/include/qt6/QtCore/qfunctionaltools_impl.h \
+ /usr/include/c++/16.1.1/memory \
+ /usr/include/c++/16.1.1/bits/stl_raw_storage_iter.h \
+ /usr/include/c++/16.1.1/bits/align.h \
+ /usr/include/c++/16.1.1/bits/unique_ptr.h \
+ /usr/include/c++/16.1.1/bits/shared_ptr.h /usr/include/c++/16.1.1/iosfwd \
+ /usr/include/c++/16.1.1/bits/stringfwd.h \
  /usr/include/c++/16.1.1/bits/postypes.h /usr/include/c++/16.1.1/cwchar \
  /usr/include/wchar.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/stdarg.h \
  /usr/include/bits/types/wint_t.h /usr/include/bits/types/mbstate_t.h \
  /usr/include/bits/types/__mbstate_t.h /usr/include/bits/types/__FILE.h \
  /usr/include/bits/types/FILE.h \
- /usr/include/c++/16.1.1/bits/streambuf_iterator.h \
- /usr/include/c++/16.1.1/streambuf \
- /usr/include/c++/16.1.1/bits/localefwd.h \
- /usr/include/c++/16.1.1/x86_64-pc-linux-gnu/bits/c++locale.h \
- /usr/include/c++/16.1.1/clocale /usr/include/locale.h \
- /usr/include/bits/locale.h /usr/include/c++/16.1.1/cctype \
- /usr/include/ctype.h /usr/include/c++/16.1.1/bits/ios_base.h \
+ /usr/include/c++/16.1.1/bits/shared_ptr_base.h \
+ /usr/include/c++/16.1.1/bits/allocated_ptr.h \
  /usr/include/c++/16.1.1/ext/atomicity.h \
  /usr/include/c++/16.1.1/x86_64-pc-linux-gnu/bits/gthr.h \
  /usr/include/c++/16.1.1/x86_64-pc-linux-gnu/bits/gthr-default.h \
@@ -224,6 +218,29 @@ CMakeFiles/Avion.dir/src/main.cpp.o: \
  /usr/include/bits/pthread_stack_min-dynamic.h \
  /usr/include/c++/16.1.1/x86_64-pc-linux-gnu/bits/atomic_word.h \
  /usr/include/sys/single_threaded.h \
+ /usr/include/c++/16.1.1/ext/concurrence.h \
+ /usr/include/c++/16.1.1/bits/shared_ptr_atomic.h \
+ /usr/include/c++/16.1.1/backward/auto_ptr.h \
+ /usr/include/c++/16.1.1/pstl/glue_memory_defs.h \
+ /usr/include/qt6/QtCore/qobject.h /usr/include/qt6/QtCore/qstring.h \
+ /usr/include/qt6/QtCore/qchar.h /usr/include/qt6/QtCore/qstringview.h \
+ /usr/include/qt6/QtCore/qbytearray.h /usr/include/qt6/QtCore/qrefcount.h \
+ /usr/include/qt6/QtCore/qarraydata.h /usr/include/qt6/QtCore/qpair.h \
+ /usr/include/string.h /usr/include/strings.h \
+ /usr/include/qt6/QtCore/qarraydatapointer.h \
+ /usr/include/qt6/QtCore/qarraydataops.h \
+ /usr/include/qt6/QtCore/qcontainertools_impl.h \
+ /usr/include/qt6/QtCore/qxptype_traits.h \
+ /usr/include/qt6/QtCore/q23type_traits.h /usr/include/c++/16.1.1/cstring \
+ /usr/include/c++/16.1.1/iterator \
+ /usr/include/c++/16.1.1/bits/stream_iterator.h \
+ /usr/include/c++/16.1.1/bits/streambuf_iterator.h \
+ /usr/include/c++/16.1.1/streambuf \
+ /usr/include/c++/16.1.1/bits/localefwd.h \
+ /usr/include/c++/16.1.1/x86_64-pc-linux-gnu/bits/c++locale.h \
+ /usr/include/c++/16.1.1/clocale /usr/include/locale.h \
+ /usr/include/bits/locale.h /usr/include/c++/16.1.1/cctype \
+ /usr/include/ctype.h /usr/include/c++/16.1.1/bits/ios_base.h \
  /usr/include/c++/16.1.1/bits/locale_classes.h \
  /usr/include/c++/16.1.1/string \
  /usr/include/c++/16.1.1/bits/char_traits.h \
@@ -250,17 +267,6 @@ CMakeFiles/Avion.dir/src/main.cpp.o: \
  /usr/include/c++/16.1.1/stdexcept \
  /usr/include/c++/16.1.1/bits/stdexcept_except.h \
  /usr/include/c++/16.1.1/bits/streambuf.tcc \
- /usr/include/c++/16.1.1/memory \
- /usr/include/c++/16.1.1/bits/stl_raw_storage_iter.h \
- /usr/include/c++/16.1.1/bits/align.h \
- /usr/include/c++/16.1.1/bits/unique_ptr.h \
- /usr/include/c++/16.1.1/bits/shared_ptr.h \
- /usr/include/c++/16.1.1/bits/shared_ptr_base.h \
- /usr/include/c++/16.1.1/bits/allocated_ptr.h \
- /usr/include/c++/16.1.1/ext/concurrence.h \
- /usr/include/c++/16.1.1/bits/shared_ptr_atomic.h \
- /usr/include/c++/16.1.1/backward/auto_ptr.h \
- /usr/include/c++/16.1.1/pstl/glue_memory_defs.h \
  /usr/include/qt6/QtCore/q20functional.h \
  /usr/include/qt6/QtCore/q20memory.h /usr/include/qt6/QtCore/q17memory.h \
  /usr/include/qt6/QtCore/qbytearrayalgorithms.h \
@@ -274,12 +280,6 @@ CMakeFiles/Avion.dir/src/main.cpp.o: \
  /usr/include/qt6/QtCore/qstringbuilder.h \
  /usr/include/qt6/QtCore/qstringconverter.h \
  /usr/include/qt6/QtCore/qstringconverter_base.h \
- /usr/include/qt6/QtCore/qcoreevent.h \
- /usr/include/qt6/QtCore/qbasictimer.h \
- /usr/include/qt6/QtCore/qabstracteventdispatcher.h \
- /usr/include/qt6/QtCore/qobject.h /usr/include/qt6/QtCore/qobjectdefs.h \
- /usr/include/qt6/QtCore/qobjectdefs_impl.h \
- /usr/include/qt6/QtCore/qfunctionaltools_impl.h \
  /usr/include/qt6/QtCore/qlist.h /usr/include/qt6/QtCore/qhashfunctions.h \
  /usr/include/c++/16.1.1/numeric \
  /usr/include/c++/16.1.1/bits/stl_numeric.h \
@@ -308,23 +308,29 @@ CMakeFiles/Avion.dir/src/main.cpp.o: \
  /usr/include/qt6/QtCore/qobject_impl.h \
  /usr/include/qt6/QtCore/qbindingstorage.h /usr/include/c++/16.1.1/chrono \
  /usr/include/c++/16.1.1/bits/chrono.h /usr/include/c++/16.1.1/ratio \
- /usr/include/c++/16.1.1/ctime /usr/include/qt6/QtCore/qeventloop.h \
- /usr/include/qt6/QtCore/qdeadlinetimer.h \
- /usr/include/qt6/QtCore/qnativeinterface.h \
- /usr/include/qt6/QtCore/qcoreapplication_platform.h \
- /usr/include/qt6/QtGui/qwindowdefs.h \
- /usr/include/qt6/QtGui/qinputmethod.h /usr/include/qt6/QtCore/qlocale.h \
- /usr/include/qt6/QtCore/qvariant.h /usr/include/qt6/QtCore/qdebug.h \
- /usr/include/qt6/QtCore/qtextstream.h \
- /usr/include/qt6/QtCore/qcontiguouscache.h \
- /usr/include/c++/16.1.1/climits \
+ /usr/include/c++/16.1.1/ctime /usr/include/qt6/QtCore/qmargins.h \
+ /usr/include/qt6/QtCore/qcheckedint_impl.h \
+ /usr/include/qt6/QtCore/q23utility.h \
+ /usr/include/qt6/QtCore/q20utility.h /usr/include/qt6/QtGui/qaction.h \
+ /usr/include/qt6/QtGui/qkeysequence.h /usr/include/qt6/QtGui/qicon.h \
+ /usr/include/qt6/QtCore/qsize.h /usr/include/qt6/QtGui/qpixmap.h \
+ /usr/include/qt6/QtGui/qpaintdevice.h /usr/include/qt6/QtCore/qrect.h \
+ /usr/include/qt6/QtCore/qpoint.h /usr/include/qt6/QtGui/qcolor.h \
+ /usr/include/qt6/QtGui/qrgb.h /usr/include/qt6/QtGui/qrgba64.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/limits.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/include/syslimits.h \
  /usr/include/limits.h /usr/include/bits/posix1_lim.h \
  /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
  /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
- /usr/include/bits/uio_lim.h /usr/include/qt6/QtCore/qsharedpointer.h \
- /usr/include/qt6/QtCore/qshareddata.h \
+ /usr/include/bits/uio_lim.h /usr/include/qt6/QtCore/qshareddata.h \
+ /usr/include/qt6/QtGui/qimage.h /usr/include/qt6/QtGui/qpixelformat.h \
+ /usr/include/qt6/QtGui/qtransform.h /usr/include/qt6/QtGui/qpolygon.h \
+ /usr/include/qt6/QtGui/qregion.h /usr/include/qt6/QtCore/qspan.h \
+ /usr/include/c++/16.1.1/cassert /usr/include/qt6/QtCore/q20iterator.h \
+ /usr/include/qt6/QtCore/qline.h /usr/include/qt6/QtCore/qvariant.h \
+ /usr/include/qt6/QtCore/qdebug.h /usr/include/qt6/QtCore/qtextstream.h \
+ /usr/include/qt6/QtCore/qcontiguouscache.h \
+ /usr/include/c++/16.1.1/climits /usr/include/qt6/QtCore/qsharedpointer.h \
  /usr/include/qt6/QtCore/qsharedpointer_impl.h \
  /usr/include/c++/16.1.1/set /usr/include/c++/16.1.1/bits/stl_set.h \
  /usr/include/c++/16.1.1/bits/stl_multiset.h \
@@ -334,49 +340,23 @@ CMakeFiles/Avion.dir/src/main.cpp.o: \
  /usr/include/qt6/QtCore/qshareddata_impl.h \
  /usr/include/qt6/QtCore/qset.h /usr/include/qt6/QtCore/qhash.h \
  /usr/include/qt6/QtCore/qvarlengtharray.h \
- /usr/include/qt6/QtCore/qalloc.h /usr/include/qt6/QtCore/q23utility.h \
- /usr/include/qt6/QtCore/q20utility.h /usr/include/qt6/QtCore/qpoint.h \
- /usr/include/qt6/QtCore/qcheckedint_impl.h \
- /usr/include/qt6/QtCore/qsize.h /usr/include/qt6/QtCore/qmargins.h \
- /usr/include/qt6/QtGui/qguiapplication_platform.h \
- /usr/include/qt6/QtQml/QQmlApplicationEngine \
- /usr/include/qt6/QtQml/qqmlapplicationengine.h \
- /usr/include/qt6/QtQml/qqmlengine.h /usr/include/qt6/QtCore/qurl.h \
- /usr/include/qt6/QtQml/qjsengine.h /usr/include/qt6/QtCore/qtimezone.h \
- /usr/include/qt6/QtCore/qdatetime.h /usr/include/qt6/QtCore/qcalendar.h \
- /usr/include/qt6/QtQml/qjsvalue.h /usr/include/qt6/QtQml/qtqmlglobal.h \
- /usr/include/qt6/QtQml/qtqml-config.h \
- /usr/include/qt6/QtNetwork/qtnetworkglobal.h \
- /usr/include/qt6/QtNetwork/qtnetwork-config.h \
- /usr/include/qt6/QtNetwork/qtnetworkexports.h \
- /usr/include/qt6/QtQml/qtqmlexports.h \
- /usr/include/qt6/QtQml/qjsmanagedvalue.h \
- /usr/include/qt6/QtQml/qjsprimitivevalue.h \
- /usr/include/qt6/QtQml/qjsnumbercoercion.h \
- /usr/include/qt6/QtQml/qqmldebug.h /usr/include/qt6/QtQml/qqml.h \
- /usr/include/qt6/QtQml/qqmlprivate.h /usr/include/qt6/QtQml/qqmllist.h \
- /usr/include/qt6/QtQml/qqmlparserstatus.h \
- /usr/include/qt6/QtQml/qqmlpropertyvaluesource.h \
- /usr/include/qt6/QtCore/qmetasequence.h \
- /usr/include/qt6/QtCore/qiterable_impl.h \
- /usr/include/qt6/QtCore/qmetaobject.h /usr/include/qt6/QtCore/qpointer.h \
- /usr/include/qt6/QtCore/qtyperevision.h \
- /usr/include/qt6/QtCore/qversionnumber.h /usr/include/qt6/QtCore/qspan.h \
- /usr/include/c++/16.1.1/cassert /usr/include/qt6/QtCore/q20iterator.h \
- /usr/include/qt6/QtQml/qqmlregistration.h \
- /usr/include/qt6/QtQmlIntegration/qqmlintegration.h \
- /usr/include/qt6/QtQml/qqmlerror.h \
- /usr/include/qt6/QtQml/qqmlabstracturlinterceptor.h \
- /usr/include/qt6/QtQml/QQmlContext /usr/include/qt6/QtQml/qqmlcontext.h \
- /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/include/views/ChronometreWidget.hpp \
- /usr/include/qt6/QtCore/QObject /usr/include/qt6/QtCore/QTimer \
- /usr/include/qt6/QtCore/qtimer.h /usr/include/qt6/QtCore/QString \
- /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/include/controllers/CrudController.hpp \
- /usr/include/qt6/QtCore/QStringList /usr/include/qt6/QtCore/QVariantList \
- /usr/include/qt6/QtCore/qvariantlist.h /usr/include/qt6/QtCore/QList \
- /usr/include/qt6/QtCore/QVariant \
- /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/include/controllers/SimulationController.hpp \
- /usr/include/qt6/QtCore/QList \
- /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/include/models/Avion.hpp \
- /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/include/models/Piste.hpp \
- /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/include/services/AvionService.hpp
+ /usr/include/qt6/QtCore/qalloc.h /usr/include/qt6/QtGui/qpalette.h \
+ /usr/include/qt6/QtGui/qbrush.h /usr/include/qt6/QtGui/qfont.h \
+ /usr/include/qt6/QtCore/qendian.h /usr/include/qt6/QtGui/qfontmetrics.h \
+ /usr/include/qt6/QtGui/qfontinfo.h \
+ /usr/include/qt6/QtGui/qfontvariableaxis.h \
+ /usr/include/qt6/QtWidgets/qsizepolicy.h \
+ /usr/include/qt6/QtGui/qcursor.h /usr/include/qt6/QtGui/qbitmap.h \
+ /usr/include/qt6/QtWidgets/QPushButton \
+ /usr/include/qt6/QtWidgets/qpushbutton.h \
+ /usr/include/qt6/QtWidgets/qabstractbutton.h \
+ /usr/include/qt6/QtWidgets/QLabel /usr/include/qt6/QtWidgets/qlabel.h \
+ /usr/include/qt6/QtWidgets/qframe.h /usr/include/qt6/QtGui/qpicture.h \
+ /usr/include/qt6/QtCore/qiodevice.h \
+ /usr/include/qt6/QtGui/qtextdocument.h /usr/include/qt6/QtCore/qurl.h \
+ /usr/include/qt6/QtCore/QTimer /usr/include/qt6/QtCore/qtimer.h \
+ /usr/include/qt6/QtCore/qbasictimer.h \
+ /usr/include/qt6/QtCore/qabstracteventdispatcher.h \
+ /usr/include/qt6/QtCore/qeventloop.h \
+ /usr/include/qt6/QtCore/qdeadlinetimer.h \
+ /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/include/models/Avion.hpp

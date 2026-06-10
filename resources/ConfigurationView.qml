@@ -3,14 +3,12 @@ import QtQuick.Controls
 
 Item {
     id: configurationView
-    //anchors.fill: parent
 
-    // Signal pour avertir le main.qml qu'on veut lancer la simulation
     signal simulationLancee()
 
     Rectangle {
         anchors.fill: parent
-        color: "#2C3E50" // Fond bleu nuit / cockpit
+        color: "#2C3E50"
 
         Column {
             anchors.centerIn: parent
@@ -34,7 +32,8 @@ Item {
                 ComboBox {
                     id: comboAvion
                     width: parent.width
-                    model: ["Cesna 172", "Boeing 737", "Airbus A320"]
+                    // 🔗 Charge les vrais avions du CSV
+                    model: monSimulationController.modelesAvions 
                 }
             }
 
@@ -47,7 +46,8 @@ Item {
                 ComboBox {
                     id: comboPiste
                     width: parent.width
-                    model: ["Piste Principale (3000m)", "Piste Courte (1500m)", "Piste Secondaire (2000m)"]
+                    // 🔗 Charge les vraies pistes du CSV
+                    model: monSimulationController.modelesPistes 
                 }
             }
 
@@ -59,8 +59,13 @@ Item {
                 anchors.horizontalCenter: parent.horizontalCenter
                 
                 onClicked: {
-                    // On émet le signal pour dire au main.qml de passer à la suite
-                    configurationView.simulationLancee()
+                    // 🔗 On valide les indices sélectionnés dans le contrôleur C++
+                    let valide = monSimulationController.selectionnerConfiguration(comboAvion.currentIndex, comboPiste.currentIndex)
+                    
+                    if (valide) {
+                        // Déclenche le signal intercepté par main.qml
+                        configurationView.simulationLancee()
+                    }
                 }
             }
         }

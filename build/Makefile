@@ -216,29 +216,29 @@ build/.qt/rcc/qrc_fichiers_qml.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Avion.dir/build.make CMakeFiles/Avion.dir/build/.qt/rcc/qrc_fichiers_qml.cpp.s
 .PHONY : build/.qt/rcc/qrc_fichiers_qml.cpp.s
 
-src/controllers/AvionControllers.o: src/controllers/AvionControllers.cpp.o
-.PHONY : src/controllers/AvionControllers.o
+src/controllers/AvionController.o: src/controllers/AvionController.cpp.o
+.PHONY : src/controllers/AvionController.o
 
 # target to build an object file
-src/controllers/AvionControllers.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Avion.dir/build.make CMakeFiles/Avion.dir/src/controllers/AvionControllers.cpp.o
-.PHONY : src/controllers/AvionControllers.cpp.o
+src/controllers/AvionController.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Avion.dir/build.make CMakeFiles/Avion.dir/src/controllers/AvionController.cpp.o
+.PHONY : src/controllers/AvionController.cpp.o
 
-src/controllers/AvionControllers.i: src/controllers/AvionControllers.cpp.i
-.PHONY : src/controllers/AvionControllers.i
+src/controllers/AvionController.i: src/controllers/AvionController.cpp.i
+.PHONY : src/controllers/AvionController.i
 
 # target to preprocess a source file
-src/controllers/AvionControllers.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Avion.dir/build.make CMakeFiles/Avion.dir/src/controllers/AvionControllers.cpp.i
-.PHONY : src/controllers/AvionControllers.cpp.i
+src/controllers/AvionController.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Avion.dir/build.make CMakeFiles/Avion.dir/src/controllers/AvionController.cpp.i
+.PHONY : src/controllers/AvionController.cpp.i
 
-src/controllers/AvionControllers.s: src/controllers/AvionControllers.cpp.s
-.PHONY : src/controllers/AvionControllers.s
+src/controllers/AvionController.s: src/controllers/AvionController.cpp.s
+.PHONY : src/controllers/AvionController.s
 
 # target to generate assembly for a file
-src/controllers/AvionControllers.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Avion.dir/build.make CMakeFiles/Avion.dir/src/controllers/AvionControllers.cpp.s
-.PHONY : src/controllers/AvionControllers.cpp.s
+src/controllers/AvionController.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Avion.dir/build.make CMakeFiles/Avion.dir/src/controllers/AvionController.cpp.s
+.PHONY : src/controllers/AvionController.cpp.s
 
 src/controllers/CrudController.o: src/controllers/CrudController.cpp.o
 .PHONY : src/controllers/CrudController.o
@@ -263,6 +263,30 @@ src/controllers/CrudController.s: src/controllers/CrudController.cpp.s
 src/controllers/CrudController.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Avion.dir/build.make CMakeFiles/Avion.dir/src/controllers/CrudController.cpp.s
 .PHONY : src/controllers/CrudController.cpp.s
+
+src/controllers/SimulationController.o: src/controllers/SimulationController.cpp.o
+.PHONY : src/controllers/SimulationController.o
+
+# target to build an object file
+src/controllers/SimulationController.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Avion.dir/build.make CMakeFiles/Avion.dir/src/controllers/SimulationController.cpp.o
+.PHONY : src/controllers/SimulationController.cpp.o
+
+src/controllers/SimulationController.i: src/controllers/SimulationController.cpp.i
+.PHONY : src/controllers/SimulationController.i
+
+# target to preprocess a source file
+src/controllers/SimulationController.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Avion.dir/build.make CMakeFiles/Avion.dir/src/controllers/SimulationController.cpp.i
+.PHONY : src/controllers/SimulationController.cpp.i
+
+src/controllers/SimulationController.s: src/controllers/SimulationController.cpp.s
+.PHONY : src/controllers/SimulationController.s
+
+# target to generate assembly for a file
+src/controllers/SimulationController.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Avion.dir/build.make CMakeFiles/Avion.dir/src/controllers/SimulationController.cpp.s
+.PHONY : src/controllers/SimulationController.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
@@ -450,12 +474,15 @@ help:
 	@echo "... build/.qt/rcc/qrc_fichiers_qml.o"
 	@echo "... build/.qt/rcc/qrc_fichiers_qml.i"
 	@echo "... build/.qt/rcc/qrc_fichiers_qml.s"
-	@echo "... src/controllers/AvionControllers.o"
-	@echo "... src/controllers/AvionControllers.i"
-	@echo "... src/controllers/AvionControllers.s"
+	@echo "... src/controllers/AvionController.o"
+	@echo "... src/controllers/AvionController.i"
+	@echo "... src/controllers/AvionController.s"
 	@echo "... src/controllers/CrudController.o"
 	@echo "... src/controllers/CrudController.i"
 	@echo "... src/controllers/CrudController.s"
+	@echo "... src/controllers/SimulationController.o"
+	@echo "... src/controllers/SimulationController.i"
+	@echo "... src/controllers/SimulationController.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

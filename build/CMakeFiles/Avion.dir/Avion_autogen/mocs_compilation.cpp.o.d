@@ -373,5 +373,11 @@ CMakeFiles/Avion.dir/Avion_autogen/mocs_compilation.cpp.o: \
  /usr/include/qt6/QtCore/QVariantList \
  /usr/include/qt6/QtCore/qvariantlist.h /usr/include/qt6/QtCore/QList \
  /usr/include/qt6/QtCore/QVariant \
+ /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/build/Avion_autogen/BAFWLH3SZT/moc_SimulationController.cpp \
+ /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/build/Avion_autogen/BAFWLH3SZT/../../../include/controllers/SimulationController.hpp \
+ /usr/include/qt6/QtCore/QList \
+ /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/include/models/Piste.hpp \
+ /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/include/services/AvionService.hpp \
  /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/build/Avion_autogen/CY5N3QYTG5/moc_ChronometreWidget.cpp \
- /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/build/Avion_autogen/CY5N3QYTG5/../../../include/views/ChronometreWidget.hpp
+ /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/build/Avion_autogen/CY5N3QYTG5/../../../include/views/ChronometreWidget.hpp \
+ /usr/include/qt6/QtCore/QString

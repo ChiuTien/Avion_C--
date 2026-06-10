@@ -1,5 +1,8 @@
-/home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/build/Avion_autogen/CY5N3QYTG5/moc_ChronometreWidget.cpp: /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/include/views/ChronometreWidget.hpp \
+/home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/build/Avion_autogen/BAFWLH3SZT/moc_SimulationController.cpp: /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/include/controllers/SimulationController.hpp \
   /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/build/Avion_autogen/moc_predefs.h \
+  /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/include/models/Avion.hpp \
+  /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/include/models/Piste.hpp \
+  /home/chiu/Documents/ITU/L2/S4/Projet\ Tahina/Exo/Avion/include/services/AvionService.hpp \
   /usr/include/alloca.h \
   /usr/include/asm-generic/bitsperlong.h \
   /usr/include/asm-generic/errno-base.h \
@@ -256,16 +259,15 @@
   /usr/include/linux/types.h \
   /usr/include/locale.h \
   /usr/include/pthread.h \
+  /usr/include/qt6/QtCore/QList \
   /usr/include/qt6/QtCore/QObject \
-  /usr/include/qt6/QtCore/QString \
-  /usr/include/qt6/QtCore/QTimer \
+  /usr/include/qt6/QtCore/QStringList \
   /usr/include/qt6/QtCore/q17memory.h \
   /usr/include/qt6/QtCore/q20bit.h \
   /usr/include/qt6/QtCore/q20functional.h \
   /usr/include/qt6/QtCore/q20memory.h \
   /usr/include/qt6/QtCore/q20type_traits.h \
   /usr/include/qt6/QtCore/q23type_traits.h \
-  /usr/include/qt6/QtCore/qabstracteventdispatcher.h \
   /usr/include/qt6/QtCore/qalgorithms.h \
   /usr/include/qt6/QtCore/qanystringview.h \
   /usr/include/qt6/QtCore/qarraydata.h \
@@ -275,7 +277,6 @@
   /usr/include/qt6/QtCore/qatomic.h \
   /usr/include/qt6/QtCore/qatomic_cxx11.h \
   /usr/include/qt6/QtCore/qbasicatomic.h \
-  /usr/include/qt6/QtCore/qbasictimer.h \
   /usr/include/qt6/QtCore/qbindingstorage.h \
   /usr/include/qt6/QtCore/qbytearray.h \
   /usr/include/qt6/QtCore/qbytearrayalgorithms.h \
@@ -293,8 +294,6 @@
   /usr/include/qt6/QtCore/qcontainertools_impl.h \
   /usr/include/qt6/QtCore/qdarwinhelpers.h \
   /usr/include/qt6/QtCore/qdatastream.h \
-  /usr/include/qt6/QtCore/qdeadlinetimer.h \
-  /usr/include/qt6/QtCore/qeventloop.h \
   /usr/include/qt6/QtCore/qexceptionhandling.h \
   /usr/include/qt6/QtCore/qflags.h \
   /usr/include/qt6/QtCore/qfloat16.h \
@@ -353,7 +352,6 @@
   /usr/include/qt6/QtCore/qtdeprecationmarkers.h \
   /usr/include/qt6/QtCore/qtenvironmentvariables.h \
   /usr/include/qt6/QtCore/qtformat_impl.h \
-  /usr/include/qt6/QtCore/qtimer.h \
   /usr/include/qt6/QtCore/qtmetamacros.h \
   /usr/include/qt6/QtCore/qtnoop.h \
   /usr/include/qt6/QtCore/qtpreprocessorsupport.h \

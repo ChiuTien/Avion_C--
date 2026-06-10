@@ -1660,6 +1660,12 @@
 			null
 		],
 		[
+			"/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/include/controllers/SimulationController.hpp",
+			"MU",
+			"BAFWLH3SZT/moc_SimulationController.cpp",
+			null
+		],
+		[
 			"/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/include/models/Piste.hpp",
 			"MU",
 			"EPPU6REHSQ/moc_Piste.cpp",
@@ -1757,12 +1763,17 @@
 	"SOURCES" : 
 	[
 		[
-			"/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/src/controllers/AvionControllers.cpp",
+			"/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/src/controllers/AvionController.cpp",
 			"MU",
 			null
 		],
 		[
 			"/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/src/controllers/CrudController.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/src/controllers/SimulationController.cpp",
 			"MU",
 			null
 		],

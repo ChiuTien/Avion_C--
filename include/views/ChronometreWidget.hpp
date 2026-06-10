@@ -1,36 +1,38 @@
-// include/views/ChronometreWidget.hpp
 #pragma once
 
-#include <QWidget>
-#include <QPushButton>
-#include <QLabel>
+#include <QObject>
 #include <QTimer>
-
+#include <QString>
 
 namespace Views {
-
+    
     class ChronometreWidget : public QObject {
-        Q_OBJECT
+    Q_OBJECT
+    Q_PROPERTY(QString tempsAffiche READ getTempsAffiche NOTIFY tempsMisAJour)
 
-        Q_PROPERTY(QString tempsAffiche READ getTempsAffiche NOTIFY tempsChange)
-        private:
-            // Notre moteur de temps
-            QTimer* minuteur;
-            int tempsEcoule; // En secondes ou millisecondes
-            QString tempsAffiche;
+    public:
+        explicit ChronometreWidget(QObject* parent = nullptr);
 
-            void mettreAjourAffichage();
+        Q_INVOKABLE void start();
+        Q_INVOKABLE void stop();
+        Q_INVOKABLE void reset();
 
-        signals:
-            void tempsChange();
+        QString getTempsAffiche() const { return m_tempsAffiche; }
+        double getChronoDt() const { return m_dt; } // Retourne le pas de temps (ex: 0.016s)
 
-        public:
-            ChronometreWidget(QObject* parent = nullptr);
-            ~ChronometreWidget();
+    signals:
+        void tempsMisAJour();
+        void tickPhysique(); // 🔄 Émis à chaque milliseconde écoulée pour recalculer la physique
+        void simulationDemarree();
+        void simulationArretee();
 
-            QString getTempsAffiche() const {return tempsAffiche; }
+    private slots:
+        void incrementerTemps();
 
-            Q_INVOKABLE void provoquerPause();
+    private:
+        QTimer* m_timerInterne;
+        int m_millisecondesEcoulees;
+        double m_dt; // Pas de temps en secondes
+        QString m_tempsAffiche;
     };
-
 }

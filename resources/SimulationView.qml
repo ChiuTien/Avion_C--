@@ -2,7 +2,7 @@ import QtQuick
 import QtQuick.Controls
 
 Item {
-    //anchors.fill: parent
+    id: simulationView
 
     // 🌤️ 1. ZONE SUPÉRIEURE : Vue extérieure / Ciel
     Rectangle {
@@ -13,9 +13,6 @@ Item {
         anchors.bottom: tableauDeBord.top
         color: "#87CEEB"
         clip: true
-
-        property double avionX: 100
-        property double avionY: 150
 
         // 🛣️ La Piste d'atterrissage
         Rectangle {
@@ -30,11 +27,14 @@ Item {
         Rectangle {
             id: avionGraphique
             width: 40; height: 20; color: "#FFFFFF"; radius: 5
-            x: zoneCiel.avionX; y: zoneCiel.avionY
+            
+            // 🔗 Récupère la vraie position du CSV mise à jour par le moteur physique
+            x: monSimulationController.avionX
+            y: (zoneCiel.height - height) - monSimulationController.avionY
         }
     }
 
-    // 📊 2. ZONE INFÉRIEURE GAUCHE : Instruments de Vol
+    // 📊 2. ZONE INFÉRIEURE GAUCHE : Instruments de Vol (VRAIES VALEURS)
     Rectangle {
         id: tableauDeBord
         width: parent.width / 3; height: 200
@@ -43,16 +43,21 @@ Item {
 
         Grid {
             columns: 2; spacing: 12; anchors.centerIn: parent
+            
             Text { text: "Vitesse X :"; color: "white"; font.bold: true }
-            Text { text: "0.0 kt"; color: "#2ECC71" }
+            Text { text: monSimulationController.vitesseX.toFixed(1) + " kt"; color: "#2ECC71" }
+            
             Text { text: "Vitesse Y :"; color: "white"; font.bold: true }
-            Text { text: "0.0 ft/min"; color: "#2ECC71" }
+            Text { text: monSimulationController.vitesseY.toFixed(1) + " ft/min"; color: "#2ECC71" }
+            
             Text { text: "Altitude :"; color: "white"; font.bold: true }
-            Text { text: "0 ft"; color: "#2ECC71" }
+            Text { text: Math.round(monSimulationController.avionY) + " m"; color: "#2ECC71" }
+            
             Text { text: "Distance Piste :"; color: "white"; font.bold: true }
-            Text { text: "0 m"; color: "#2ECC71" }
+            Text { text: Math.round(monSimulationController.distancePiste) + " m"; color: "#2ECC71" }
+            
             Text { text: "V. Décrochage :"; color: "#E74C3C"; font.bold: true }
-            Text { text: "0.0 kt"; color: "#E74C3C" }
+            Text { text: monSimulationController.vitesseDecrochage.toFixed(1) + " kt"; color: "#E74C3C" }
         }
     }
 
@@ -69,22 +74,23 @@ Item {
             Column {
                 spacing: 10
                 Text { text: "Accélération X"; color: "white"; font.bold: true; anchors.horizontalCenter: parent.horizontalCenter }
-                Text { text: "0.0 m/s²"; color: "#F1C40F"; font.bold: true; anchors.horizontalCenter: parent.horizontalCenter }
+                Text { text: monSimulationController.accelerationX.toFixed(2) + " m/s²"; color: "#F1C40F"; font.bold: true; anchors.horizontalCenter: parent.horizontalCenter }
                 Row {
                     spacing: 8
-                    Button { text: "+"; width: 40; onClicked: monControllerCplusplus.accelererX() }
-                    Button { text: "-"; width: 40; onClicked: monControllerCplusplus.freinerX() }
+                    // 🔗 Connecté aux méthodes du nouveau contrôleur
+                    Button { text: "+"; width: 40; onClicked: monSimulationController.accelererX() }
+                    Button { text: "-"; width: 40; onClicked: monSimulationController.freinerX() }
                 }
             }
 
             Column {
                 spacing: 10
                 Text { text: "Accélération Y"; color: "white"; font.bold: true; anchors.horizontalCenter: parent.horizontalCenter }
-                Text { text: "0.0 m/s²"; color: "#F1C40F"; font.bold: true; anchors.horizontalCenter: parent.horizontalCenter }
+                Text { text: monSimulationController.accelerationY.toFixed(2) + " m/s²"; color: "#F1C40F"; font.bold: true; anchors.horizontalCenter: parent.horizontalCenter }
                 Row {
                     spacing: 8
-                    Button { text: "+"; width: 40; onClicked: monControllerCplusplus.accelererY() }
-                    Button { text: "-"; width: 40; onClicked: monControllerCplusplus.freinerY() }
+                    Button { text: "+"; width: 40; onClicked: monSimulationController.accelererY() }
+                    Button { text: "-"; width: 40; onClicked: monSimulationController.freinerY() }
                 }
             }
         }
@@ -100,14 +106,19 @@ Item {
         Column {
             anchors.centerIn: parent; spacing: 15
             Text {
-                id: affichageChrono
-                text: monChronoCplusplus.tempsAffiche
-                color: "red"; font.pointSize: 24; font.family: "Courier"; anchors.horizontalCenter: parent.horizontalCenter
+                text: monChrono.tempsAffiche 
+                font.pointSize: 26
+                color: "white"
             }
+
             Button {
-                id: boutonChrono
-                text: "Start / Pause"; anchors.horizontalCenter: parent.horizontalCenter
-                onClicked: monChronoCplusplus.provoquerPause()
+                text: "START ▶"
+                onClicked: monChrono.start() 
+            }
+
+            Button {
+                text: "STOP ⏸"
+                onClicked: monChrono.stop()  
             }
         }
     }

@@ -1,46 +1,60 @@
-// src/views/ChronometreWidget.cpp
 #include "views/ChronometreWidget.hpp"
 
 namespace Views {
 
-    ChronometreWidget::ChronometreWidget(QObject* parent) 
-        : QObject(parent), tempsEcoule(0), tempsAffiche("00:00:00") {
-        
-        minuteur = new QTimer(this);
-        
-        // 🔗 On connecte le tic du timer à notre fonction de mise à jour
-        connect(minuteur, &QTimer::timeout, this, &ChronometreWidget::mettreAjourAffichage);
-    }
-
-    void ChronometreWidget::provoquerPause() {
-        if (minuteur->isActive()) {
-            minuteur->stop();
-        } else {
-            minuteur->start(1000);
-        }
+    ChronometreWidget::ChronometreWidget(QObject* parent)
+        : QObject(parent), m_millisecondesEcoulees(0), m_dt(0.016), m_tempsAffiche("00:00.00") {
     
-        // 📢 On émet le signal pour avertir la vue (QML) que l'état a changé
-        emit tempsChange(); 
+        m_timerInterne = new QTimer(this);
+    
+        // On connecte le timeout du timer à notre fonction d'incrémentation
+        connect(m_timerInterne, &QTimer::timeout, this, &ChronometreWidget::incrementerTemps);
     }
 
-    void ChronometreWidget::mettreAjourAffichage() {
-        // 1. On augmente le compteur de secondes 📈
-        tempsEcoule++;
-
-        // 2. On extrait les heures, les minutes et les secondes
-        int heures = tempsEcoule / 3600;
-        int minutes = (tempsEcoule % 3600) / 60;
-        int secondes = tempsEcoule % 60;
-
-        // 3. On formate en "00:00:00" avec des zéros de remplissage 📝
-        tempsAffiche = QString("%1:%2:%3")
-                        .arg(heures, 2, 10, QChar('0'))
-                        .arg(minutes, 2, 10, QChar('0'))
-                        .arg(secondes, 2, 10, QChar('0'));
-
-        // 4. 📢 On crie au QML que le texte a changé !
-        emit tempsChange();
+    void ChronometreWidget::start() {
+        if (!m_timerInterne->isActive()) {
+            // 16 ms d'intervalle pour coller au dt de 0.016s (~60Hz)
+            m_timerInterne->start(16); 
+            emit simulationDemarree();
+        }
     }
 
-    ChronometreWidget::~ChronometreWidget() {}
+    void ChronometreWidget::stop() {
+        if (m_timerInterne->isActive()) {
+            m_timerInterne->stop();
+            emit simulationArretee();
+        }
+    }
+
+    void ChronometreWidget::reset() {
+        m_timerInterne->stop();
+        m_millisecondesEcoulees = 0;
+        m_tempsAffiche = "00:00.00";
+    
+        emit tempsMisAJour();
+        emit tickPhysique(); // On force un tick pour réinitialiser la physique à l'état initial
+        emit simulationArretee();
+    }
+
+    void ChronometreWidget::incrementerTemps() {
+        // On ajoute 16 millisecondes à chaque tick du QTimer
+        m_millisecondesEcoulees += 16;
+
+        // --- FORMATAGE DU TEMPS POUR L'AFFICHAGE QML ---
+        int minutes = (m_millisecondesEcoulees / 60000) % 60;
+        int secondes = (m_millisecondesEcoulees / 1000) % 60;
+        int centiemes = (m_millisecondesEcoulees % 1000) / 10;
+
+        // Construit une chaîne comme "01:23.45"
+        m_tempsAffiche = QString("%1:%2.%3")
+                            .arg(minutes, 2, 10, QChar('0'))
+                            .arg(secondes, 2, 10, QChar('0'))
+                            .arg(centiemes, 2, 10, QChar('0'));
+
+        // On avertit le QML de rafraîchir l'affichage du texte
+        emit tempsMisAJour();
+
+        // 🚀 ON CORRÈLE LA PHYSIQUE : on signale au SimulationController de calculer le pas suivant
+        emit tickPhysique();
+}
 }
