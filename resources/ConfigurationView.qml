@@ -3,67 +3,108 @@ import QtQuick.Controls
 
 Item {
     id: configurationView
-
+    
     signal simulationLancee()
-
+    
+    // Fond blanc
     Rectangle {
         anchors.fill: parent
-        color: "#2C3E50"
-
+        color: "white"
+        
+        // Conteneur principal centré
         Column {
             anchors.centerIn: parent
-            spacing: 30
-            width: parent.width * 0.8
-
+            spacing: 25
+            width: Math.min(parent.width * 0.6, 400)
+            
+            // Titre
             Text {
-                text: "Configuration de la Simulation"
-                color: "white"
-                font.pointSize: 24
+                text: "Configuration"
+                font.pixelSize: 28
                 font.bold: true
+                color: "#333"
                 anchors.horizontalCenter: parent.horizontalCenter
             }
-
-            // --- Sélection de l'Avion ---
+            
+            // Sélection de l'avion
             Column {
-                spacing: 10
+                spacing: 8
                 width: parent.width
                 
-                Text { text: "Choisir un Avion :"; color: "#ECF0F1"; font.pointSize: 14 }
+                Text {
+                    text: "Avion"
+                    font.pixelSize: 14
+                    font.bold: true
+                    color: "#555"
+                }
+                
                 ComboBox {
                     id: comboAvion
                     width: parent.width
-                    // 🔗 Charge les vrais avions du CSV
-                    model: monSimulationController.modelesAvions 
+                    model: monSimulationController.modelesAvions
+                    
+                    background: Rectangle {
+                        color: "white"
+                        border.color: "#ccc"
+                        border.width: 1
+                        radius: 4
+                    }
                 }
             }
-
-            // --- Sélection de la Piste ---
+            
+            // Sélection de la piste
             Column {
-                spacing: 10
+                spacing: 8
                 width: parent.width
-
-                Text { text: "Choisir une Piste d'Atterrissage :"; color: "#ECF0F1"; font.pointSize: 14 }
+                
+                Text {
+                    text: "Piste"
+                    font.pixelSize: 14
+                    font.bold: true
+                    color: "#555"
+                }
+                
                 ComboBox {
                     id: comboPiste
                     width: parent.width
-                    // 🔗 Charge les vraies pistes du CSV
-                    model: monSimulationController.modelesPistes 
+                    model: monSimulationController.modelesPistes
+                    
+                    background: Rectangle {
+                        color: "white"
+                        border.color: "#ccc"
+                        border.width: 1
+                        radius: 4
+                    }
                 }
             }
-
-            // --- Bouton de validation ---
+            
+            // Bouton de lancement
             Button {
-                text: "Prêt pour le décollage 🚀"
-                width: 250
-                height: 50
+                text: "Lancer la simulation"
+                width: parent.width
+                height: 45
                 anchors.horizontalCenter: parent.horizontalCenter
                 
+                background: Rectangle {
+                    color: parent.pressed ? "#1976D2" : "#2196F3"
+                    radius: 4
+                }
+                
+                contentItem: Text {
+                    text: parent.text
+                    color: "white"
+                    font.pixelSize: 16
+                    horizontalAlignment: Text.AlignHCenter
+                    verticalAlignment: Text.AlignVCenter
+                }
+                
                 onClicked: {
-                    // 🔗 On valide les indices sélectionnés dans le contrôleur C++
-                    let valide = monSimulationController.selectionnerConfiguration(comboAvion.currentIndex, comboPiste.currentIndex)
+                    let valide = monSimulationController.selectionnerConfiguration(
+                        comboAvion.currentIndex,
+                        comboPiste.currentIndex
+                    )
                     
                     if (valide) {
-                        // Déclenche le signal intercepté par main.qml
                         configurationView.simulationLancee()
                     }
                 }

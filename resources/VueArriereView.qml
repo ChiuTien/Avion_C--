@@ -2,14 +2,13 @@ import QtQuick
 import QtQuick.Controls
 
 Item {
-    id: simulationView
+    id: vueArriereView
     width: 1020
     height: 720
-
+    
     // ========== PROPRIÉTÉS ==========
     property double altitudeMax: 3000
-    property double distanceMax: 7000
-    property double distanceApparitionPiste: 2000
+    property double vueArriereScale: 200  // Échelle pour la vue arrière
     
     // ========== FOND BLANC ==========
     Rectangle {
@@ -27,6 +26,16 @@ Item {
         color: "lightblue"
         clip: true
         
+        // Horizon
+        Rectangle {
+            id: horizon
+            width: parent.width
+            height: 2
+            color: "darkgray"
+            anchors.verticalCenter: parent.verticalCenter
+        }
+        
+        // Sol (vue arrière - ligne horizontale)
         Rectangle {
             id: sol
             width: parent.width
@@ -42,35 +51,33 @@ Item {
             }
         }
         
+        // Piste (vue arrière - centrée)
         Rectangle {
             id: pisteGraphique
-            width: 200
-            height: 15
+            width: 60
+            height: 200
             color: "gray"
+            anchors.horizontalCenter: parent.horizontalCenter
             anchors.bottom: sol.top
             border.color: "darkgray"
             border.width: 1
-            radius: 2
+            radius: 3
             
             opacity: {
                 if (monSimulationController && monSimulationController.distancePiste !== undefined) {
-                    if (monSimulationController.distancePiste <= distanceApparitionPiste) {
-                        return 1 - (monSimulationController.distancePiste / distanceApparitionPiste)
+                    if (monSimulationController.distancePiste <= 2000) {
+                        return 1 - (monSimulationController.distancePiste / 2000)
                     }
                 }
                 return 0
             }
             
-            x: {
-                if (monSimulationController && monSimulationController.distancePiste !== undefined) {
-                    if (monSimulationController.distancePiste <= distanceApparitionPiste) {
-                        let progression = 1 - (monSimulationController.distancePiste / distanceApparitionPiste)
-                        let xMin = avionGraphique.x - width / 2
-                        let xMax = avionGraphique.x + 50
-                        return xMin + (progression * (xMax - xMin))
-                    }
-                }
-                return parent.width
+            // Marques de la piste
+            Rectangle {
+                width: 40
+                height: 5
+                color: "white"
+                anchors.centerIn: parent
             }
             
             Text {
@@ -79,48 +86,78 @@ Item {
                 font.pixelSize: 10
                 font.bold: true
                 color: "white"
+                rotation: -90
             }
         }
         
+        // Avion (vue arrière - rond)
         Rectangle {
             id: avionGraphique
-            width: 50
-            height: 25
+            width: 30
+            height: 30
             color: "red"
-            radius: 5
-            x: 80
+            radius: 15
+            anchors.horizontalCenter: parent.horizontalCenter
             
             y: {
                 if (!monSimulationController || monSimulationController.avionY === undefined) {
                     return sol.y - height - 10
                 }
                 
-                // Inversion de l'axe Y : altitude max = haut, altitude min = sol
                 let alt = Math.max(0, monSimulationController.avionY)
                 let altNormalisee = Math.min(alt / altitudeMax, 1)
                 
                 let yMin = 50
                 let yMax = sol.y - height - 10
                 
-                // Inversion : quand altitude est max, on est en haut (yMin)
                 return yMax - (altNormalisee * (yMax - yMin))
             }
             
-            rotation: {
-                if (!monSimulationController || monSimulationController.vitesseY === undefined) return 0
-                // Rotation selon la vitesse Y (monte = inclinaison haut, descend = inclinaison bas)
-                return Math.min(Math.max(-monSimulationController.vitesseY * 0.5, -15), 15)
-            }
-            
-            Text {
-                text: "✈️"
+            // Ailes (vue arrière)
+            Rectangle {
+                width: 50
+                height: 8
+                color: "red"
+                radius: 2
                 anchors.centerIn: parent
-                font.pixelSize: 20
             }
             
             Rectangle {
+                width: 8
+                height: 40
+                color: "red"
+                radius: 2
+                anchors.centerIn: parent
+            }
+            
+            Text {
+                text: "⬆️"
+                anchors.centerIn: parent
+                font.pixelSize: 12
+            }
+            
+            // Effet de déplacement latéral selon la vitesse X
+            Rectangle {
+                width: 20
+                height: 20
+                color: "orange"
+                opacity: 0.5
+                radius: 10
                 anchors.left: parent.right
-                anchors.leftMargin: 10
+                anchors.leftMargin: 5
+                anchors.verticalCenter: parent.verticalCenter
+                visible: Math.abs(monSimulationController?.vitesseX || 0) > 50
+                
+                Text {
+                    text: monSimulationController?.vitesseX > 0 ? "→" : "←"
+                    anchors.centerIn: parent
+                    font.pixelSize: 12
+                }
+            }
+            
+            Rectangle {
+                anchors.right: parent.left
+                anchors.rightMargin: 10
                 anchors.verticalCenter: parent.verticalCenter
                 width: 120
                 height: 40
@@ -141,44 +178,12 @@ Item {
             }
         }
         
-        Rectangle {
-            width: 30
-            height: 3
-            color: "black"
-            opacity: 0.2
-            anchors.right: avionGraphique.left
-            anchors.rightMargin: 5
-            anchors.verticalCenter: avionGraphique.verticalCenter
-            visible: monSimulationController && monSimulationController.vitesseX > 50
-        }
-        
         // Nuages
         Rectangle {
-            x: 200
-            y: 100
-            width: 80
-            height: 40
-            radius: 20
-            color: "white"
-            opacity: 0.6
+            x: 200; y: 100; width: 80; height: 40; radius: 20; color: "white"; opacity: 0.6
         }
         Rectangle {
-            x: 600
-            y: 150
-            width: 100
-            height: 45
-            radius: 22
-            color: "white"
-            opacity: 0.5
-        }
-        Rectangle {
-            x: 400
-            y: 300
-            width: 70
-            height: 35
-            radius: 17
-            color: "white"
-            opacity: 0.4
+            x: 700; y: 200; width: 100; height: 45; radius: 22; color: "white"; opacity: 0.5
         }
     }
     
@@ -283,17 +288,62 @@ Item {
             
             Row {
                 spacing: 15
-                Button {
-                    text: "START"
-                    width: 80
-                    onClicked: { if(monChrono && monChrono.start) monChrono.start() }
-                }
-                Button {
-                    text: "STOP"
-                    width: 80
-                    onClicked: { if(monChrono && monChrono.stop) monChrono.stop() }
+                Button { text: "START"; width: 80; onClicked: { if(monChrono && monChrono.start) monChrono.start() } }
+                Button { text: "STOP"; width: 80; onClicked: { if(monChrono && monChrono.stop) monChrono.stop() } }
+            }
+        }
+    }
+    
+    // ========== BOUTONS DE NAVIGATION VUE ==========
+    Row {
+        anchors.top: parent.top
+        anchors.horizontalCenter: parent.horizontalCenter
+        anchors.margins: 10
+        spacing: 10
+        
+        Button {
+            text: "Profil Droit"
+            width: 100
+            background: Rectangle {
+                color: parent.pressed ? "lightgray" : "whitesmoke"
+                border.color: "gray"
+                radius: 4
+            }
+            onClicked: {
+                if(stackNavigation) {
+                    var profilDroit = stackNavigation.push("ProfilDroitView.qml")
+                    profilDroit.monSimulationController = monSimulationController
+                    profilDroit.monChrono = monChrono
                 }
             }
+        }
+        
+        Button {
+            text: "Profil Gauche"
+            width: 100
+            background: Rectangle {
+                color: parent.pressed ? "lightgray" : "whitesmoke"
+                border.color: "gray"
+                radius: 4
+            }
+            onClicked: {
+                if(stackNavigation) {
+                    var profilGauche = stackNavigation.push("ProfilGaucheView.qml")
+                    profilGauche.monSimulationController = monSimulationController
+                    profilGauche.monChrono = monChrono
+                }
+            }
+        }
+        
+        Button {
+            text: "Vue Arrière"
+            width: 100
+            background: Rectangle {
+                color: parent.pressed ? "lightgray" : "lightblue"
+                border.color: "gray"
+                radius: 4
+            }
+            enabled: false
         }
     }
     

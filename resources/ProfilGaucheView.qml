@@ -2,10 +2,10 @@ import QtQuick
 import QtQuick.Controls
 
 Item {
-    id: simulationView
+    id: profilGaucheView
     width: 1020
     height: 720
-
+    
     // ========== PROPRIÉTÉS ==========
     property double altitudeMax: 3000
     property double distanceMax: 7000
@@ -42,6 +42,7 @@ Item {
             }
         }
         
+        // Piste (vue de profil gauche - vue miroir)
         Rectangle {
             id: pisteGraphique
             width: 200
@@ -82,6 +83,7 @@ Item {
             }
         }
         
+        // Avion (profil gauche - avion tourné vers la gauche)
         Rectangle {
             id: avionGraphique
             width: 50
@@ -95,25 +97,23 @@ Item {
                     return sol.y - height - 10
                 }
                 
-                // Inversion de l'axe Y : altitude max = haut, altitude min = sol
                 let alt = Math.max(0, monSimulationController.avionY)
                 let altNormalisee = Math.min(alt / altitudeMax, 1)
                 
                 let yMin = 50
                 let yMax = sol.y - height - 10
                 
-                // Inversion : quand altitude est max, on est en haut (yMin)
                 return yMax - (altNormalisee * (yMax - yMin))
             }
             
             rotation: {
                 if (!monSimulationController || monSimulationController.vitesseY === undefined) return 0
-                // Rotation selon la vitesse Y (monte = inclinaison haut, descend = inclinaison bas)
                 return Math.min(Math.max(-monSimulationController.vitesseY * 0.5, -15), 15)
             }
             
+            // Avion orienté à gauche
             Text {
-                text: "✈️"
+                text: "🠜✈️"
                 anchors.centerIn: parent
                 font.pixelSize: 20
             }
@@ -154,31 +154,13 @@ Item {
         
         // Nuages
         Rectangle {
-            x: 200
-            y: 100
-            width: 80
-            height: 40
-            radius: 20
-            color: "white"
-            opacity: 0.6
+            x: 200; y: 100; width: 80; height: 40; radius: 20; color: "white"; opacity: 0.6
         }
         Rectangle {
-            x: 600
-            y: 150
-            width: 100
-            height: 45
-            radius: 22
-            color: "white"
-            opacity: 0.5
+            x: 600; y: 150; width: 100; height: 45; radius: 22; color: "white"; opacity: 0.5
         }
         Rectangle {
-            x: 400
-            y: 300
-            width: 70
-            height: 35
-            radius: 17
-            color: "white"
-            opacity: 0.4
+            x: 400; y: 300; width: 70; height: 35; radius: 17; color: "white"; opacity: 0.4
         }
     }
     
@@ -283,15 +265,60 @@ Item {
             
             Row {
                 spacing: 15
-                Button {
-                    text: "START"
-                    width: 80
-                    onClicked: { if(monChrono && monChrono.start) monChrono.start() }
+                Button { text: "START"; width: 80; onClicked: { if(monChrono && monChrono.start) monChrono.start() } }
+                Button { text: "STOP"; width: 80; onClicked: { if(monChrono && monChrono.stop) monChrono.stop() } }
+            }
+        }
+    }
+    
+    // ========== BOUTONS DE NAVIGATION VUE ==========
+    Row {
+        anchors.top: parent.top
+        anchors.horizontalCenter: parent.horizontalCenter
+        anchors.margins: 10
+        spacing: 10
+        
+        Button {
+            text: "Profil Droit"
+            width: 100
+            background: Rectangle {
+                color: parent.pressed ? "lightgray" : "whitesmoke"
+                border.color: "gray"
+                radius: 4
+            }
+            onClicked: {
+                if(stackNavigation) {
+                    var profilDroit = stackNavigation.push("ProfilDroitView.qml")
+                    profilDroit.monSimulationController = monSimulationController
+                    profilDroit.monChrono = monChrono
                 }
-                Button {
-                    text: "STOP"
-                    width: 80
-                    onClicked: { if(monChrono && monChrono.stop) monChrono.stop() }
+            }
+        }
+        
+        Button {
+            text: "Profil Gauche"
+            width: 100
+            background: Rectangle {
+                color: parent.pressed ? "lightgray" : "lightblue"
+                border.color: "gray"
+                radius: 4
+            }
+            enabled: false  // Vue actuelle
+        }
+        
+        Button {
+            text: "Vue Arrière"
+            width: 100
+            background: Rectangle {
+                color: parent.pressed ? "lightgray" : "whitesmoke"
+                border.color: "gray"
+                radius: 4
+            }
+            onClicked: {
+                if(stackNavigation) {
+                    var vueArriere = stackNavigation.push("VueArriereView.qml")
+                    vueArriere.monSimulationController = monSimulationController
+                    vueArriere.monChrono = monChrono
                 }
             }
         }
