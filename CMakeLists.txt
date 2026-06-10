@@ -29,8 +29,6 @@ add_executable(${PROJECT_NAME} ${SOURCES}
     src/models/Piste.cpp
     include/services/AvionService.hpp
     src/services/AvionService.cpp
-    include/controllers/AvionController.hpp
-    src/controllers/AvionController.cpp
     include/views/ChronometreWidget.hpp
     src/views/ChronometreWidget.cpp
     src/repositories/PisteDAO.cpp

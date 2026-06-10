@@ -12,8 +12,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/Avion.dir/Avion_autogen/mocs_compilation.cpp.o.d"
   "CMakeFiles/Avion.dir/build/.qt/rcc/qrc_fichiers_qml.cpp.o"
   "CMakeFiles/Avion.dir/build/.qt/rcc/qrc_fichiers_qml.cpp.o.d"
-  "CMakeFiles/Avion.dir/src/controllers/AvionController.cpp.o"
-  "CMakeFiles/Avion.dir/src/controllers/AvionController.cpp.o.d"
   "CMakeFiles/Avion.dir/src/controllers/CrudController.cpp.o"
   "CMakeFiles/Avion.dir/src/controllers/CrudController.cpp.o.d"
   "CMakeFiles/Avion.dir/src/controllers/SimulationController.cpp.o"

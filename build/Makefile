@@ -216,30 +216,6 @@ build/.qt/rcc/qrc_fichiers_qml.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Avion.dir/build.make CMakeFiles/Avion.dir/build/.qt/rcc/qrc_fichiers_qml.cpp.s
 .PHONY : build/.qt/rcc/qrc_fichiers_qml.cpp.s
 
-src/controllers/AvionController.o: src/controllers/AvionController.cpp.o
-.PHONY : src/controllers/AvionController.o
-
-# target to build an object file
-src/controllers/AvionController.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Avion.dir/build.make CMakeFiles/Avion.dir/src/controllers/AvionController.cpp.o
-.PHONY : src/controllers/AvionController.cpp.o
-
-src/controllers/AvionController.i: src/controllers/AvionController.cpp.i
-.PHONY : src/controllers/AvionController.i
-
-# target to preprocess a source file
-src/controllers/AvionController.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Avion.dir/build.make CMakeFiles/Avion.dir/src/controllers/AvionController.cpp.i
-.PHONY : src/controllers/AvionController.cpp.i
-
-src/controllers/AvionController.s: src/controllers/AvionController.cpp.s
-.PHONY : src/controllers/AvionController.s
-
-# target to generate assembly for a file
-src/controllers/AvionController.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Avion.dir/build.make CMakeFiles/Avion.dir/src/controllers/AvionController.cpp.s
-.PHONY : src/controllers/AvionController.cpp.s
-
 src/controllers/CrudController.o: src/controllers/CrudController.cpp.o
 .PHONY : src/controllers/CrudController.o
 
@@ -474,9 +450,6 @@ help:
 	@echo "... build/.qt/rcc/qrc_fichiers_qml.o"
 	@echo "... build/.qt/rcc/qrc_fichiers_qml.i"
 	@echo "... build/.qt/rcc/qrc_fichiers_qml.s"
-	@echo "... src/controllers/AvionController.o"
-	@echo "... src/controllers/AvionController.i"
-	@echo "... src/controllers/AvionController.s"
 	@echo "... src/controllers/CrudController.o"
 	@echo "... src/controllers/CrudController.i"
 	@echo "... src/controllers/CrudController.s"

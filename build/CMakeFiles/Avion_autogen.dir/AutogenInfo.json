@@ -1648,12 +1648,6 @@
 	"HEADERS" : 
 	[
 		[
-			"/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/include/controllers/AvionController.hpp",
-			"MU",
-			"BAFWLH3SZT/moc_AvionController.cpp",
-			null
-		],
-		[
 			"/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/include/controllers/CrudController.hpp",
 			"MU",
 			"BAFWLH3SZT/moc_CrudController.cpp",
@@ -1762,11 +1756,6 @@
 	"SETTINGS_FILE" : "/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/build/CMakeFiles/Avion_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
-		[
-			"/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/src/controllers/AvionController.cpp",
-			"MU",
-			null
-		],
 		[
 			"/home/chiu/Documents/ITU/L2/S4/Projet Tahina/Exo/Avion/src/controllers/CrudController.cpp",
 			"MU",

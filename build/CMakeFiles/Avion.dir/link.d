@@ -3,7 +3,6 @@
   /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/../../../../lib/crti.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/crtbeginS.o \
   CMakeFiles/Avion.dir/Avion_autogen/mocs_compilation.cpp.o \
-  CMakeFiles/Avion.dir/src/controllers/AvionController.cpp.o \
   CMakeFiles/Avion.dir/src/controllers/CrudController.cpp.o \
   CMakeFiles/Avion.dir/src/controllers/SimulationController.cpp.o \
   CMakeFiles/Avion.dir/src/main.cpp.o \
@@ -154,8 +153,6 @@
 /usr/lib/gcc/x86_64-pc-linux-gnu/16.1.1/crtbeginS.o:
 
 CMakeFiles/Avion.dir/Avion_autogen/mocs_compilation.cpp.o:
-
-CMakeFiles/Avion.dir/src/controllers/AvionController.cpp.o:
 
 CMakeFiles/Avion.dir/src/controllers/CrudController.cpp.o:
 

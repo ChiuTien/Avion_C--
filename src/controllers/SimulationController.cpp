@@ -84,25 +84,31 @@ bool SimulationController::selectionnerConfiguration(int indexAvion, int indexPi
 // ⚙️ Gestion dynamique des commandes depuis l'IHM
 void SimulationController::accelererX() {
     if (!m_avionActif) return;
-    m_avionActif->setAccelerationX(m_avionActif->getAccelerationX() + m_avionActif->getPasFreinageX());
+    m_avionActif->setAccelerationX(m_avionActif->getAccelerationX() - m_avionActif->getPasFreinageX());
     emit positionChangee();
 }
 
 void SimulationController::freinerX() {
     if (!m_avionActif) return;
-    m_avionActif->setAccelerationX(m_avionActif->getAccelerationX() - m_avionActif->getPasFreinageX());
+    double nouvelleAcceleration = m_avionActif->getAccelerationX() + m_avionActif->getPasFreinageX();
+    if(m_avionActif->getFreinageMX() <= nouvelleAcceleration) {
+        m_avionActif->setAccelerationX(nouvelleAcceleration);
+    }
     emit positionChangee();
 }
 
 void SimulationController::accelererY() {
     if (!m_avionActif) return;
-    m_avionActif->setAccelerationY(m_avionActif->getAccelerationY() + m_avionActif->getPasFreinageY());
+    m_avionActif->setAccelerationY(m_avionActif->getAccelerationY() - m_avionActif->getPasFreinageY());
     emit positionChangee();
 }
 
 void SimulationController::freinerY() {
     if (!m_avionActif) return;
-    m_avionActif->setAccelerationY(m_avionActif->getAccelerationY() - m_avionActif->getPasFreinageY());
+    double nouvelleAcceleration = m_avionActif->getAccelerationY() + m_avionActif->getPasFreinageY();
+    if(m_avionActif->getFreinageMY() <= nouvelleAcceleration) {
+        m_avionActif->setAccelerationY(nouvelleAcceleration);
+    }
     emit positionChangee();
 }
 
